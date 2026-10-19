@@ -1,0 +1,72 @@
+[
+  {
+    "chapter": "minecolonies",
+    "quests": 27,
+    "item_quests": 23,
+    "branches": 4,
+    "new_workshops": 6
+  },
+  {
+    "chapter": "ad_astra",
+    "quests": 29,
+    "item_quests": 27,
+    "branches": 4,
+    "new_workshops": 6
+  },
+  {
+    "chapter": "advanced_rs",
+    "quests": 28,
+    "item_quests": 22,
+    "branches": 3,
+    "new_workshops": 6
+  },
+  {
+    "chapter": "economy",
+    "quests": 24,
+    "item_quests": 14,
+    "branches": 3,
+    "new_workshops": 6
+  },
+  {
+    "chapter": "enderio",
+    "quests": 27,
+    "item_quests": 24,
+    "branches": 4,
+    "new_workshops": 6
+  },
+  {
+    "chapter": "astral",
+    "quests": 31,
+    "item_quests": 29,
+    "branches": 4,
+    "new_workshops": 6
+  },
+  {
+    "chapter": "sfm",
+    "quests": 25,
+    "item_quests": 21,
+    "branches": 4,
+    "new_workshops": 6
+  },
+  {
+    "chapter": "xnet",
+    "quests": 24,
+    "item_quests": 21,
+    "branches": 4,
+    "new_workshops": 6
+  },
+  {
+    "chapter": "computercraft",
+    "quests": 26,
+    "item_quests": 19,
+    "branches": 4,
+    "new_workshops": 6
+  },
+  {
+    "chapter": "rftools",
+    "quests": 28,
+    "item_quests": 24,
+    "branches": 4,
+    "new_workshops": 6
+  }
+]

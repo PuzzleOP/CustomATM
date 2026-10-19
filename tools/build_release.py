@@ -21,12 +21,13 @@ def main():
     for jar in sorted((p/'mods').glob('*.jar')):
         rel='mods/'+jar.name
         entry={'path':rel,'sha256':digest(jar),'size':jar.stat().st_size}
-        if jar.name=='atm10-casino-dyneco-1.0.0.jar':entry['source']='payload';payload[rel]=jar
+        if jar.name in {'atm10-casino-dyneco-1.0.0.jar','customatm-economy-1.0.0.jar'}:entry['source']='payload';payload[rel]=jar
         else:
             url=urls.get(jar.name);assert url and url.startswith('https://'),('Missing original download URL',jar.name)
             entry.update(source='url',url=url)
         files.append(entry)
     # Deliberate allowlist: never recursively publish the live profile's config directory.
+    runtime_forms=json.loads((ROOT/'pack/known-runtime-forms.json').read_text())
     policy=json.loads((ROOT/'pack/managed-paths.json').read_text())
     for pattern in policy['files']:
         matches=sorted(p.glob(pattern));assert matches,('No files for',pattern)
@@ -36,12 +37,14 @@ def main():
             assert rel not in payload
             assert '/saves/' not in rel and not src.name.endswith('_merged.snbt')
             payload[rel]=src
-            files.append({'path':rel,'sha256':digest(src),'size':src.stat().st_size,'source':'payload'})
+            entry={'path':rel,'sha256':digest(src),'size':src.stat().st_size,'source':'payload'}
+            if rel in runtime_forms:entry['previous_forms']=runtime_forms[rel]
+            files.append(entry)
     with zipfile.ZipFile(out/'customatm-payload.zip','w',zipfile.ZIP_DEFLATED) as z:
         for rel,src in sorted(payload.items()):
             info=zipfile.ZipInfo(rel,(2026,10,19,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED
             z.writestr(info,src.read_bytes())
-    manifest={'schema':1,'repository':'PuzzleOP/CustomATM','client_version':3,'version':version,
+    manifest={'schema':1,'repository':'PuzzleOP/CustomATM','client_version':4,'version':version,
               'base':{'name':'All the Mods 10 - ATM10','version':'8.3','minecraft':'1.21.1','loader':'neoforge-21.1.259','curseforge_project_id':925200,'curseforge_file_id':9190157},
               'quest_group':'28D38D1EC21B4002','files':sorted(files,key=lambda f:f['path']),
               'obsolete':json.loads((ROOT/'pack/obsolete.json').read_text()),

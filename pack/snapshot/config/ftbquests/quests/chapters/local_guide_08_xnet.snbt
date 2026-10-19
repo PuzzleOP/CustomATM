@@ -1,6 +1,6 @@
 {
   "default_hide_dependency_lines": false,
-  "default_quest_shape": "square",
+  "default_quest_shape": "hexagon",
   "filename": "local_guide_08_xnet",
   "group": "28D38D1EC21B4002",
   "icon": {
@@ -21,13 +21,14 @@
           "type": "checkmark"
         }
       ],
-      "x": 0.0,
-      "y": 0.0,
-      "shape": "gear",
+      "x": -3,
+      "y": 0,
+      "shape": "diamond",
       "icon": {
         "id": "xnet:controller",
         "count": 1
-      }
+      },
+      "size": 1.5
     },
     {
       "id": "2FFB17ED8EB75DC7",
@@ -40,18 +41,19 @@
           "type": "checkmark"
         }
       ],
-      "x": 3.0,
-      "y": 0.0,
+      "x": -3,
+      "y": 3,
       "shape": "square",
       "icon": {
         "id": "minecraft:book",
         "count": 1
-      }
+      },
+      "optional": true
     },
     {
       "id": "0A1C039E0485CD09",
       "dependencies": [
-        "2FFB17ED8EB75DC7"
+        "5D482EA2D901A236"
       ],
       "tasks": [
         {
@@ -66,16 +68,24 @@
         },
         {
           "id": "7CB3D5CEC1E4BF66",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
+      "x": 0.0,
       "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "xnet:controller",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "3F49A71467860236",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "436CDBF32678D44B",
@@ -84,17 +94,45 @@
       ],
       "tasks": [
         {
+          "id": "5987B946543B30C7",
+          "type": "item",
+          "item": {
+            "id": "xnet:connector_blue",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        },
+        {
+          "id": "4B5803C59DDF0533",
+          "type": "item",
+          "item": {
+            "id": "xnet:netcable_blue",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
           "id": "123BD0C32E7D4E5C",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
+      "x": 3.0,
       "y": 0.0,
-      "shape": "square",
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "xnet:connector_blue",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "0D2065067756F043",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "3616E99D31390D00",
@@ -103,17 +141,35 @@
       ],
       "tasks": [
         {
+          "id": "4F30D5F2749325F8",
+          "type": "item",
+          "item": {
+            "id": "minecraft:chest",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        },
+        {
           "id": "14F0BC4FBC74AE80",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
+      "x": 6.0,
       "y": 0.0,
-      "shape": "square",
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecraft:chest",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "0B7FBC89E4733FC6",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "303408939651539D",
@@ -122,36 +178,72 @@
       ],
       "tasks": [
         {
+          "id": "467E813E294D1CAF",
+          "type": "item",
+          "item": {
+            "id": "minecraft:iron_ingot",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
           "id": "7316724EE981BF9C",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 3.0,
-      "shape": "square",
+      "x": 9.0,
+      "y": 0.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecraft:iron_ingot",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "56D5885B09DED4D4",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "72F0D9534A22C619",
       "dependencies": [
-        "303408939651539D"
+        "3616E99D31390D00"
       ],
       "tasks": [
         {
+          "id": "7EB9CA350471733D",
+          "type": "item",
+          "item": {
+            "id": "minecraft:furnace",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "0849CD24473EDA10",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 3.0,
-      "shape": "square",
+      "x": 0.0,
+      "y": 4.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecraft:furnace",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "57418313E83AFE23",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "62982FA9DE6FC808",
@@ -160,17 +252,35 @@
       ],
       "tasks": [
         {
+          "id": "5C3C32FEFA89528E",
+          "type": "item",
+          "item": {
+            "id": "minecraft:iron_ingot",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        },
+        {
           "id": "5D349D0543C235B6",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
-      "y": 3.0,
-      "shape": "square",
+      "x": 3.0,
+      "y": 4.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecraft:iron_ingot",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "38474B1B0B495A22",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "06AF177A21F52931",
@@ -179,112 +289,230 @@
       ],
       "tasks": [
         {
+          "id": "4DA3833CDEA8813E",
+          "type": "item",
+          "item": {
+            "id": "minecraft:chest",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        },
+        {
           "id": "1B673BD2875631F8",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 3.0,
-      "y": 3.0,
-      "shape": "square",
+      "x": 6.0,
+      "y": 4.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecraft:chest",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "0C428E15E4FADBF2",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "3BCB6A25C89CC654",
+      "dependencies": [
+        "3616E99D31390D00"
+      ],
+      "tasks": [
+        {
+          "id": "084E5E50DD6C931A",
+          "type": "item",
+          "item": {
+            "id": "rftoolsutility:tank",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        },
+        {
+          "id": "2170AA0B29AEC008",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 0.0,
+      "y": 8.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "rftoolsutility:tank",
+        "count": 1
+      },
+      "rewards": [
+        {
+          "id": "4541A59E509D7C1B",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "0BF831C0D9936965",
+      "dependencies": [
+        "3616E99D31390D00"
+      ],
+      "tasks": [
+        {
+          "id": "22E390044EE5B351",
+          "type": "item",
+          "item": {
+            "id": "xnet:connector_blue",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        },
+        {
+          "id": "1FE417BA0B1163EF",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 3.0,
+      "y": 8.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "xnet:connector_blue",
+        "count": 1
+      },
+      "rewards": [
+        {
+          "id": "0E804E84A04091A0",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "436B2B31FA242413",
+      "dependencies": [
+        "3616E99D31390D00"
+      ],
+      "tasks": [
+        {
+          "id": "6BA567084DA87A4B",
+          "type": "item",
+          "item": {
+            "id": "minecraft:lever",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "17C40C829FCBAF2A",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 6.0,
+      "y": 8.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecraft:lever",
+        "count": 1
+      },
+      "rewards": [
+        {
+          "id": "336306E461F90645",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "52DEC77FE782E2E1",
       "dependencies": [
         "06AF177A21F52931"
       ],
       "tasks": [
         {
-          "id": "2170AA0B29AEC008",
-          "type": "checkmark"
-        }
-      ],
-      "x": 0.0,
-      "y": 3.0,
-      "shape": "square",
-      "icon": {
-        "id": "minecraft:book",
-        "count": 1
-      }
-    },
-    {
-      "id": "0BF831C0D9936965",
-      "dependencies": [
-        "3BCB6A25C89CC654"
-      ],
-      "tasks": [
-        {
-          "id": "1FE417BA0B1163EF",
-          "type": "checkmark"
-        }
-      ],
-      "x": 0.0,
-      "y": 6.0,
-      "shape": "square",
-      "icon": {
-        "id": "minecraft:book",
-        "count": 1
-      }
-    },
-    {
-      "id": "436B2B31FA242413",
-      "dependencies": [
-        "0BF831C0D9936965"
-      ],
-      "tasks": [
-        {
-          "id": "17C40C829FCBAF2A",
-          "type": "checkmark"
-        }
-      ],
-      "x": 3.0,
-      "y": 6.0,
-      "shape": "square",
-      "icon": {
-        "id": "minecraft:book",
-        "count": 1
-      }
-    },
-    {
-      "id": "52DEC77FE782E2E1",
-      "dependencies": [
-        "436B2B31FA242413"
-      ],
-      "tasks": [
+          "id": "692C4510CB9BE123",
+          "type": "item",
+          "item": {
+            "id": "xnet:advanced_connector_blue",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
         {
           "id": "19F1E30EE975DA7E",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
-      "y": 6.0,
-      "shape": "square",
+      "x": 9.0,
+      "y": 4.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "xnet:advanced_connector_blue",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "495EFF50799E9998",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "54D90CCEB8C0FA5E",
       "dependencies": [
-        "52DEC77FE782E2E1"
+        "3616E99D31390D00"
       ],
       "tasks": [
         {
+          "id": "0564C45EC4C73B28",
+          "type": "item",
+          "item": {
+            "id": "xnet:netcable_red",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
+          "id": "0976E67055227A58",
+          "type": "item",
+          "item": {
+            "id": "xnet:connector_red",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        },
+        {
           "id": "7C766A75ED78BFF9",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 6.0,
-      "shape": "square",
+      "x": 0.0,
+      "y": 12.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "xnet:netcable_red",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "2FBEB9E589A1E31F",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "4EBD6A891A6AB73F",
@@ -304,16 +532,24 @@
         },
         {
           "id": "5914A64F84140815",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 6.0,
+      "x": 3.0,
+      "y": 12.0,
       "shape": "hexagon",
       "icon": {
         "id": "xnet:router",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "7E804D993F4779FB",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "67CCD513FA0890BB",
@@ -333,21 +569,29 @@
         },
         {
           "id": "06DDB259DDD4980D",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 9.0,
+      "x": 6.0,
+      "y": 12.0,
       "shape": "hexagon",
       "icon": {
         "id": "xnet:wireless_router",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "3208A2B2EB2F942F",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "36820FE443D6DA6D",
       "dependencies": [
-        "67CCD513FA0890BB"
+        "3616E99D31390D00"
       ],
       "tasks": [
         {
@@ -356,7 +600,7 @@
         }
       ],
       "x": 9.0,
-      "y": 9.0,
+      "y": 12.0,
       "shape": "square",
       "icon": {
         "id": "minecraft:book",
@@ -366,28 +610,306 @@
     {
       "id": "6B6E4AE6FBEDF860",
       "dependencies": [
-        "36820FE443D6DA6D"
+        "62982FA9DE6FC808",
+        "0BF831C0D9936965"
       ],
       "tasks": [
+        {
+          "id": "645962F6291BC951",
+          "type": "item",
+          "item": {
+            "id": "minecraft:iron_ingot",
+            "count": 1
+          },
+          "count": 32,
+          "consume_items": false
+        },
         {
           "id": "7C8B23F8654DFC68",
           "type": "checkmark"
         }
       ],
-      "x": 6.0,
-      "y": 9.0,
-      "shape": "gear",
+      "x": 12.0,
+      "y": 12.0,
+      "shape": "diamond",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecraft:iron_ingot",
         "count": 1
       },
+      "size": 1.5,
       "rewards": [
         {
-          "id": "4BFD078819EC4808",
+          "id": "6A58A7890A31FE61",
+          "type": "xp",
+          "xp": 75
+        }
+      ]
+    },
+    {
+      "id": "695FB70F6E75B9A2",
+      "dependencies": [
+        "436CDBF32678D44B"
+      ],
+      "tasks": [
+        {
+          "id": "162CC292F546DDB4",
+          "type": "item",
+          "item": {
+            "id": "xnet:connector_blue",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        },
+        {
+          "id": "79635D51FE66C512",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 3.0,
+      "y": 1.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "xnet:connector_blue",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "2E4E3B08C9CDA629",
           "type": "xp",
           "xp": 25
         }
       ]
+    },
+    {
+      "id": "2B6E5949ED1C0568",
+      "dependencies": [
+        "72F0D9534A22C619"
+      ],
+      "tasks": [
+        {
+          "id": "6C9920F8EF2A159F",
+          "type": "item",
+          "item": {
+            "id": "minecraft:raw_iron",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
+          "id": "4539F0B99AF3158F",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": -0.75,
+      "y": 5.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecraft:raw_iron",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "177B4FFFAC050636",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "1029EC5F43F79CC0",
+      "dependencies": [
+        "72F0D9534A22C619"
+      ],
+      "tasks": [
+        {
+          "id": "2BCDCCEA96A903C1",
+          "type": "item",
+          "item": {
+            "id": "minecraft:coal",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
+          "id": "00624ED1670165D2",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 0.75,
+      "y": 5.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecraft:coal",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "525E4CFFD8193DEF",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "3DFC04D54BF238DE",
+      "dependencies": [
+        "52DEC77FE782E2E1"
+      ],
+      "tasks": [
+        {
+          "id": "2CEC40F2424A9B0A",
+          "type": "item",
+          "item": {
+            "id": "xnet:connector_upgrade",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "76E35506989F1280",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 9.0,
+      "y": 5.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "xnet:connector_upgrade",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "62E8C13D4F0933EF",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "4C2BFDE663C48BDC",
+      "dependencies": [
+        "4EBD6A891A6AB73F"
+      ],
+      "tasks": [
+        {
+          "id": "6CA458CB0D0BBD4A",
+          "type": "item",
+          "item": {
+            "id": "xnet:netcable_routing",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
+          "id": "68A03E49515360A7",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 3.0,
+      "y": 13.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "xnet:netcable_routing",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "7046F691EE70A9E5",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "3372DE492FA50F82",
+      "dependencies": [
+        "6B6E4AE6FBEDF860"
+      ],
+      "tasks": [
+        {
+          "id": "4B6C2C2EC3D3A10A",
+          "type": "item",
+          "item": {
+            "id": "minecraft:chest",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        },
+        {
+          "id": "45A8159D24584A43",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 12.0,
+      "y": 13.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecraft:chest",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "33802ACE88D45F61",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "2D4956C9AF0A6F93",
+      "image": "customatm:textures/quests/xnet_lane_0.png",
+      "x": 5.0,
+      "y": -1.15,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "47E90C341C851CD3",
+      "image": "customatm:textures/quests/xnet_lane_1.png",
+      "x": 5.0,
+      "y": 2.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "05716AF2188D6131",
+      "image": "customatm:textures/quests/xnet_lane_2.png",
+      "x": 5.0,
+      "y": 6.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "434ABD846622A4FA",
+      "image": "customatm:textures/quests/xnet_lane_3.png",
+      "x": 5.0,
+      "y": 10.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
     }
   ]
 }

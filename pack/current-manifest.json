@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "repository": "PuzzleOP/CustomATM",
-  "client_version": 3,
-  "version": "1.2.2",
+  "client_version": 4,
+  "version": "1.3.0",
   "base": {
     "name": "All the Mods 10 - ATM10",
     "version": "8.3",
@@ -14,6 +14,12 @@
   "quest_group": "28D38D1EC21B4002",
   "files": [
     {
+      "path": "config/customatm_economy/catalog.json",
+      "sha256": "83c9640d5999f6f9f86deef6e2c039a88d71c9434b4f172af0412bfd0b9de250",
+      "size": 5054294,
+      "source": "payload"
+    },
+    {
       "path": "config/dyneco-common.toml",
       "sha256": "fbe8496073c58b736b81fefcd0b1f9fc2fb8c65fd2211929484e7f2f70e16ffe",
       "size": 402,
@@ -21,128 +27,516 @@
     },
     {
       "path": "config/ftbquests/quests/chapters/local_guide_01_minecolonies.snbt",
-      "sha256": "63612547708b6a067020001ef71b66661ec93bf23efb10775a50f76e68a77b90",
-      "size": 11992,
-      "source": "payload"
+      "sha256": "c60fbf05769c784872102927abbac78976a1fdecd264e876a4cce3f4b981379d",
+      "size": 21701,
+      "source": "payload",
+      "previous_forms": [
+        {
+          "published_sha256": "63612547708b6a067020001ef71b66661ec93bf23efb10775a50f76e68a77b90",
+          "runtime_sha256": "e44f47cede107c78262d8ff8eba62c1972f8d76fb8a33452c1f535558adfb0ee"
+        },
+        {
+          "published_sha256": "63612547708b6a067020001ef71b66661ec93bf23efb10775a50f76e68a77b90",
+          "runtime_sha256": "f1896e7d9a93ab00ddb842a4d0ba1679251db262d538c0af600f07c011798634"
+        }
+      ]
     },
     {
       "path": "config/ftbquests/quests/chapters/local_guide_02_ad_astra.snbt",
-      "sha256": "f39caea96c48061f34eb1b38e179088a14eaa8a89ae68e9f4c1e415e286e3cd9",
-      "size": 13235,
-      "source": "payload"
+      "sha256": "2fc2766bd4dcea6bad16d07bbf7c6bda104ba11038598e0a6302135f26a12e6a",
+      "size": 25447,
+      "source": "payload",
+      "previous_forms": [
+        {
+          "published_sha256": "f39caea96c48061f34eb1b38e179088a14eaa8a89ae68e9f4c1e415e286e3cd9",
+          "runtime_sha256": "ecbf7b254dbb4e2447ad5b3422f0c14f173e0155bba907fafcf29cb3028fda42"
+        },
+        {
+          "published_sha256": "f39caea96c48061f34eb1b38e179088a14eaa8a89ae68e9f4c1e415e286e3cd9",
+          "runtime_sha256": "f5faf892d9e726b7740b7c47f4d06b71cbec5887869a80e942d2d285a1b78e85"
+        }
+      ]
     },
     {
       "path": "config/ftbquests/quests/chapters/local_guide_03_advanced_rs.snbt",
-      "sha256": "2c72edf1f0441f7e168142d7ac2ed1642f8740ed2905dc3d085109c5a0928bb9",
-      "size": 11322,
-      "source": "payload"
+      "sha256": "3787ff1e553bdb23b0e4142772f77f9518bcb453719863e3c6532f2293d14209",
+      "size": 22508,
+      "source": "payload",
+      "previous_forms": [
+        {
+          "published_sha256": "2c72edf1f0441f7e168142d7ac2ed1642f8740ed2905dc3d085109c5a0928bb9",
+          "runtime_sha256": "6d473055f7373349ac4c5a691dedbeb5d220faefd484e36849beccbb4529471b"
+        },
+        {
+          "published_sha256": "2c72edf1f0441f7e168142d7ac2ed1642f8740ed2905dc3d085109c5a0928bb9",
+          "runtime_sha256": "8fe12a398b8e48c32c197a55e2ccd62147c21b46cda971616f69a260b4d15b49"
+        }
+      ]
     },
     {
       "path": "config/ftbquests/quests/chapters/local_guide_04_economy.snbt",
-      "sha256": "1b6fbd799521883f9576a0e09708ada0594fa239ee63f4d7144c08294dff0dfa",
-      "size": 7582,
-      "source": "payload"
+      "sha256": "f39cb6099816773a03210e7e5fa69ff71324079978381008ff8bf835fd683a55",
+      "size": 16319,
+      "source": "payload",
+      "previous_forms": [
+        {
+          "published_sha256": "1b6fbd799521883f9576a0e09708ada0594fa239ee63f4d7144c08294dff0dfa",
+          "runtime_sha256": "46df40edcb640fe73cfcdc1084721074ea738336b9b0f4fadc72423fe9848c04"
+        },
+        {
+          "published_sha256": "1b6fbd799521883f9576a0e09708ada0594fa239ee63f4d7144c08294dff0dfa",
+          "runtime_sha256": "9f15ea6504546e7afe26fb5dfa9fb8e18b655f46d58a0507c8417c7657a801a2"
+        }
+      ]
     },
     {
       "path": "config/ftbquests/quests/chapters/local_guide_05_enderio.snbt",
-      "sha256": "693d6a8e65007d6d505dc6e536a564d07c705582b21a3a7f53afa6bc29b722e4",
-      "size": 10995,
-      "source": "payload"
+      "sha256": "d54c92cd935172c12caf0c04c4bc9a90f5de299e05c475507f4e6c9d57134836",
+      "size": 21879,
+      "source": "payload",
+      "previous_forms": [
+        {
+          "published_sha256": "693d6a8e65007d6d505dc6e536a564d07c705582b21a3a7f53afa6bc29b722e4",
+          "runtime_sha256": "84b118b7a78a25d819aeeb23df7662eff7e14b9c6aed3638d5711098abbd8724"
+        },
+        {
+          "published_sha256": "693d6a8e65007d6d505dc6e536a564d07c705582b21a3a7f53afa6bc29b722e4",
+          "runtime_sha256": "ed4c4e118da572821c42ee7c0e10cf74e21eaa21aebd8b64cb66ce2f3389bcd2"
+        }
+      ]
     },
     {
       "path": "config/ftbquests/quests/chapters/local_guide_06_astral.snbt",
-      "sha256": "491771102835ba62db9d08772a1f01b12d58e0ec156d36978583abb83a01563a",
-      "size": 14192,
-      "source": "payload"
+      "sha256": "0d5a6c87f8a3d73b26a026e7f474b302b87757f349be5da655dbf6de7714d91a",
+      "size": 25632,
+      "source": "payload",
+      "previous_forms": [
+        {
+          "published_sha256": "491771102835ba62db9d08772a1f01b12d58e0ec156d36978583abb83a01563a",
+          "runtime_sha256": "2bd3cb02a3ab1e10c5149c035037001733cc05b8d7fe82d3a11bf8fefd5e77c6"
+        },
+        {
+          "published_sha256": "491771102835ba62db9d08772a1f01b12d58e0ec156d36978583abb83a01563a",
+          "runtime_sha256": "4dc958acabd46bb6fb5c12fb5ef7c28035ca1b197abfffb70fae7bfb13c3025a"
+        }
+      ]
     },
     {
       "path": "config/ftbquests/quests/chapters/local_guide_07_sfm.snbt",
-      "sha256": "4406e66bcbefdeab2a352bc0c6a7692f1ff205b0583a79fdb3ed0682e109d7f6",
-      "size": 8283,
-      "source": "payload"
+      "sha256": "05d75f27c968b0a1f9fa6013fe8d99c33b0acb041d0bd369f05f9e4b9d36e3cc",
+      "size": 19840,
+      "source": "payload",
+      "previous_forms": [
+        {
+          "published_sha256": "4406e66bcbefdeab2a352bc0c6a7692f1ff205b0583a79fdb3ed0682e109d7f6",
+          "runtime_sha256": "648f45094b8a49997796579cd70efc048c05a6fe2475a94d7e9f53957834bc32"
+        },
+        {
+          "published_sha256": "4406e66bcbefdeab2a352bc0c6a7692f1ff205b0583a79fdb3ed0682e109d7f6",
+          "runtime_sha256": "a7979473e7cff436190d26f79622601aa259aeee88422d276b31cb82721f6535"
+        }
+      ]
     },
     {
       "path": "config/ftbquests/quests/chapters/local_guide_08_xnet.snbt",
-      "sha256": "3403dc8220ffebf653ca4fcef7c422aaffe663c16e17fdf7be7def8dcb731b12",
-      "size": 7800,
-      "source": "payload"
+      "sha256": "3631101ec7ec54bfa0df067f420d776c0b8dfd20275aaa87516a179824deba7f",
+      "size": 19480,
+      "source": "payload",
+      "previous_forms": [
+        {
+          "published_sha256": "3403dc8220ffebf653ca4fcef7c422aaffe663c16e17fdf7be7def8dcb731b12",
+          "runtime_sha256": "340ed69bf1940749964faf833fbfef067c087ed10b46c6c2cb8af4b80ab085f8"
+        },
+        {
+          "published_sha256": "3403dc8220ffebf653ca4fcef7c422aaffe663c16e17fdf7be7def8dcb731b12",
+          "runtime_sha256": "56017f44fe97eac80ffe1ef507a40725b09b16ff08cb3f54b1a357c65cfca994"
+        }
+      ]
     },
     {
       "path": "config/ftbquests/quests/chapters/local_guide_09_computercraft.snbt",
-      "sha256": "9c25fbc241c44dab292ff7bb58cde2cac41bb4ffefe4914ff8ec5fbec8731bc3",
-      "size": 9757,
-      "source": "payload"
+      "sha256": "3afe7a1268638e1d2b306161ef39163be44bde9b4533d72c176d9fd275d41d68",
+      "size": 19767,
+      "source": "payload",
+      "previous_forms": [
+        {
+          "published_sha256": "9c25fbc241c44dab292ff7bb58cde2cac41bb4ffefe4914ff8ec5fbec8731bc3",
+          "runtime_sha256": "1a4fc5cafd487ba3beebae4290fa5fcea1e1383b8b454d8fe7f0064aeed4e94a"
+        },
+        {
+          "published_sha256": "9c25fbc241c44dab292ff7bb58cde2cac41bb4ffefe4914ff8ec5fbec8731bc3",
+          "runtime_sha256": "2dfdb33491e1422a3b5ea34c69ff2e6c87a181a3e9873d34994a427fd262f31a"
+        }
+      ]
     },
     {
       "path": "config/ftbquests/quests/chapters/local_guide_10_rftools.snbt",
-      "sha256": "6e3cf50df2c7c0e6e3b15878f1135d5140a01697be01e2be056113c7930b32e6",
-      "size": 10435,
-      "source": "payload"
+      "sha256": "a466c3b4b6ddc9849ee45d7488e51ef07c208f5fcb2dc034b1cd153a1279a45b",
+      "size": 23368,
+      "source": "payload",
+      "previous_forms": [
+        {
+          "published_sha256": "6e3cf50df2c7c0e6e3b15878f1135d5140a01697be01e2be056113c7930b32e6",
+          "runtime_sha256": "5c1f987ec793c52aee4643e679c2e77a46dea3dccc983dfc260d71a62e38694e"
+        },
+        {
+          "published_sha256": "6e3cf50df2c7c0e6e3b15878f1135d5140a01697be01e2be056113c7930b32e6",
+          "runtime_sha256": "b8c6aeb63479b95148daff68350afbdc1eeac907ece30e593f2b51a00e698ff5"
+        }
+      ]
     },
     {
       "path": "config/ftbquests/quests/lang/en_us/chapters/local_guide_01_minecolonies.snbt",
-      "sha256": "73e8ff92c7657c002ca748cdbb9dc3b51f5f8d959dbf1ad492c5b939919a7fb6",
-      "size": 16219,
+      "sha256": "d399530cfd18533400d5c310254eaa73a7841d10f7d53db48ff4bce5452dfae4",
+      "size": 23501,
       "source": "payload"
     },
     {
       "path": "config/ftbquests/quests/lang/en_us/chapters/local_guide_02_ad_astra.snbt",
-      "sha256": "17045ae902568d8d443b72fd196f1e097101093d3edc7b9372b35e5e773777cb",
-      "size": 17257,
+      "sha256": "cdd962452f7163949a083249722ed62ec609f63cfaff0f177c6c1ad04365b5f2",
+      "size": 24277,
       "source": "payload"
     },
     {
       "path": "config/ftbquests/quests/lang/en_us/chapters/local_guide_03_advanced_rs.snbt",
-      "sha256": "a6210a82e43a933be0e6fc05ffe9105be6d56f6a85303e7489052796b452b3b8",
-      "size": 17606,
+      "sha256": "ceaf357033936a6c7719a9da045385e52c436a79ddb3e9ed2c84d85d2ab8d526",
+      "size": 25478,
       "source": "payload"
     },
     {
       "path": "config/ftbquests/quests/lang/en_us/chapters/local_guide_04_economy.snbt",
-      "sha256": "cecdbf3bdd0767448d0c15f9713161bfff3dbe2542de5e6e1597a088da155221",
-      "size": 14096,
+      "sha256": "b1bec8773d430dde81147a8ceac0c5ff0a47c3fe08f7b8fe4908c8d1469a5619",
+      "size": 21527,
       "source": "payload"
     },
     {
       "path": "config/ftbquests/quests/lang/en_us/chapters/local_guide_05_enderio.snbt",
-      "sha256": "611ea01ba226fffb84060eb900bb09ba6778989d376b7cd20621a66a0090ea9e",
-      "size": 15700,
+      "sha256": "39f0e9929b629a37eb2a5f686abf2ddb8094030f4bf7a57d2fdc3d2227447e79",
+      "size": 22833,
       "source": "payload"
     },
     {
       "path": "config/ftbquests/quests/lang/en_us/chapters/local_guide_06_astral.snbt",
-      "sha256": "7725ca4706609ccfa3ccdd5b186a38ad7f71b1bc0350dee6507bda3d44ff65c7",
-      "size": 19117,
+      "sha256": "d0046e3b84a6faa5fd5c1d41d4ab66734f641dbd6bd545f6c9288e68d8624152",
+      "size": 26122,
       "source": "payload"
     },
     {
       "path": "config/ftbquests/quests/lang/en_us/chapters/local_guide_07_sfm.snbt",
-      "sha256": "67b21cb72a065919b2d576c4ee28fdc59674f67673d8f1f18502b9ae97fa6ed1",
-      "size": 15902,
+      "sha256": "3fad62cd31f84e36d6da4cd6fccd66d092f419ca15926ead9b6539fdb7983221",
+      "size": 23142,
       "source": "payload"
     },
     {
       "path": "config/ftbquests/quests/lang/en_us/chapters/local_guide_08_xnet.snbt",
-      "sha256": "99840b0565306413bf1c516dcb74e5bdc72c1a33cfa5b62b7731e7ebcdcc0be5",
-      "size": 14384,
+      "sha256": "dbff5f76306a5af792436f67058ce12f48e3da48cf98218416448f63c004af2a",
+      "size": 21302,
       "source": "payload"
     },
     {
       "path": "config/ftbquests/quests/lang/en_us/chapters/local_guide_09_computercraft.snbt",
-      "sha256": "a4377ab8cea74a8fc303b9e1df10d454df02fc36290cbe876b9803eeac8ec94b",
-      "size": 17632,
+      "sha256": "09e53e9312e6cb71c0dad73f0953fdba2fa05e2bd3057c9a5d82935e65b16509",
+      "size": 25949,
       "source": "payload"
     },
     {
       "path": "config/ftbquests/quests/lang/en_us/chapters/local_guide_10_rftools.snbt",
-      "sha256": "5dafe0e7d2aedcd0f5e67ee5f7335a389e45ce887fc3f4d382798a26179f3beb",
-      "size": 17991,
+      "sha256": "71296993030a1b8bbd5f5ed02ca73e0ac461219bd314f228c905ae8f72562eef",
+      "size": 24827,
       "source": "payload"
     },
     {
       "path": "config/ftbquests/quests/lang/en_us/local_guides_group.snbt",
       "sha256": "fee14a08d83c5da5822811e377dc659b8cf90415ea61f7899368b0891e42c80c",
       "size": 70,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/ad_astra.png",
+      "sha256": "323398985fbf0e2885d1d084c68b834d1668838a2184be90d00b4543310db3fe",
+      "size": 29894,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/ad_astra_lane_0.png",
+      "sha256": "07fbf85d6aac5ed98af585f081f7f2e58106829c7580c45607a103f1c2dc9a40",
+      "size": 4203,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/ad_astra_lane_1.png",
+      "sha256": "e786dc955c89fff9eb383153d6bcbb1c483c9daa334c762da80dc49647f6cc6c",
+      "size": 3734,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/ad_astra_lane_2.png",
+      "sha256": "64bc95e2c57d522252f6694bbb3ca01d9b07e96a9204ba0ea25a1e015fbddde6",
+      "size": 4521,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/ad_astra_lane_3.png",
+      "sha256": "3149c39db34b1a6e77ffbeaae61a7877cd02f3cdb28cf5089cb2c3617a4d8090",
+      "size": 4480,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/advanced_rs.png",
+      "sha256": "bed12b815afe56556aecff4783e76f93f86212ade0b00a8229c855e74227a4dc",
+      "size": 28570,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/advanced_rs_lane_0.png",
+      "sha256": "9bd1cf1ac26ec1483b8aa779053ddef752ebc13c1acc8bb176ceca0b903c83ad",
+      "size": 3641,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/advanced_rs_lane_1.png",
+      "sha256": "b9dfa4154c0a80305cef6dedf72ca1f0eaa9bed65af84aa76f9937b72ad986c3",
+      "size": 4470,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/advanced_rs_lane_2.png",
+      "sha256": "62e51042c4f98bb256e13f0583bb54fe80db1c914fdfea295c96fa43e3e8b37a",
+      "size": 4748,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/astral.png",
+      "sha256": "0ec4690a60a0a9694082d23dd791faf6a63fa45bb7fb2344a690ca0ff144e190",
+      "size": 30769,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/astral_lane_0.png",
+      "sha256": "6246a8715790f891d14225cd3055c34c5b0d1bd1a168c33e42a710e7309f50c0",
+      "size": 3644,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/astral_lane_1.png",
+      "sha256": "5bebab740a9158e6c5ef5c82d680cce6569064d8729267bf06b362f9a8671eb4",
+      "size": 4969,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/astral_lane_2.png",
+      "sha256": "8e0660cc0fbfb26e5811776209f2e66867e749f0b715bec59e846f5bdab202de",
+      "size": 3640,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/astral_lane_3.png",
+      "sha256": "6cdd3af2f7e8d907bc3a37aece075770c198504a83b35d42899328099ca0f484",
+      "size": 4181,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/computercraft.png",
+      "sha256": "b2a2530c25d1a33dd67a65fe24b2555a1cbb3dbd9e724a8f8b08b8e48033b44d",
+      "size": 30450,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/computercraft_lane_0.png",
+      "sha256": "7de47572f85ce47604160d267aa5897fe35c33c811ec226f732eb96a553ba00f",
+      "size": 2366,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/computercraft_lane_1.png",
+      "sha256": "75f6fad2a4fdf8e177711af4b5dc877c1047afe35c70bcc46145f2a1b986b039",
+      "size": 3976,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/computercraft_lane_2.png",
+      "sha256": "10b614bdde0f89f79971256c0401c4a2920d1ce0b1003d184cd8196ccea9d656",
+      "size": 3928,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/computercraft_lane_3.png",
+      "sha256": "12e7154dbbe8e15755fc5940b9b066caa752033f0ca965685363fb7fbbfdfce3",
+      "size": 3477,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/economy.png",
+      "sha256": "83e82c2df3eac34fc856bd50e71167a9214502c88caa2b56b1cf653b80b25b6b",
+      "size": 32102,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/economy_lane_0.png",
+      "sha256": "95290a5633b2a7afc8c71a1f3272c52fcc9ef429d577d295c45a3afd1b945cd5",
+      "size": 3640,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/economy_lane_1.png",
+      "sha256": "c0947d4718ebd62197e79f8741d639976af2fc5bb720e5b8bb143365d92f26f3",
+      "size": 4299,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/economy_lane_2.png",
+      "sha256": "b01dc38986945a151677f1b0cabdc8d0c38d41221d8654b30da5f4dc54238c63",
+      "size": 3484,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/enderio.png",
+      "sha256": "3aabc47230c1525b0e23d553a837b18284f5168643ceef367279c853616f2b22",
+      "size": 30854,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/enderio_lane_0.png",
+      "sha256": "9db2e089222e5fb4dabb55f2bc3d29237691e1a8cbabd8668d87569bcef17b2a",
+      "size": 4212,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/enderio_lane_1.png",
+      "sha256": "4145b693f40b3211575488dc40f4455dd6bc0fc7203d17427d6361455473f19c",
+      "size": 4000,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/enderio_lane_2.png",
+      "sha256": "4fbf6c2e950677e64deba4fbfd79d25b9678a7aaa4dfbdfef63beb8fdceef3c5",
+      "size": 4960,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/enderio_lane_3.png",
+      "sha256": "c557154a8cb94d33cd01ecb8669b00b26e0a9115cb8c4bb81bc7250010d7ea55",
+      "size": 4354,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/minecolonies.png",
+      "sha256": "e867505801b855d187f095592554d3e7582281a8fb33499bbe571970bfdfacca",
+      "size": 27362,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/minecolonies_lane_0.png",
+      "sha256": "9daa8ba431c89ff987c5913bd7fdfd96ef4317dbdc28632842cfcead88ebaba2",
+      "size": 3322,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/minecolonies_lane_1.png",
+      "sha256": "933afdb864c5743f2bd5fb906b540bfca4f57d563a520e244ab61020887402a5",
+      "size": 3002,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/minecolonies_lane_2.png",
+      "sha256": "c1026e9c129d560e9b3eb927cab011d535ee1b4bfa73857908854522ec28d41d",
+      "size": 4322,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/minecolonies_lane_3.png",
+      "sha256": "cad914fe1d25e776a0c1ca3761b215710923dec91d2cdc4a9487776b6fd9aca7",
+      "size": 3935,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/rftools.png",
+      "sha256": "9557ee5e0bd9f7c8b7d15d24905ba94706ca2829009e0840005d8840ea22367a",
+      "size": 32821,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/rftools_lane_0.png",
+      "sha256": "39841c89c59710a770f18e2cd5be49e512ef5500c4421d8ee28ba0202fa5e898",
+      "size": 3414,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/rftools_lane_1.png",
+      "sha256": "d6675b9451faf64494604bd98c017bf25b956cd256dccd6fd9ed134e76d21809",
+      "size": 4310,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/rftools_lane_2.png",
+      "sha256": "8b71d8b8f67885d85dd189f6ca9023821b59ca3a6bbc4ae02bc90ec1b9287655",
+      "size": 3965,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/rftools_lane_3.png",
+      "sha256": "2d988ae4b8588ee890c87f8557727926c8d50c11223d9d4ec05636b83a6c1688",
+      "size": 4720,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/sfm.png",
+      "sha256": "905f3e9ef28c4f5f910add14cf953909f2710a6ab7d9de4b9777d099971df7e3",
+      "size": 29847,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/sfm_lane_0.png",
+      "sha256": "9cab58b10d187eb2c7e929ad5737544ba77e94f81551baa712565abb9fd7af4c",
+      "size": 3839,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/sfm_lane_1.png",
+      "sha256": "475f0d72f1c71f4cc46dff55883fd6b67a366f0f7d4a02e4ab5ed1ef6e8bddaa",
+      "size": 4092,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/sfm_lane_2.png",
+      "sha256": "63dd99b8386ceff5e4c0fb6375186387190434c7ab9b9975a84e1429225650bc",
+      "size": 4036,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/sfm_lane_3.png",
+      "sha256": "946ff1415e7eae2e9f1c93fdd25629f8f233ecd8c0161fc9c3dc9071e09bc5bd",
+      "size": 4090,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/xnet.png",
+      "sha256": "36374812c1461eab5b322b08029b0545da439817e17bec6976d9950befe3c355",
+      "size": 28986,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/xnet_lane_0.png",
+      "sha256": "57bbfe10989becdf1327455553d3d86c5500a49536ae649768412d915c11b452",
+      "size": 2982,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/xnet_lane_1.png",
+      "sha256": "79c115f4491c69a40d35be485671b95080dab4855f6490ce5cde7a90e215a0d8",
+      "size": 4934,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/xnet_lane_2.png",
+      "sha256": "2b679fa243fd499462de9aa61c447af1549a1d4fc1f1cf0a90d3f5d00ff41f6c",
+      "size": 5540,
+      "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/xnet_lane_3.png",
+      "sha256": "a3c4f17002f349716cdd5e1baea1286620f1a6937db673573ce5a53e6b2ead84",
+      "size": 4854,
       "source": "payload"
     },
     {
@@ -1702,6 +2096,12 @@
       "size": 410690,
       "source": "url",
       "url": "https://edge.forgecdn.net/files/6529/130/curios-neoforge-9.5.1%2b1.21.1.jar"
+    },
+    {
+      "path": "mods/customatm-economy-1.0.0.jar",
+      "sha256": "6abc38cb863876ecaa62abbaf8ead7a4c79006ac4ef087e68a92522a7f3442aa",
+      "size": 14772,
+      "source": "payload"
     },
     {
       "path": "mods/cwb-neoforge-3.0.0+mc1.21.jar",
@@ -3698,6 +4098,6 @@
   ],
   "payload": {
     "name": "customatm-payload.zip",
-    "sha256": "16ff11218867d1890020e970451e5f317b4360a343573ab3450144587246d894"
+    "sha256": "365059e600018066fd466fcad3bf306ea6dc98c5bd5f925816ca9077093b593b"
   }
 }

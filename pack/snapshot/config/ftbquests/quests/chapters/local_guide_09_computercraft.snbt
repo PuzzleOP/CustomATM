@@ -1,6 +1,6 @@
 {
   "default_hide_dependency_lines": false,
-  "default_quest_shape": "square",
+  "default_quest_shape": "hexagon",
   "filename": "local_guide_09_computercraft",
   "group": "28D38D1EC21B4002",
   "icon": {
@@ -21,13 +21,14 @@
           "type": "checkmark"
         }
       ],
-      "x": 0.0,
-      "y": 0.0,
-      "shape": "gear",
+      "x": -3,
+      "y": 0,
+      "shape": "diamond",
       "icon": {
         "id": "computercraft:computer_advanced",
         "count": 1
-      }
+      },
+      "size": 1.5
     },
     {
       "id": "0B3760DF95BD695E",
@@ -40,18 +41,19 @@
           "type": "checkmark"
         }
       ],
-      "x": 3.0,
-      "y": 0.0,
+      "x": -3,
+      "y": 3,
       "shape": "square",
       "icon": {
         "id": "minecraft:book",
         "count": 1
-      }
+      },
+      "optional": true
     },
     {
       "id": "303B9B71E3EB0278",
       "dependencies": [
-        "0B3760DF95BD695E"
+        "1FCC68D3F7711256"
       ],
       "tasks": [
         {
@@ -66,16 +68,24 @@
         },
         {
           "id": "224217FDF8B76876",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
+      "x": 0.0,
       "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "computercraft:computer_advanced",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "2116E26703015E7B",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "1C4CD738E2979024",
@@ -88,7 +98,7 @@
           "type": "checkmark"
         }
       ],
-      "x": 9.0,
+      "x": 3.0,
       "y": 0.0,
       "shape": "square",
       "icon": {
@@ -107,7 +117,7 @@
           "type": "checkmark"
         }
       ],
-      "x": 12.0,
+      "x": 6.0,
       "y": 0.0,
       "shape": "square",
       "icon": {
@@ -118,7 +128,7 @@
     {
       "id": "4E1E39A846877C4D",
       "dependencies": [
-        "258BFAAC1F8A3AF4"
+        "303B9B71E3EB0278"
       ],
       "tasks": [
         {
@@ -128,26 +138,34 @@
             "id": "computercraft:monitor_advanced",
             "count": 1
           },
-          "count": 1,
+          "count": 4,
           "consume_items": false
         },
         {
           "id": "3C230F2A19704FD7",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 3.0,
+      "x": 0.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "computercraft:monitor_advanced",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "19C61FD0F4514159",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "67B332F525EB45D6",
       "dependencies": [
-        "4E1E39A846877C4D"
+        "258BFAAC1F8A3AF4"
       ],
       "tasks": [
         {
@@ -157,21 +175,39 @@
             "id": "computercraft:cable",
             "count": 1
           },
-          "count": 1,
+          "count": 8,
+          "consume_items": false
+        },
+        {
+          "id": "68F62A278FC86355",
+          "type": "item",
+          "item": {
+            "id": "computercraft:wired_modem",
+            "count": 1
+          },
+          "count": 2,
           "consume_items": false
         },
         {
           "id": "18A24BFA29B900BE",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 3.0,
+      "x": 3.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "computercraft:cable",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "1D51277ACEE4E63D",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "2E8ED2C1830C784A",
@@ -180,22 +216,40 @@
       ],
       "tasks": [
         {
+          "id": "02C3582C310B3513",
+          "type": "item",
+          "item": {
+            "id": "minecraft:chest",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "06CE76D01E6AC122",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
       "x": 6.0,
-      "y": 3.0,
-      "shape": "square",
+      "y": 4.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecraft:chest",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "43D47ACF69D58802",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "122E9F59D4910A3F",
       "dependencies": [
-        "2E8ED2C1830C784A"
+        "258BFAAC1F8A3AF4"
       ],
       "tasks": [
         {
@@ -203,8 +257,8 @@
           "type": "checkmark"
         }
       ],
-      "x": 3.0,
-      "y": 3.0,
+      "x": 9.0,
+      "y": 0.0,
       "shape": "square",
       "icon": {
         "id": "minecraft:book",
@@ -222,8 +276,8 @@
           "type": "checkmark"
         }
       ],
-      "x": 0.0,
-      "y": 3.0,
+      "x": 12.0,
+      "y": 0.0,
       "shape": "square",
       "icon": {
         "id": "minecraft:book",
@@ -237,22 +291,50 @@
       ],
       "tasks": [
         {
+          "id": "6EFF8D371CFAD439",
+          "type": "item",
+          "item": {
+            "id": "computercraft:disk",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "478FE15973773DC8",
+          "type": "item",
+          "item": {
+            "id": "computercraft:disk_drive",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "250644FE506FD40C",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 0.0,
-      "y": 6.0,
-      "shape": "square",
+      "x": 15.0,
+      "y": 0.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "computercraft:disk",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "1C6BC20B922D1D28",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "2FDF6DC22F117D17",
       "dependencies": [
-        "2A14FE93C40B676D"
+        "303B9B71E3EB0278"
       ],
       "tasks": [
         {
@@ -267,16 +349,24 @@
         },
         {
           "id": "18928A6904CC79B0",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 3.0,
-      "y": 6.0,
+      "x": 0.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "computercraft:turtle_advanced",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "184ED507ADA1F5EA",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "70858E0F111B76CE",
@@ -285,17 +375,35 @@
       ],
       "tasks": [
         {
+          "id": "0B5232B2D2B3B52D",
+          "type": "item",
+          "item": {
+            "id": "minecraft:stone",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
           "id": "2D89A67748656405",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
-      "y": 6.0,
-      "shape": "square",
+      "x": 3.0,
+      "y": 8.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecraft:stone",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "74D40205FA472719",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "36913CEC37E1C97E",
@@ -304,22 +412,40 @@
       ],
       "tasks": [
         {
+          "id": "133614B4F5091362",
+          "type": "item",
+          "item": {
+            "id": "minecraft:coal",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        },
+        {
           "id": "73FB2D05A5FD219F",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 6.0,
-      "shape": "square",
+      "x": 6.0,
+      "y": 8.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecraft:coal",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "2706C93716CAD605",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "707FD598FC96C2A2",
       "dependencies": [
-        "36913CEC37E1C97E"
+        "67B332F525EB45D6"
       ],
       "tasks": [
         {
@@ -334,21 +460,29 @@
         },
         {
           "id": "099E1F8F1F4D586E",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 6.0,
+      "x": 9.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "advancedperipherals:rs_bridge",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "2ECCBC6A247C0C4C",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "4F8565EDD613BEBF",
       "dependencies": [
-        "707FD598FC96C2A2"
+        "67B332F525EB45D6"
       ],
       "tasks": [
         {
@@ -363,21 +497,29 @@
         },
         {
           "id": "7AF2F0EBABB4BA20",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
       "x": 12.0,
-      "y": 9.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "advancedperipherals:colony_integrator",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "559A705113CB715F",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "44C89EC8B31860C1",
       "dependencies": [
-        "4F8565EDD613BEBF"
+        "67B332F525EB45D6"
       ],
       "tasks": [
         {
@@ -392,40 +534,67 @@
         },
         {
           "id": "42CC5BDC884475EF",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 9.0,
+      "x": 15.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "advancedperipherals:energy_detector",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "13CC7F95CBFF963F",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "434A579A370CCA1B",
       "dependencies": [
-        "44C89EC8B31860C1"
+        "151179D43D671F67",
+        "2E8ED2C1830C784A"
       ],
       "tasks": [
         {
+          "id": "244885FE253F3521",
+          "type": "item",
+          "item": {
+            "id": "computercraft:computer_advanced",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "0FE204EB46ED7965",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
-      "y": 9.0,
-      "shape": "square",
+      "x": 0.0,
+      "y": 12.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "computercraft:computer_advanced",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "65FA719CE3ACA5F4",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "234305EAD3616597",
       "dependencies": [
-        "434A579A370CCA1B"
+        "2A14FE93C40B676D"
       ],
       "tasks": [
         {
@@ -433,8 +602,8 @@
           "type": "checkmark"
         }
       ],
-      "x": 3.0,
-      "y": 9.0,
+      "x": 18.0,
+      "y": 0.0,
       "shape": "square",
       "icon": {
         "id": "minecraft:book",
@@ -444,28 +613,307 @@
     {
       "id": "77C10BE3D82578F8",
       "dependencies": [
-        "234305EAD3616597"
+        "4E1E39A846877C4D",
+        "2E8ED2C1830C784A",
+        "434A579A370CCA1B"
       ],
       "tasks": [
+        {
+          "id": "21D4107499FC0EAB",
+          "type": "item",
+          "item": {
+            "id": "computercraft:monitor_advanced",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        },
         {
           "id": "1B00002670740DDB",
           "type": "checkmark"
         }
       ],
-      "x": 0.0,
-      "y": 9.0,
-      "shape": "gear",
+      "x": 3.0,
+      "y": 12.0,
+      "shape": "diamond",
       "icon": {
-        "id": "minecraft:book",
+        "id": "computercraft:monitor_advanced",
         "count": 1
       },
+      "size": 1.5,
       "rewards": [
         {
-          "id": "7B26C06692298932",
+          "id": "72950C7D14102DCC",
+          "type": "xp",
+          "xp": 75
+        }
+      ]
+    },
+    {
+      "id": "184062F7869D0C7D",
+      "dependencies": [
+        "2A14FE93C40B676D"
+      ],
+      "tasks": [
+        {
+          "id": "0DD990CC1D0CB019",
+          "type": "item",
+          "item": {
+            "id": "computercraft:disk",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "315884B9A1FAB04F",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 15.0,
+      "y": 1.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "computercraft:disk",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "386C9899F627E8D9",
           "type": "xp",
           "xp": 25
         }
       ]
+    },
+    {
+      "id": "44033BCD1B13368D",
+      "dependencies": [
+        "2E8ED2C1830C784A"
+      ],
+      "tasks": [
+        {
+          "id": "4372BF5F1360A049",
+          "type": "item",
+          "item": {
+            "id": "minecraft:chest",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "3033CB3AE4FEBCBD",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 6.0,
+      "y": 5.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecraft:chest",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "35DA6211005AE145",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "094E5D1C976B3E79",
+      "dependencies": [
+        "4E1E39A846877C4D"
+      ],
+      "tasks": [
+        {
+          "id": "6C4816BBD8589D19",
+          "type": "item",
+          "item": {
+            "id": "computercraft:monitor_advanced",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        },
+        {
+          "id": "5FD00D8D93BAC104",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 0.0,
+      "y": 5.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "computercraft:monitor_advanced",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "42C1CE29BD6FBF1D",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "48D31BB015994066",
+      "dependencies": [
+        "2FDF6DC22F117D17"
+      ],
+      "tasks": [
+        {
+          "id": "4BF32F040C1B66EE",
+          "type": "item",
+          "item": {
+            "id": "minecraft:coal",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        },
+        {
+          "id": "246B6D5AE6E476F8",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 0.0,
+      "y": 9.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecraft:coal",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "0851F477D099EE0A",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "06CE9E40107D21FC",
+      "dependencies": [
+        "1C4CD738E2979024"
+      ],
+      "tasks": [
+        {
+          "id": "5845EFD849A00D25",
+          "type": "item",
+          "item": {
+            "id": "minecraft:redstone_lamp",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "7D1196235CE007F9",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 3.0,
+      "y": 1.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecraft:redstone_lamp",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "66573BD941234375",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "75C4E2C0FD0BFFDF",
+      "dependencies": [
+        "434A579A370CCA1B"
+      ],
+      "tasks": [
+        {
+          "id": "6CB8187ECDF51187",
+          "type": "item",
+          "item": {
+            "id": "computercraft:computer_advanced",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "0E1B1BE57DEE7431",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 0.0,
+      "y": 13.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "computercraft:computer_advanced",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "669B185C8306F479",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "530E5AFC8636BC65",
+      "image": "customatm:textures/quests/computercraft_lane_0.png",
+      "x": 5.0,
+      "y": -1.15,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "03A1F304710C7DAB",
+      "image": "customatm:textures/quests/computercraft_lane_1.png",
+      "x": 5.0,
+      "y": 2.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "2BEAAE71F4BF42BB",
+      "image": "customatm:textures/quests/computercraft_lane_2.png",
+      "x": 5.0,
+      "y": 6.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "3AF28B89B0D0FD79",
+      "image": "customatm:textures/quests/computercraft_lane_3.png",
+      "x": 5.0,
+      "y": 10.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
     }
   ]
 }

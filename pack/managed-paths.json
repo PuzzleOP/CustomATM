@@ -1,6 +1,8 @@
 {
   "files": [
     "config/dyneco-common.toml",
+    "config/customatm_economy/catalog.json",
+    "kubejs/assets/customatm/textures/quests/*.png",
     "kubejs/server_scripts/local_customizations/dyneco_broad_market.js",
     "kubejs/server_scripts/local_customizations/amadron_multiplayer_fix.js",
     "config/ftbquests/quests/chapters/local_guide_*.snbt",

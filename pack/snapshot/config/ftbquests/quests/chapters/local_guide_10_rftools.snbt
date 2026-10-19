@@ -1,6 +1,6 @@
 {
   "default_hide_dependency_lines": false,
-  "default_quest_shape": "square",
+  "default_quest_shape": "hexagon",
   "filename": "local_guide_10_rftools",
   "group": "28D38D1EC21B4002",
   "icon": {
@@ -21,13 +21,14 @@
           "type": "checkmark"
         }
       ],
-      "x": 0.0,
-      "y": 0.0,
-      "shape": "gear",
+      "x": -3,
+      "y": 0,
+      "shape": "diamond",
       "icon": {
         "id": "rftoolsbuilder:builder",
         "count": 1
-      }
+      },
+      "size": 1.5
     },
     {
       "id": "05F4F827AAFA1FC8",
@@ -40,18 +41,19 @@
           "type": "checkmark"
         }
       ],
-      "x": 3.0,
-      "y": 0.0,
+      "x": -3,
+      "y": 3,
       "shape": "square",
       "icon": {
         "id": "minecraft:book",
         "count": 1
-      }
+      },
+      "optional": true
     },
     {
       "id": "57DD9B9201AB5318",
       "dependencies": [
-        "05F4F827AAFA1FC8"
+        "364B1F0F21B55ACF"
       ],
       "tasks": [
         {
@@ -59,7 +61,7 @@
           "type": "checkmark"
         }
       ],
-      "x": 6.0,
+      "x": 0.0,
       "y": 0.0,
       "shape": "square",
       "icon": {
@@ -84,17 +86,35 @@
           "consume_items": false
         },
         {
+          "id": "5E104187A9AC7EE6",
+          "type": "item",
+          "item": {
+            "id": "rftoolsstorage:storage_module0",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "0B222471AC249655",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
+      "x": 3.0,
       "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "rftoolsstorage:modular_storage",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "72315D3C2B282E0F",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "74591E725FAF9178",
@@ -114,16 +134,24 @@
         },
         {
           "id": "1F033E11E3C7EC14",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
+      "x": 6.0,
       "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "rftoolsstorage:storage_scanner",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "3308A2E8A2657858",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "5B613DE6E3221667",
@@ -132,17 +160,35 @@
       ],
       "tasks": [
         {
+          "id": "5E21B424E78A9E5B",
+          "type": "item",
+          "item": {
+            "id": "minecraft:chest",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        },
+        {
           "id": "0BC9376A4B7D3448",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 3.0,
-      "shape": "square",
+      "x": 9.0,
+      "y": 0.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecraft:chest",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "2ABB09C8EEBE80A0",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "4737630D28A02AC2",
@@ -151,22 +197,40 @@
       ],
       "tasks": [
         {
+          "id": "336EAC38AFA353B5",
+          "type": "item",
+          "item": {
+            "id": "rftoolsstorage:storage_control_module",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "189C32C208FDD4BB",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 3.0,
-      "shape": "square",
+      "x": 12.0,
+      "y": 0.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "rftoolsstorage:storage_control_module",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "1AB154641E150C86",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "3F952649493333D5",
       "dependencies": [
-        "4737630D28A02AC2"
+        "364B1F0F21B55ACF"
       ],
       "tasks": [
         {
@@ -181,16 +245,24 @@
         },
         {
           "id": "23D17BCE00B25418",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
-      "y": 3.0,
+      "x": 0.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "rftoolsbuilder:builder",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "720D3310A893A5CF",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "636065F5A7FED2F4",
@@ -199,17 +271,35 @@
       ],
       "tasks": [
         {
+          "id": "56FED2FFDEEE3DC8",
+          "type": "item",
+          "item": {
+            "id": "rftoolsbuilder:shape_card_def",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "262EBF9209F9E14F",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
       "x": 3.0,
-      "y": 3.0,
-      "shape": "square",
+      "y": 4.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "rftoolsbuilder:shape_card_def",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "705A0CB6A089ECFF",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "0C97D372DE4192E4",
@@ -218,17 +308,35 @@
       ],
       "tasks": [
         {
+          "id": "143E20341B4195EF",
+          "type": "item",
+          "item": {
+            "id": "minecraft:stone_bricks",
+            "count": 1
+          },
+          "count": 64,
+          "consume_items": false
+        },
+        {
           "id": "42313B9C694153EE",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 0.0,
-      "y": 3.0,
-      "shape": "square",
+      "x": 6.0,
+      "y": 4.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecraft:stone_bricks",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "23FBBAAC4470E881",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "3D12D37BED4FF5CA",
@@ -237,17 +345,35 @@
       ],
       "tasks": [
         {
+          "id": "4904360B69D0439A",
+          "type": "item",
+          "item": {
+            "id": "rftoolsbuilder:shape_card_quarry",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "32C691B49E97DEA8",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 0.0,
-      "y": 6.0,
-      "shape": "square",
+      "x": 9.0,
+      "y": 4.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "rftoolsbuilder:shape_card_quarry",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "50F0FEB34E762BAA",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "5594BD3A263C42A6",
@@ -256,17 +382,35 @@
       ],
       "tasks": [
         {
+          "id": "5205899C9295C50B",
+          "type": "item",
+          "item": {
+            "id": "minecraft:cobblestone",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        },
+        {
           "id": "2AB753B86F80B303",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 3.0,
-      "y": 6.0,
-      "shape": "square",
+      "x": 12.0,
+      "y": 4.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecraft:cobblestone",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "4AFDFFEF004511B5",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "2C7AAE8529DCE989",
@@ -275,17 +419,35 @@
       ],
       "tasks": [
         {
+          "id": "0AA2AE988B2E7C2C",
+          "type": "item",
+          "item": {
+            "id": "rftoolsbuilder:shape_card_pump",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "6C18E631DCCC3F93",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
-      "y": 6.0,
-      "shape": "square",
+      "x": 15.0,
+      "y": 4.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "rftoolsbuilder:shape_card_pump",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "013BDCD2D9CB0A28",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "0AB1155414A36BE4",
@@ -305,21 +467,29 @@
         },
         {
           "id": "219853E57B57DA49",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 6.0,
+      "x": 18.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "rftoolsbuilder:scanner",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "7EA4659603FC5B47",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "47A9AE97A58A4A5C",
       "dependencies": [
-        "0AB1155414A36BE4"
+        "364B1F0F21B55ACF"
       ],
       "tasks": [
         {
@@ -334,16 +504,24 @@
         },
         {
           "id": "2D464B76CFF5DB13",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 6.0,
+      "x": 0.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "rftoolsutility:crafter3",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "250B090DF3696A92",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "7B7A21506AF0F888",
@@ -352,22 +530,50 @@
       ],
       "tasks": [
         {
+          "id": "04F8C7D4E5B5DC4D",
+          "type": "item",
+          "item": {
+            "id": "minecraft:oak_planks",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        },
+        {
+          "id": "0E9A7C3EFC75A941",
+          "type": "item",
+          "item": {
+            "id": "minecraft:stick",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        },
+        {
           "id": "01CBDC1CAECE91DD",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 9.0,
-      "shape": "square",
+      "x": 3.0,
+      "y": 8.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecraft:oak_planks",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "0C51ADB5A75828A6",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "68F12FB45632AD4E",
       "dependencies": [
-        "7B7A21506AF0F888"
+        "364B1F0F21B55ACF"
       ],
       "tasks": [
         {
@@ -381,22 +587,40 @@
           "consume_items": false
         },
         {
+          "id": "78628A4052CAB030",
+          "type": "item",
+          "item": {
+            "id": "rftoolsutility:screen",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "3E52BD893849BD26",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 9.0,
+      "x": 6.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "rftoolsutility:screen_controller",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "036EC0A391A34867",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "7DF19F62049AD56C",
       "dependencies": [
-        "68F12FB45632AD4E"
+        "364B1F0F21B55ACF"
       ],
       "tasks": [
         {
@@ -410,17 +634,45 @@
           "consume_items": false
         },
         {
+          "id": "457D1A54074A4FE2",
+          "type": "item",
+          "item": {
+            "id": "rftoolsutility:matter_receiver",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "1910EDB35AD046DC",
+          "type": "item",
+          "item": {
+            "id": "rftoolsutility:dialing_device",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "4F2C83D60AA58E52",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
-      "y": 9.0,
+      "x": 0.0,
+      "y": 12.0,
       "shape": "hexagon",
       "icon": {
         "id": "rftoolsutility:matter_transmitter",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "2B92774CA1C9CBF0",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "5799453D63DA415C",
@@ -429,41 +681,77 @@
       ],
       "tasks": [
         {
+          "id": "6ABEF887E0ED03AB",
+          "type": "item",
+          "item": {
+            "id": "rftoolsutility:charged_porter",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "4CDC68EED43843CF",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
       "x": 3.0,
-      "y": 9.0,
-      "shape": "square",
+      "y": 12.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "rftoolsutility:charged_porter",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "4A238E304C1593D3",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "7B9628162E1461FD",
       "dependencies": [
-        "5799453D63DA415C"
+        "3F952649493333D5"
       ],
       "tasks": [
         {
+          "id": "16CBF893FBAA5FA7",
+          "type": "item",
+          "item": {
+            "id": "rftoolsbase:dimensionalshard",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "1BFB34ECBFB14A5B",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 0.0,
-      "y": 9.0,
-      "shape": "square",
+      "x": 9.0,
+      "y": 8.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "rftoolsbase:dimensionalshard",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "7B1139714177304B",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "53AA0C3333600B35",
       "dependencies": [
-        "7B9628162E1461FD"
+        "3F952649493333D5"
       ],
       "tasks": [
         {
@@ -471,7 +759,7 @@
           "type": "checkmark"
         }
       ],
-      "x": 0.0,
+      "x": 6.0,
       "y": 12.0,
       "shape": "square",
       "icon": {
@@ -482,28 +770,306 @@
     {
       "id": "5913F44ED94E1822",
       "dependencies": [
-        "53AA0C3333600B35"
+        "0C97D372DE4192E4",
+        "47A9AE97A58A4A5C"
       ],
       "tasks": [
+        {
+          "id": "3C57D1D3EFAC0BC9",
+          "type": "item",
+          "item": {
+            "id": "minecraft:stone_bricks",
+            "count": 1
+          },
+          "count": 64,
+          "consume_items": false
+        },
         {
           "id": "645FA1C7A1EC9FA8",
           "type": "checkmark"
         }
       ],
-      "x": 3.0,
+      "x": 9.0,
       "y": 12.0,
-      "shape": "gear",
+      "shape": "diamond",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecraft:stone_bricks",
         "count": 1
       },
+      "size": 1.5,
       "rewards": [
         {
-          "id": "7C870A02258F4B03",
+          "id": "6BCC8C228694D201",
+          "type": "xp",
+          "xp": 75
+        }
+      ]
+    },
+    {
+      "id": "444912A5B494E81A",
+      "dependencies": [
+        "51D92DD2423142C2"
+      ],
+      "tasks": [
+        {
+          "id": "53AE28DA442B3F18",
+          "type": "item",
+          "item": {
+            "id": "rftoolsstorage:storage_module0",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "3C32538A7B37AE7C",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 3.0,
+      "y": 1.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "rftoolsstorage:storage_module0",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "7BAEBFFFA2791E19",
           "type": "xp",
           "xp": 25
         }
       ]
+    },
+    {
+      "id": "2FDE8EE1489DEC78",
+      "dependencies": [
+        "3F952649493333D5"
+      ],
+      "tasks": [
+        {
+          "id": "33FC1D0CCCEA041F",
+          "type": "item",
+          "item": {
+            "id": "rftoolsbuilder:shape_card_def",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2065B133CF2095AE",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 0.0,
+      "y": 5.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "rftoolsbuilder:shape_card_def",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "1482EB7B14879502",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "37E20C22C48373F0",
+      "dependencies": [
+        "3D12D37BED4FF5CA"
+      ],
+      "tasks": [
+        {
+          "id": "446ACE1F528871D8",
+          "type": "item",
+          "item": {
+            "id": "minecraft:chest",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        },
+        {
+          "id": "342DDE72BA859EDB",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 9.0,
+      "y": 5.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecraft:chest",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "29A2ABB5114FAFAE",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "50E3D5C7BFDDD37E",
+      "dependencies": [
+        "47A9AE97A58A4A5C"
+      ],
+      "tasks": [
+        {
+          "id": "258DB2ECF1A46FAD",
+          "type": "item",
+          "item": {
+            "id": "minecraft:stick",
+            "count": 1
+          },
+          "count": 32,
+          "consume_items": false
+        },
+        {
+          "id": "7A96B320312BF936",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 0.0,
+      "y": 9.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecraft:stick",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "1DACE88BF1DA2EF8",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "42A58B2D0478330E",
+      "dependencies": [
+        "7DF19F62049AD56C"
+      ],
+      "tasks": [
+        {
+          "id": "2D08F285E7BDDDB9",
+          "type": "item",
+          "item": {
+            "id": "rftoolsutility:matter_receiver",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "0EA27C4DEDE55116",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 0.0,
+      "y": 13.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "rftoolsutility:matter_receiver",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "54448F781FF48DC0",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "4D97E42D0F6097D0",
+      "dependencies": [
+        "68F12FB45632AD4E"
+      ],
+      "tasks": [
+        {
+          "id": "444A74AAFFA91479",
+          "type": "item",
+          "item": {
+            "id": "rftoolsutility:screen",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "11D8032BF493B05A",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 6.0,
+      "y": 9.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "rftoolsutility:screen",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "1AAC90E89B230D90",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "083EE17C9C1EB74C",
+      "image": "customatm:textures/quests/rftools_lane_0.png",
+      "x": 5.0,
+      "y": -1.15,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "59C3FF7DB0A59A8A",
+      "image": "customatm:textures/quests/rftools_lane_1.png",
+      "x": 5.0,
+      "y": 2.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "425D5F17B017D46C",
+      "image": "customatm:textures/quests/rftools_lane_2.png",
+      "x": 5.0,
+      "y": 6.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "20F20810A63363F8",
+      "image": "customatm:textures/quests/rftools_lane_3.png",
+      "x": 5.0,
+      "y": 10.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
     }
   ]
 }

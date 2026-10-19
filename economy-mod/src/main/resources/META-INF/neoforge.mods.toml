@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="customatm_economy"
+version="1.0.0"
+displayName="CustomATM Farm-Aware Economy"
+description="Pack-wide prices and persistent shared market demand for automated farms."
+[[dependencies.customatm_economy]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+side="BOTH"
+[[dependencies.customatm_economy]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.259,21.2)"
+side="BOTH"
+[[dependencies.customatm_economy]]
+modId="dyneco"
+type="required"
+versionRange="[1.2.0]"
+ordering="AFTER"
+side="BOTH"
+[[mixins]]
+config="customatm_economy.mixins.json"

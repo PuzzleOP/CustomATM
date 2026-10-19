@@ -1,6 +1,6 @@
 {
   "default_hide_dependency_lines": false,
-  "default_quest_shape": "square",
+  "default_quest_shape": "hexagon",
   "filename": "local_guide_02_ad_astra",
   "group": "28D38D1EC21B4002",
   "icon": {
@@ -21,13 +21,14 @@
           "type": "checkmark"
         }
       ],
-      "x": 0.0,
-      "y": 0.0,
-      "shape": "gear",
+      "x": -3,
+      "y": 0,
+      "shape": "diamond",
       "icon": {
         "id": "ad_astra:tier_1_rocket",
         "count": 1
-      }
+      },
+      "size": 1.5
     },
     {
       "id": "43205FAABE71A19D",
@@ -40,45 +41,46 @@
           "type": "checkmark"
         }
       ],
-      "x": 3.0,
-      "y": 0.0,
+      "x": -3,
+      "y": 3,
       "shape": "square",
       "icon": {
         "id": "minecraft:book",
         "count": 1
-      }
+      },
+      "optional": true
     },
     {
       "id": "5E8B76ADCE0FFF3C",
       "dependencies": [
-        "43205FAABE71A19D"
+        "0427FC81E857F60B"
       ],
       "tasks": [
         {
-          "id": "5928106C296779C7",
+          "id": "47D452F09B9CC647",
           "type": "item",
           "item": {
-            "id": "patchouli:guide_book",
-            "count": 1,
-            "components": {
-              "patchouli:book": "ad_astra:astrodux"
-            }
+            "id": "ad_astra:astrodux",
+            "count": 1
           },
           "count": 1,
-          "consume_items": false,
-          "match_components": "strict"
+          "consume_items": false
         }
       ],
-      "x": 6.0,
+      "x": 0.0,
       "y": 0.0,
       "shape": "hexagon",
       "icon": {
-        "id": "patchouli:guide_book",
-        "count": 1,
-        "components": {
-          "patchouli:book": "ad_astra:astrodux"
+        "id": "ad_astra:astrodux",
+        "count": 1
+      },
+      "rewards": [
+        {
+          "id": "4F0D0BC24CAE716D",
+          "type": "xp",
+          "xp": 15
         }
-      }
+      ]
     },
     {
       "id": "602ABAC97C81CCCB",
@@ -98,16 +100,24 @@
         },
         {
           "id": "4D00AE36EC335238",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
+      "x": 3.0,
       "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "ad_astra:coal_generator",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "2AD1F95540273172",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "371075639BD2B993",
@@ -126,13 +136,20 @@
           "consume_items": false
         }
       ],
-      "x": 12.0,
+      "x": 6.0,
       "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "ad_astra:steel_ingot",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "029ACB926E2ACD02",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "46BB06D66C3C9942",
@@ -152,21 +169,29 @@
         },
         {
           "id": "2771AE0F5E8DD8A5",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 3.0,
+      "x": 9.0,
+      "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "ad_astra:compressor",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "33B431BECEFE3523",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "7E98C22B11EC4896",
       "dependencies": [
-        "46BB06D66C3C9942"
+        "602ABAC97C81CCCB"
       ],
       "tasks": [
         {
@@ -181,21 +206,29 @@
         },
         {
           "id": "4F1C9CDABAB6B6FB",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 3.0,
+      "x": 0.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "ad_astra:fuel_refinery",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "2B50C35A08842511",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "35B4A2C4984E736C",
       "dependencies": [
-        "7E98C22B11EC4896"
+        "46BB06D66C3C9942"
       ],
       "tasks": [
         {
@@ -210,16 +243,24 @@
         },
         {
           "id": "5B26CB233F169A09",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
-      "y": 3.0,
+      "x": 12.0,
+      "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "ad_astra:nasa_workbench",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "6D61C0F371E2DE9F",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "03EBF6343E93AED7",
@@ -239,23 +280,41 @@
         },
         {
           "id": "25F0456FD23592E8",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 3.0,
-      "y": 3.0,
+      "x": 15.0,
+      "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "ad_astra:tier_1_rocket",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "3623C8B7315C8F8D",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "1772CF3D1B830C75",
       "dependencies": [
-        "03EBF6343E93AED7"
+        "371075639BD2B993"
       ],
       "tasks": [
+        {
+          "id": "408F514BD3ECCB18",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:space_helmet",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
         {
           "id": "7F3AE96BFAC3D67C",
           "type": "item",
@@ -267,22 +326,50 @@
           "consume_items": false
         },
         {
+          "id": "7663AA913144E9A2",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:space_pants",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "79668094433076F1",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:space_boots",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "30335D77925F0DED",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 0.0,
-      "y": 3.0,
+      "x": 3.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
-        "id": "ad_astra:space_suit",
+        "id": "ad_astra:space_helmet",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "06FBBB3AC117F204",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "33D8C2874025A9C2",
       "dependencies": [
-        "1772CF3D1B830C75"
+        "602ABAC97C81CCCB"
       ],
       "tasks": [
         {
@@ -297,35 +384,74 @@
         },
         {
           "id": "13C00520EF55E642",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 0.0,
-      "y": 6.0,
+      "x": 6.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "ad_astra:oxygen_loader",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "2384DBE6CA7998DE",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "370DC82F574E180A",
       "dependencies": [
-        "33D8C2874025A9C2"
+        "03EBF6343E93AED7",
+        "1772CF3D1B830C75",
+        "33D8C2874025A9C2",
+        "7E98C22B11EC4896"
       ],
       "tasks": [
         {
+          "id": "2AAE38DA4714FB4E",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:launch_pad",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "4F889B1EFBDB8F49",
+          "type": "item",
+          "item": {
+            "id": "minecraft:cooked_beef",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        },
+        {
           "id": "370CCEFA81B6C73D",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 3.0,
-      "y": 6.0,
-      "shape": "square",
+      "x": 9.0,
+      "y": 4.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "ad_astra:launch_pad",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "41DFB6185EA7DA6F",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "575B1E148392A4AA",
@@ -334,17 +460,40 @@
       ],
       "tasks": [
         {
+          "id": "7894B8D499F009A7",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:moon_cobblestone",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        },
+        {
           "id": "5625958D90C6A500",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
+        },
+        {
+          "id": "72FEFC2307F8CD6B",
+          "type": "dimension",
+          "dimension": "ad_astra:moon"
         }
       ],
-      "x": 6.0,
-      "y": 6.0,
-      "shape": "square",
+      "x": 12.0,
+      "y": 4.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "ad_astra:moon_cobblestone",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "674334C56B2D288B",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "216D2FCAB60B42A8",
@@ -364,16 +513,24 @@
         },
         {
           "id": "24BBC45917AE82CE",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 6.0,
+      "x": 15.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "ad_astra:desh_ingot",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "5991CF822F269BA4",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "1C879BB1FC86D78E",
@@ -393,16 +550,24 @@
         },
         {
           "id": "2C33E78F8A36D087",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 6.0,
+      "x": 0.0,
+      "y": 12.0,
       "shape": "hexagon",
       "icon": {
         "id": "ad_astra:oxygen_distributor",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "4F95E61E0238492C",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "7BE7E6D3362B889B",
@@ -422,21 +587,29 @@
         },
         {
           "id": "6B1E5D4AC612F258",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 9.0,
+      "x": 3.0,
+      "y": 12.0,
       "shape": "hexagon",
       "icon": {
         "id": "ad_astra:ti_69",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "1FDE5DABFC7C59B5",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "15225DADFC0914E0",
       "dependencies": [
-        "7BE7E6D3362B889B"
+        "216D2FCAB60B42A8"
       ],
       "tasks": [
         {
@@ -451,21 +624,34 @@
         },
         {
           "id": "4E98708C3FECCB03",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
+        },
+        {
+          "id": "4ACB68717EABCDF3",
+          "type": "dimension",
+          "dimension": "ad_astra:mars"
         }
       ],
-      "x": 9.0,
-      "y": 9.0,
+      "x": 0.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "ad_astra:tier_2_rocket",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "70912686C0435D98",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "112081DBB9670E96",
       "dependencies": [
-        "15225DADFC0914E0"
+        "7BE7E6D3362B889B"
       ],
       "tasks": [
         {
@@ -480,23 +666,41 @@
         },
         {
           "id": "39E20508B38F6BAA",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
       "x": 6.0,
-      "y": 9.0,
+      "y": 12.0,
       "shape": "hexagon",
       "icon": {
         "id": "ad_astra:cryo_freezer",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "1E70CC98DA7EA603",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "29B3EBF9795A73D6",
       "dependencies": [
-        "112081DBB9670E96"
+        "15225DADFC0914E0"
       ],
       "tasks": [
+        {
+          "id": "73905B64AE878218",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:netherite_space_helmet",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
         {
           "id": "5DF8DAA15E83656A",
           "type": "item",
@@ -506,19 +710,47 @@
           },
           "count": 1,
           "consume_items": false
+        },
+        {
+          "id": "571D7BBD8F4AF7A0",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:netherite_space_pants",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "40C4AB859C11EE5D",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:netherite_space_boots",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
         }
       ],
       "x": 3.0,
-      "y": 9.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
-        "id": "ad_astra:netherite_space_suit",
+        "id": "ad_astra:netherite_space_helmet",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "42F8DD868F1CA223",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "4284386F90782B0B",
       "dependencies": [
+        "15225DADFC0914E0",
         "29B3EBF9795A73D6"
       ],
       "tasks": [
@@ -534,16 +766,24 @@
         },
         {
           "id": "084F5FA9F06A65BA",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 0.0,
-      "y": 9.0,
+      "x": 6.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "ad_astra:tier_3_rocket",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "29D1B7B2F638BCDC",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "337557221E144235",
@@ -563,61 +803,370 @@
         },
         {
           "id": "6345453A4CEF36D1",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
+        },
+        {
+          "id": "723C27ECFB3C6F37",
+          "type": "dimension",
+          "dimension": "ad_astra:glacio"
         }
       ],
-      "x": 0.0,
-      "y": 12.0,
+      "x": 9.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "ad_astra:tier_4_rocket",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "4E03A867AC471745",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "70A829E91698D799",
       "dependencies": [
-        "337557221E144235"
+        "112081DBB9670E96"
       ],
       "tasks": [
         {
+          "id": "104F71F78F3DF63F",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:oxygen_distributor",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "7CB8C32D0EA6A9AA",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 3.0,
+      "x": 9.0,
       "y": 12.0,
-      "shape": "square",
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "ad_astra:oxygen_distributor",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "786FC870E3A2DB1B",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "637DED48D606987A",
       "dependencies": [
-        "70A829E91698D799"
+        "1C879BB1FC86D78E",
+        "15225DADFC0914E0"
       ],
       "tasks": [
+        {
+          "id": "2B004A65C2FDBBE5",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:ostrum_ingot",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        },
         {
           "id": "0EF717AD00C74897",
           "type": "checkmark"
         }
       ],
-      "x": 6.0,
+      "x": 12.0,
       "y": 12.0,
-      "shape": "gear",
+      "shape": "diamond",
       "icon": {
-        "id": "minecraft:book",
+        "id": "ad_astra:ostrum_ingot",
         "count": 1
       },
+      "size": 1.5,
       "rewards": [
         {
-          "id": "2788B56FD96CD55A",
+          "id": "775946CD8FE2256C",
+          "type": "xp",
+          "xp": 75
+        }
+      ]
+    },
+    {
+      "id": "59506CAABC557406",
+      "dependencies": [
+        "35B4A2C4984E736C"
+      ],
+      "tasks": [
+        {
+          "id": "65E406302CE5FCB3",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:steel_engine",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "1E78885B177A79AD",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 12.0,
+      "y": 1.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:steel_engine",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "42A7F15C8E74E6BF",
           "type": "xp",
           "xp": 25
         }
       ]
+    },
+    {
+      "id": "7EE9E100EE26427D",
+      "dependencies": [
+        "03EBF6343E93AED7"
+      ],
+      "tasks": [
+        {
+          "id": "6EA86D5BC4134165",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:launch_pad",
+            "count": 1
+          },
+          "count": 9,
+          "consume_items": false
+        },
+        {
+          "id": "2F94E9F11227A305",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 15.0,
+      "y": 1.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:launch_pad",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "6BBEFFC8C717F214",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "53B29C7463436B74",
+      "dependencies": [
+        "575B1E148392A4AA"
+      ],
+      "tasks": [
+        {
+          "id": "0784AC7F66067BDC",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:raw_desh",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
+          "id": "3CA980D701950D5F",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 12.0,
+      "y": 5.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:raw_desh",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "7A52408EF2912215",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "760FC69EB529E7DF",
+      "dependencies": [
+        "15225DADFC0914E0"
+      ],
+      "tasks": [
+        {
+          "id": "7D6E1698CE6BD0EC",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:ostrum_ingot",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
+          "id": "72F7EE0B068B9C01",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 0.0,
+      "y": 9.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:ostrum_ingot",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "4BE66823E5226675",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "1DC49C00875B63CD",
+      "dependencies": [
+        "4284386F90782B0B"
+      ],
+      "tasks": [
+        {
+          "id": "32773467F5CFE32D",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:calorite_ingot",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
+          "id": "72B039AE9AE66621",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 6.0,
+      "y": 9.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:calorite_ingot",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "15E2B7B5E2BD56C2",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "6D76D05A660A0319",
+      "dependencies": [
+        "1C879BB1FC86D78E"
+      ],
+      "tasks": [
+        {
+          "id": "1F75D9DF152355F9",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:solar_panel",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "0FAF44762D35AC38",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 0.0,
+      "y": 13.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:solar_panel",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "34D0B4CB674D17BB",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "3767E3556AEE80A2",
+      "image": "customatm:textures/quests/ad_astra_lane_0.png",
+      "x": 5.0,
+      "y": -1.15,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "64E2EA27CD8C5443",
+      "image": "customatm:textures/quests/ad_astra_lane_1.png",
+      "x": 5.0,
+      "y": 2.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "1D0E39A256C92D87",
+      "image": "customatm:textures/quests/ad_astra_lane_2.png",
+      "x": 5.0,
+      "y": 6.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "3FD13831F1B2FE63",
+      "image": "customatm:textures/quests/ad_astra_lane_3.png",
+      "x": 5.0,
+      "y": 10.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
     }
   ]
 }

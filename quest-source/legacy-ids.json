@@ -1,0 +1,2827 @@
+{
+  "minecolonies": {
+    "chapter": "681B4DB073FB10D5",
+    "quests": [
+      {
+        "id": "59C2E82B3B2557C7",
+        "tasks": [
+          {
+            "id": "3B7BB3BD7EFFB0B3",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "55EDA03B1FB4A0D6",
+        "tasks": [
+          {
+            "id": "1798041B47F38631",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "40376CAADCA40739",
+        "tasks": [
+          {
+            "id": "40521F65525C7D15",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "71ADC4A26B994969",
+        "tasks": [
+          {
+            "id": "662ADB40F6532F72",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "7BC3A2AC07F7B091",
+        "tasks": [
+          {
+            "id": "4138BC32A991FCD2",
+            "type": "item",
+            "item": {
+              "id": "minecolonies:blockhuttownhall",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "072E1C7622F3D5F3",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "6DCD38F81AE6889F",
+        "tasks": [
+          {
+            "id": "4C594F2BF98C45F6",
+            "type": "item",
+            "item": {
+              "id": "minecolonies:blockhutbuilder",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "2D3016661DBDBA7A",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "5CE76239A3358618",
+        "tasks": [
+          {
+            "id": "59BA5993BAF6345D",
+            "type": "item",
+            "item": {
+              "id": "minecolonies:clipboard",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "20A6328863326D41",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "61C01C6EB265C963",
+        "tasks": [
+          {
+            "id": "4A16C456473091B8",
+            "type": "item",
+            "item": {
+              "id": "minecolonies:blockhutcook",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "789FE9B5023ED13F",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "58F86761CC305FCA",
+        "tasks": [
+          {
+            "id": "08224DDFB67975E7",
+            "type": "item",
+            "item": {
+              "id": "minecolonies:blockhutcitizen",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "310E33F64326FBFA",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "082E6F2C61EF913B",
+        "tasks": [
+          {
+            "id": "089E5415AEE78854",
+            "type": "item",
+            "item": {
+              "id": "minecolonies:blockhutlumberjack",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "581D5E484F8DFBFC",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "2A3B0630147CC528",
+        "tasks": [
+          {
+            "id": "2BB6A386A93FF2CA",
+            "type": "item",
+            "item": {
+              "id": "minecolonies:blockhutwarehouse",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "2B4CE46E6CBCAD74",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "302E3FA9C8C56751",
+        "tasks": [
+          {
+            "id": "1EC13C236D751B3D",
+            "type": "item",
+            "item": {
+              "id": "minecolonies:blockhutdeliveryman",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "3A7962CE16538B8F",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "41054430E156DC83",
+        "tasks": [
+          {
+            "id": "3521BAA969A50D95",
+            "type": "item",
+            "item": {
+              "id": "minecolonies:blockhutfarmer",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "578044AF1711F7EF",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "29940787C35F8C0A",
+        "tasks": [
+          {
+            "id": "7B7FB0F5AE3134A4",
+            "type": "item",
+            "item": {
+              "id": "minecolonies:blockhutsawmill",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "405FAD816EBDC3DC",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "0DEF901F188B8E8D",
+        "tasks": [
+          {
+            "id": "08635D9630AED8DB",
+            "type": "item",
+            "item": {
+              "id": "minecolonies:blockhutstonemason",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "5382EBCDBF41CBCA",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "325942E4FB3ECE8D",
+        "tasks": [
+          {
+            "id": "56F53C2E29A8830F",
+            "type": "item",
+            "item": {
+              "id": "minecolonies:blockhutuniversity",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "311F5C88EA092A09",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "43F029CD893A6FF1",
+        "tasks": [
+          {
+            "id": "1FD8742FE8DE0365",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3FCF38C8A5D69203",
+        "tasks": [
+          {
+            "id": "6E1558BF49706842",
+            "type": "item",
+            "item": {
+              "id": "minecolonies:blockhutguardtower",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "419FB675F6DBA4A1",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "055FBE8444D16357",
+        "tasks": [
+          {
+            "id": "623F1C4C1DF51284",
+            "type": "item",
+            "item": {
+              "id": "minecolonies:blockhuttavern",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "2E018C6E27723ABD",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "68E68A1EDDCDE2AC",
+        "tasks": [
+          {
+            "id": "1D02F69698EF39CF",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "1B6DFE41CB364491",
+        "tasks": [
+          {
+            "id": "757ABD17CEF8742D",
+            "type": "checkmark"
+          }
+        ]
+      }
+    ]
+  },
+  "ad_astra": {
+    "chapter": "2465986E2653D08D",
+    "quests": [
+      {
+        "id": "0427FC81E857F60B",
+        "tasks": [
+          {
+            "id": "7476A524D271277C",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "43205FAABE71A19D",
+        "tasks": [
+          {
+            "id": "2BCC9C185A201064",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "5E8B76ADCE0FFF3C",
+        "tasks": [
+          {
+            "id": "5928106C296779C7",
+            "type": "item",
+            "item": {
+              "id": "patchouli:guide_book",
+              "count": 1,
+              "components": {
+                "patchouli:book": "ad_astra:astrodux"
+              }
+            },
+            "count": 1,
+            "consume_items": false,
+            "match_components": "strict"
+          }
+        ]
+      },
+      {
+        "id": "602ABAC97C81CCCB",
+        "tasks": [
+          {
+            "id": "4C5199BBB36E1093",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:coal_generator",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "4D00AE36EC335238",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "371075639BD2B993",
+        "tasks": [
+          {
+            "id": "65EA52E7C98B117A",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:steel_ingot",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          }
+        ]
+      },
+      {
+        "id": "46BB06D66C3C9942",
+        "tasks": [
+          {
+            "id": "613D70BCB0512A59",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:compressor",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "2771AE0F5E8DD8A5",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "7E98C22B11EC4896",
+        "tasks": [
+          {
+            "id": "31603B822584CB6E",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:fuel_refinery",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "4F1C9CDABAB6B6FB",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "35B4A2C4984E736C",
+        "tasks": [
+          {
+            "id": "5BFC1BDC9EC16480",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:nasa_workbench",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "5B26CB233F169A09",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "03EBF6343E93AED7",
+        "tasks": [
+          {
+            "id": "5ABDD3867196BABA",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:tier_1_rocket",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "25F0456FD23592E8",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "1772CF3D1B830C75",
+        "tasks": [
+          {
+            "id": "7F3AE96BFAC3D67C",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:space_suit",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "30335D77925F0DED",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "33D8C2874025A9C2",
+        "tasks": [
+          {
+            "id": "66AB9B8525EE0CED",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:oxygen_loader",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "13C00520EF55E642",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "370DC82F574E180A",
+        "tasks": [
+          {
+            "id": "370CCEFA81B6C73D",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "575B1E148392A4AA",
+        "tasks": [
+          {
+            "id": "5625958D90C6A500",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "216D2FCAB60B42A8",
+        "tasks": [
+          {
+            "id": "3C953D5FCA190335",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:desh_ingot",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "24BBC45917AE82CE",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "1C879BB1FC86D78E",
+        "tasks": [
+          {
+            "id": "582BE0FAC76F7BE5",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:oxygen_distributor",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "2C33E78F8A36D087",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "7BE7E6D3362B889B",
+        "tasks": [
+          {
+            "id": "55A8EBC6E0810807",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:ti_69",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "6B1E5D4AC612F258",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "15225DADFC0914E0",
+        "tasks": [
+          {
+            "id": "1D1D895D13AD4C64",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:tier_2_rocket",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "4E98708C3FECCB03",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "112081DBB9670E96",
+        "tasks": [
+          {
+            "id": "7E0B7DB90B6EE3CA",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:cryo_freezer",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "39E20508B38F6BAA",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "29B3EBF9795A73D6",
+        "tasks": [
+          {
+            "id": "5DF8DAA15E83656A",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:netherite_space_suit",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          }
+        ]
+      },
+      {
+        "id": "4284386F90782B0B",
+        "tasks": [
+          {
+            "id": "7651AFD7BFB931E0",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:tier_3_rocket",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "084F5FA9F06A65BA",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "337557221E144235",
+        "tasks": [
+          {
+            "id": "264331BE0F2821AA",
+            "type": "item",
+            "item": {
+              "id": "ad_astra:tier_4_rocket",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "6345453A4CEF36D1",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "70A829E91698D799",
+        "tasks": [
+          {
+            "id": "7CB8C32D0EA6A9AA",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "637DED48D606987A",
+        "tasks": [
+          {
+            "id": "0EF717AD00C74897",
+            "type": "checkmark"
+          }
+        ]
+      }
+    ]
+  },
+  "advanced_rs": {
+    "chapter": "44DA95F01132476A",
+    "quests": [
+      {
+        "id": "1F3926F40A6B3002",
+        "tasks": [
+          {
+            "id": "5147BC2D367EF0E9",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3B67BA5B0470AFBB",
+        "tasks": [
+          {
+            "id": "305C65653D7E7669",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "162CDF11A62C8795",
+        "tasks": [
+          {
+            "id": "6A2079E791168D72",
+            "type": "item",
+            "item": {
+              "id": "refinedstorage:controller",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "208752D14F13BB55",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "091432FDBD674325",
+        "tasks": [
+          {
+            "id": "42F6126595FB962C",
+            "type": "item",
+            "item": {
+              "id": "refinedstorage:external_storage",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "54B2F3573647D789",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "249CA20A77338E51",
+        "tasks": [
+          {
+            "id": "4ED6BA9FC25618E1",
+            "type": "item",
+            "item": {
+              "id": "refinedstorage:pattern_grid",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "7A5972EFA9B89B47",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "39894938C7D1DDFA",
+        "tasks": [
+          {
+            "id": "1223F4FD8CF81018",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "21E76B3B169DDD8D",
+        "tasks": [
+          {
+            "id": "63EF1A10A5F4909B",
+            "type": "item",
+            "item": {
+              "id": "refinedstorage:autocrafter",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "63C581E35C0FF07A",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "2A822AF413B88804",
+        "tasks": [
+          {
+            "id": "4F56629757EC3447",
+            "type": "item",
+            "item": {
+              "id": "refinedstorage:autocrafting_monitor",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "054302526DF7032B",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "232242C253C5C6A2",
+        "tasks": [
+          {
+            "id": "42D170E06FEF95CC",
+            "type": "item",
+            "item": {
+              "id": "rsrequestify:requester",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "18809C09EB5CCED1",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "64DAE0DB64E14365",
+        "tasks": [
+          {
+            "id": "6AC0DCA6EBB136CD",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "455FACFE88F00D4B",
+        "tasks": [
+          {
+            "id": "0512854F690710D3",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "26D538689C43C6AC",
+        "tasks": [
+          {
+            "id": "7027E6BEAC849B80",
+            "type": "item",
+            "item": {
+              "id": "refinedtypes:64k_energy_storage_disk",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "27A4AA14DC0BEB2E",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3736577BDC3D4F8E",
+        "tasks": [
+          {
+            "id": "66B66E667642ED97",
+            "type": "item",
+            "item": {
+              "id": "refinedtypes:64b_source_storage_disk",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "403AA4D624A1AF07",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3EC4CB893D60F0E4",
+        "tasks": [
+          {
+            "id": "0E8C2353930ED018",
+            "type": "item",
+            "item": {
+              "id": "refinedtypes:1k_soul_storage_disk",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "58987DD920E3CDE8",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "277D7A61EC52AD2F",
+        "tasks": [
+          {
+            "id": "58555B618B61160C",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "264F9DDB12C2AAF2",
+        "tasks": [
+          {
+            "id": "5C42E94862E754CC",
+            "type": "item",
+            "item": {
+              "id": "universalgrid:wireless_universal_grid",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "464BD1B4A0619184",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "65D2D38EC1C430A7",
+        "tasks": [
+          {
+            "id": "10201EB36E3C142B",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "4D7545E7E4FAE623",
+        "tasks": [
+          {
+            "id": "7BCF2949FFBE4794",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3506A089BDA0396F",
+        "tasks": [
+          {
+            "id": "7B08C35D2D586FCB",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "7212A4CE5FEDE709",
+        "tasks": [
+          {
+            "id": "21E2669F65F61376",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "67C1934FCABD1D48",
+        "tasks": [
+          {
+            "id": "51FD3F8183180C41",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "4B845A9FEBF30760",
+        "tasks": [
+          {
+            "id": "725A735FD7555F73",
+            "type": "checkmark"
+          }
+        ]
+      }
+    ]
+  },
+  "economy": {
+    "chapter": "756FE2AA913E8F06",
+    "quests": [
+      {
+        "id": "3828E5DDA0C35009",
+        "tasks": [
+          {
+            "id": "4A789DED52D7441A",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "00762979529AB361",
+        "tasks": [
+          {
+            "id": "2341213D399DE802",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "4C37D18D9440A483",
+        "tasks": [
+          {
+            "id": "232DB1E9437F7612",
+            "type": "item",
+            "item": {
+              "id": "dyneco:market_tablet",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "2151F8A945A8C6C4",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "4C47ACFC848D1DA7",
+        "tasks": [
+          {
+            "id": "12212E99DDB3B78A",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "0DEDA51D16462441",
+        "tasks": [
+          {
+            "id": "4C5267F1A558E7A2",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "31A9161E3C2D2100",
+        "tasks": [
+          {
+            "id": "5A185C4B75A1632A",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "364B51AEDAF9422C",
+        "tasks": [
+          {
+            "id": "573D8366E379BB5B",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "79902E2AE165400C",
+        "tasks": [
+          {
+            "id": "69314B40D0BCEDF3",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3C3E8D6ACBA66724",
+        "tasks": [
+          {
+            "id": "38FF8979A6CC97C4",
+            "type": "item",
+            "item": {
+              "id": "minecraft:chest",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "3E95692AA58A91DE",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "5A1FB2CD3C301F4B",
+        "tasks": [
+          {
+            "id": "50F979C1AEB65D9F",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "7928D79F2D94447D",
+        "tasks": [
+          {
+            "id": "1C37BEBB130DD2D2",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "17036B4B0B368140",
+        "tasks": [
+          {
+            "id": "3967F4125DDECAE3",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "5D7DB41591DF03FD",
+        "tasks": [
+          {
+            "id": "26275FBEBAD938C9",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "4DEC0220AF3FA45F",
+        "tasks": [
+          {
+            "id": "7A5D1018661F5D74",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "454FFCC7287165A0",
+        "tasks": [
+          {
+            "id": "3FD0CB86F3CE64EA",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "754777A9B561B904",
+        "tasks": [
+          {
+            "id": "5947CBD76805B5D2",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "2EF47CB2F277BA8F",
+        "tasks": [
+          {
+            "id": "06DA44C1F2641025",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "077709C3169232DC",
+        "tasks": [
+          {
+            "id": "4359BBA9ED6B5AFD",
+            "type": "checkmark"
+          }
+        ]
+      }
+    ]
+  },
+  "enderio": {
+    "chapter": "0033EF722DDC4F60",
+    "quests": [
+      {
+        "id": "7C4EF9DE3DEF3BA6",
+        "tasks": [
+          {
+            "id": "4597FB3E4E49456D",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3E769EE8AD936310",
+        "tasks": [
+          {
+            "id": "132F575EDD3C69DE",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "2E87657515D476F3",
+        "tasks": [
+          {
+            "id": "41159FEA92B86C19",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "2F7775F6E4C7C850",
+        "tasks": [
+          {
+            "id": "3EB99706C7A86DA1",
+            "type": "item",
+            "item": {
+              "id": "enderio:basic_capacitor_bank",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "3A5880F1DD16574C",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "052DA5A01BF9913D",
+        "tasks": [
+          {
+            "id": "1F5F9DFEA5FB931D",
+            "type": "item",
+            "item": {
+              "id": "enderio:alloy_smelter",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "4EEE8D270E09E0C0",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "4D6BABA78A1A59FF",
+        "tasks": [
+          {
+            "id": "4FDC4DFC98F21F9F",
+            "type": "item",
+            "item": {
+              "id": "enderio:energetic_alloy_ingot",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          }
+        ]
+      },
+      {
+        "id": "519FCA5725322C0C",
+        "tasks": [
+          {
+            "id": "2B6ADAFE2F3D3B17",
+            "type": "item",
+            "item": {
+              "id": "enderio:sag_mill",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "5A5012AC97C2692E",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "5B861CA204819EB3",
+        "tasks": [
+          {
+            "id": "002F7773E819906D",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "495FB0FFBFA9A604",
+        "tasks": [
+          {
+            "id": "71EF151B81121D7C",
+            "type": "item",
+            "item": {
+              "id": "enderio:conduit",
+              "count": 1,
+              "components": {
+                "enderio:conduit": "enderio:item"
+              }
+            },
+            "count": 1,
+            "consume_items": false,
+            "match_components": "strict"
+          },
+          {
+            "id": "0945C5CE033D8D93",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "7A32722C6F05946B",
+        "tasks": [
+          {
+            "id": "5F5A18F91DDA818B",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "1958E66FB7A2F755",
+        "tasks": [
+          {
+            "id": "1BFCEB17B908586F",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "0847046BBB793BC3",
+        "tasks": [
+          {
+            "id": "17F0BC12A9B40C4D",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "36DB0C7DDC0204CC",
+        "tasks": [
+          {
+            "id": "307020DCB30DD339",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "1CF4535FA329C06F",
+        "tasks": [
+          {
+            "id": "232E974278F09CD3",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "18CB692F90461B2E",
+        "tasks": [
+          {
+            "id": "494BEACCAC873CB8",
+            "type": "item",
+            "item": {
+              "id": "enderio:soul_vial",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "2DD0CAAAE0AA3A72",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "50F2AAA0133514C2",
+        "tasks": [
+          {
+            "id": "547CECBFD576F98D",
+            "type": "item",
+            "item": {
+              "id": "enderio:soul_binder",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "05E2A68F2E0D9E42",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "69E2304783FD1AF7",
+        "tasks": [
+          {
+            "id": "3F7F601DFA4408C3",
+            "type": "item",
+            "item": {
+              "id": "enderio:powered_spawner",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "52911EDE9F2DC0A1",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3F0678911B3AD0EC",
+        "tasks": [
+          {
+            "id": "7BD85B21FAD40E43",
+            "type": "item",
+            "item": {
+              "id": "enderio:xp_obelisk",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "1E12761C0F40FCC5",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "7DE59D4E25BF5649",
+        "tasks": [
+          {
+            "id": "6CDECD52B5B74F4F",
+            "type": "item",
+            "item": {
+              "id": "enderio:farming_station",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "1FE56A231F891D03",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "0173532A28D86EA6",
+        "tasks": [
+          {
+            "id": "36B12A9E61626741",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "114C498123F7AD6F",
+        "tasks": [
+          {
+            "id": "31B2DD453A0061F3",
+            "type": "checkmark"
+          }
+        ]
+      }
+    ]
+  },
+  "astral": {
+    "chapter": "2152B0EE8804F761",
+    "quests": [
+      {
+        "id": "492340992A6EADAC",
+        "tasks": [
+          {
+            "id": "7403BBBAB0BEDB9B",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "6537F2A7876A677B",
+        "tasks": [
+          {
+            "id": "570F82C60EE7C55F",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "329B06384D220AE6",
+        "tasks": [
+          {
+            "id": "7604E3CD82CD4F75",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:tome",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          }
+        ]
+      },
+      {
+        "id": "0A5DD29211B6E891",
+        "tasks": [
+          {
+            "id": "53438C48B4C5D1EC",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:aquamarine",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          }
+        ]
+      },
+      {
+        "id": "142538FFC0673A1D",
+        "tasks": [
+          {
+            "id": "6641A1D442B58DDC",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:constellation_paper",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          }
+        ]
+      },
+      {
+        "id": "62AAFA8076D01B14",
+        "tasks": [
+          {
+            "id": "13DB99782149570B",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:astrolabe",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "64CBA76933310A70",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3FC719625D2AAD38",
+        "tasks": [
+          {
+            "id": "452A34257426BE34",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "62B3F6E1E3B71A8E",
+        "tasks": [
+          {
+            "id": "43C376BD5DC5079E",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:wand",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          }
+        ]
+      },
+      {
+        "id": "41196F16F623D4D8",
+        "tasks": [
+          {
+            "id": "1A9DA4BFCAE14652",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:rock_crystal",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          }
+        ]
+      },
+      {
+        "id": "0CEBE470008B5F33",
+        "tasks": [
+          {
+            "id": "161FCAF38FE88B22",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:altar_illumination",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "688357CF11E01AE0",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "422823A2345D74FF",
+        "tasks": [
+          {
+            "id": "3B6E565E6870A50F",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:lightwell",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "604C80EC71C6BA8D",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3EBCB8FDC0B1D518",
+        "tasks": [
+          {
+            "id": "32061A4EA41DD540",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:starmetal_ingot",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          }
+        ]
+      },
+      {
+        "id": "2E04B992EDF7CAE9",
+        "tasks": [
+          {
+            "id": "3C841FA4D90AB53E",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:focus_relay",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "2AAE5DBBA833A5ED",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "41EC1C221A41A935",
+        "tasks": [
+          {
+            "id": "3C8FB5CC91DBDA24",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:altar_resonance",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "7FF2F70BB41FD99E",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "765A95C8D7785933",
+        "tasks": [
+          {
+            "id": "5D28B4059F814C75",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:infuser",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "2626ADC5ED0687FE",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "1BD6E00F6CC87805",
+        "tasks": [
+          {
+            "id": "1FD3CEA094FB9C86",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:altar_luminance",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "28B7C444D3436231",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "19A8EA75AB2C1D69",
+        "tasks": [
+          {
+            "id": "65EDC4C68C2AA574",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:attunement_altar",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "33C78D4579E27037",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "214EFBFC84DD00A8",
+        "tasks": [
+          {
+            "id": "7E82CFE521BD447B",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "76F0829EBB40EC66",
+        "tasks": [
+          {
+            "id": "251142A7E2872F6D",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:lumen_array",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "175D846542F50902",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3D0E870194144E90",
+        "tasks": [
+          {
+            "id": "3D36D9426A3AE524",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:lumen_filament",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "689649FA12081504",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "7F6D201DD011DABA",
+        "tasks": [
+          {
+            "id": "548B49E863D2E2C4",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:starlight_focus_rock_crystal",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "7EF0183F13EC99A5",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "597437B03E959B34",
+        "tasks": [
+          {
+            "id": "40D1225013392DC3",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:lumen_alchemy_array",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "5A0183FAC1C5EBE8",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "2E7D2E5692E2083C",
+        "tasks": [
+          {
+            "id": "6B7EF270BE70B898",
+            "type": "item",
+            "item": {
+              "id": "astralsorcery:altar_radiance",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "00382111575E6B42",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "05DF96953BD401F0",
+        "tasks": [
+          {
+            "id": "49065D39557691BD",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "79DFA6E51292A76D",
+        "tasks": [
+          {
+            "id": "51604B60C71F2C24",
+            "type": "checkmark"
+          }
+        ]
+      }
+    ]
+  },
+  "sfm": {
+    "chapter": "3F42AE98B7586A25",
+    "quests": [
+      {
+        "id": "4EF7F4D3881BB980",
+        "tasks": [
+          {
+            "id": "694CCD813BB87480",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "4A7B300A42FB222F",
+        "tasks": [
+          {
+            "id": "76DC6B9ABE38FD5F",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "50469B0A1FB3B1AD",
+        "tasks": [
+          {
+            "id": "0A837B4B33969307",
+            "type": "item",
+            "item": {
+              "id": "sfm:manager",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          }
+        ]
+      },
+      {
+        "id": "1758CCC36719D7CB",
+        "tasks": [
+          {
+            "id": "0D3A7E7E3EBC540F",
+            "type": "item",
+            "item": {
+              "id": "sfm:labelgun",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "41430FDF43977C7C",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "119971C8963166B4",
+        "tasks": [
+          {
+            "id": "28845AF4A89E3C72",
+            "type": "item",
+            "item": {
+              "id": "sfm:disk",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "00D9A9E45A80EDD2",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "7D17FF2200A2F2B7",
+        "tasks": [
+          {
+            "id": "1B82C9393CD95E65",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "6D5CB633FA418D5C",
+        "tasks": [
+          {
+            "id": "58E2E64B957D326A",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "660B3BD35352E197",
+        "tasks": [
+          {
+            "id": "4C245D9170C47BAD",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "70159CC525975883",
+        "tasks": [
+          {
+            "id": "5BA2009093529903",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3B2C8E2A3D6CB5F9",
+        "tasks": [
+          {
+            "id": "191D06CE07194226",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "5BAD5A0D9DCBBFAB",
+        "tasks": [
+          {
+            "id": "58B68DA4630CE865",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "715DE1057A2E5E50",
+        "tasks": [
+          {
+            "id": "12D7804E111DA741",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "1BD6617C08FB567D",
+        "tasks": [
+          {
+            "id": "5DF98ABB10EC2312",
+            "type": "item",
+            "item": {
+              "id": "sfm:network_tool",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "2D8EDDF589B735C2",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "2AD403F667C43882",
+        "tasks": [
+          {
+            "id": "373EB43C3BA2CA81",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "2100DDCF4B05190F",
+        "tasks": [
+          {
+            "id": "5DF693BB81820B27",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "653C7C626AC9DC49",
+        "tasks": [
+          {
+            "id": "250080817E1744FD",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "51859F2558C202FC",
+        "tasks": [
+          {
+            "id": "25E6D026410784FC",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "1606B6261DA0E892",
+        "tasks": [
+          {
+            "id": "56ECCA65AF34D6E1",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "77E937AE6C85076E",
+        "tasks": [
+          {
+            "id": "65E732D8D478A9FF",
+            "type": "checkmark"
+          }
+        ]
+      }
+    ]
+  },
+  "xnet": {
+    "chapter": "66AA476364390298",
+    "quests": [
+      {
+        "id": "5D482EA2D901A236",
+        "tasks": [
+          {
+            "id": "05BDC66A8C76EF21",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "2FFB17ED8EB75DC7",
+        "tasks": [
+          {
+            "id": "5CDC097DE21253A4",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "0A1C039E0485CD09",
+        "tasks": [
+          {
+            "id": "28E77E9E541CAE2D",
+            "type": "item",
+            "item": {
+              "id": "xnet:controller",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "7CB3D5CEC1E4BF66",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "436CDBF32678D44B",
+        "tasks": [
+          {
+            "id": "123BD0C32E7D4E5C",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3616E99D31390D00",
+        "tasks": [
+          {
+            "id": "14F0BC4FBC74AE80",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "303408939651539D",
+        "tasks": [
+          {
+            "id": "7316724EE981BF9C",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "72F0D9534A22C619",
+        "tasks": [
+          {
+            "id": "0849CD24473EDA10",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "62982FA9DE6FC808",
+        "tasks": [
+          {
+            "id": "5D349D0543C235B6",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "06AF177A21F52931",
+        "tasks": [
+          {
+            "id": "1B673BD2875631F8",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3BCB6A25C89CC654",
+        "tasks": [
+          {
+            "id": "2170AA0B29AEC008",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "0BF831C0D9936965",
+        "tasks": [
+          {
+            "id": "1FE417BA0B1163EF",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "436B2B31FA242413",
+        "tasks": [
+          {
+            "id": "17C40C829FCBAF2A",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "52DEC77FE782E2E1",
+        "tasks": [
+          {
+            "id": "19F1E30EE975DA7E",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "54D90CCEB8C0FA5E",
+        "tasks": [
+          {
+            "id": "7C766A75ED78BFF9",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "4EBD6A891A6AB73F",
+        "tasks": [
+          {
+            "id": "58970A9BC78930E2",
+            "type": "item",
+            "item": {
+              "id": "xnet:router",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "5914A64F84140815",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "67CCD513FA0890BB",
+        "tasks": [
+          {
+            "id": "3F81DF138BA81F5C",
+            "type": "item",
+            "item": {
+              "id": "xnet:wireless_router",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "06DDB259DDD4980D",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "36820FE443D6DA6D",
+        "tasks": [
+          {
+            "id": "6A8050C6379BBC1D",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "6B6E4AE6FBEDF860",
+        "tasks": [
+          {
+            "id": "7C8B23F8654DFC68",
+            "type": "checkmark"
+          }
+        ]
+      }
+    ]
+  },
+  "computercraft": {
+    "chapter": "3B831E99D9522F01",
+    "quests": [
+      {
+        "id": "1FCC68D3F7711256",
+        "tasks": [
+          {
+            "id": "3DAEB60AEC2732EC",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "0B3760DF95BD695E",
+        "tasks": [
+          {
+            "id": "79FA27CEAAFCD995",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "303B9B71E3EB0278",
+        "tasks": [
+          {
+            "id": "1DA7B597603D89EB",
+            "type": "item",
+            "item": {
+              "id": "computercraft:computer_advanced",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "224217FDF8B76876",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "1C4CD738E2979024",
+        "tasks": [
+          {
+            "id": "34C3D1910D193172",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "258BFAAC1F8A3AF4",
+        "tasks": [
+          {
+            "id": "6C1A764386CA70DC",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "4E1E39A846877C4D",
+        "tasks": [
+          {
+            "id": "3F749A2B5804CB38",
+            "type": "item",
+            "item": {
+              "id": "computercraft:monitor_advanced",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "3C230F2A19704FD7",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "67B332F525EB45D6",
+        "tasks": [
+          {
+            "id": "6B61CCEB690D53A1",
+            "type": "item",
+            "item": {
+              "id": "computercraft:cable",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "18A24BFA29B900BE",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "2E8ED2C1830C784A",
+        "tasks": [
+          {
+            "id": "06CE76D01E6AC122",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "122E9F59D4910A3F",
+        "tasks": [
+          {
+            "id": "297F2EC8ABB23A87",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "151179D43D671F67",
+        "tasks": [
+          {
+            "id": "2460A696984617BD",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "2A14FE93C40B676D",
+        "tasks": [
+          {
+            "id": "250644FE506FD40C",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "2FDF6DC22F117D17",
+        "tasks": [
+          {
+            "id": "078D65556BA79185",
+            "type": "item",
+            "item": {
+              "id": "computercraft:turtle_advanced",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "18928A6904CC79B0",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "70858E0F111B76CE",
+        "tasks": [
+          {
+            "id": "2D89A67748656405",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "36913CEC37E1C97E",
+        "tasks": [
+          {
+            "id": "73FB2D05A5FD219F",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "707FD598FC96C2A2",
+        "tasks": [
+          {
+            "id": "573B5A62DCA77913",
+            "type": "item",
+            "item": {
+              "id": "advancedperipherals:rs_bridge",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "099E1F8F1F4D586E",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "4F8565EDD613BEBF",
+        "tasks": [
+          {
+            "id": "459AEA2A274103E3",
+            "type": "item",
+            "item": {
+              "id": "advancedperipherals:colony_integrator",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "7AF2F0EBABB4BA20",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "44C89EC8B31860C1",
+        "tasks": [
+          {
+            "id": "56B0D66B4D1969C8",
+            "type": "item",
+            "item": {
+              "id": "advancedperipherals:energy_detector",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "42CC5BDC884475EF",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "434A579A370CCA1B",
+        "tasks": [
+          {
+            "id": "0FE204EB46ED7965",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "234305EAD3616597",
+        "tasks": [
+          {
+            "id": "6960CF6F7C20CD66",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "77C10BE3D82578F8",
+        "tasks": [
+          {
+            "id": "1B00002670740DDB",
+            "type": "checkmark"
+          }
+        ]
+      }
+    ]
+  },
+  "rftools": {
+    "chapter": "0A36778321D0E80E",
+    "quests": [
+      {
+        "id": "364B1F0F21B55ACF",
+        "tasks": [
+          {
+            "id": "4E477056FB2A25BA",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "05F4F827AAFA1FC8",
+        "tasks": [
+          {
+            "id": "7A18FB30B819D5BB",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "57DD9B9201AB5318",
+        "tasks": [
+          {
+            "id": "004DD68AB46919DE",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "51D92DD2423142C2",
+        "tasks": [
+          {
+            "id": "24606517CA38B02C",
+            "type": "item",
+            "item": {
+              "id": "rftoolsstorage:modular_storage",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "0B222471AC249655",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "74591E725FAF9178",
+        "tasks": [
+          {
+            "id": "60B729DB57D2447A",
+            "type": "item",
+            "item": {
+              "id": "rftoolsstorage:storage_scanner",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "1F033E11E3C7EC14",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "5B613DE6E3221667",
+        "tasks": [
+          {
+            "id": "0BC9376A4B7D3448",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "4737630D28A02AC2",
+        "tasks": [
+          {
+            "id": "189C32C208FDD4BB",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3F952649493333D5",
+        "tasks": [
+          {
+            "id": "122D5520CFF9CDD9",
+            "type": "item",
+            "item": {
+              "id": "rftoolsbuilder:builder",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "23D17BCE00B25418",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "636065F5A7FED2F4",
+        "tasks": [
+          {
+            "id": "262EBF9209F9E14F",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "0C97D372DE4192E4",
+        "tasks": [
+          {
+            "id": "42313B9C694153EE",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "3D12D37BED4FF5CA",
+        "tasks": [
+          {
+            "id": "32C691B49E97DEA8",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "5594BD3A263C42A6",
+        "tasks": [
+          {
+            "id": "2AB753B86F80B303",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "2C7AAE8529DCE989",
+        "tasks": [
+          {
+            "id": "6C18E631DCCC3F93",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "0AB1155414A36BE4",
+        "tasks": [
+          {
+            "id": "3B49DA775A82594E",
+            "type": "item",
+            "item": {
+              "id": "rftoolsbuilder:scanner",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "219853E57B57DA49",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "47A9AE97A58A4A5C",
+        "tasks": [
+          {
+            "id": "2B42D314BDD941E8",
+            "type": "item",
+            "item": {
+              "id": "rftoolsutility:crafter3",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "2D464B76CFF5DB13",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "7B7A21506AF0F888",
+        "tasks": [
+          {
+            "id": "01CBDC1CAECE91DD",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "68F12FB45632AD4E",
+        "tasks": [
+          {
+            "id": "3A45937ABE236516",
+            "type": "item",
+            "item": {
+              "id": "rftoolsutility:screen_controller",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "3E52BD893849BD26",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "7DF19F62049AD56C",
+        "tasks": [
+          {
+            "id": "6FACA318B99B84B6",
+            "type": "item",
+            "item": {
+              "id": "rftoolsutility:matter_transmitter",
+              "count": 1
+            },
+            "count": 1,
+            "consume_items": false
+          },
+          {
+            "id": "4F2C83D60AA58E52",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "5799453D63DA415C",
+        "tasks": [
+          {
+            "id": "4CDC68EED43843CF",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "7B9628162E1461FD",
+        "tasks": [
+          {
+            "id": "1BFB34ECBFB14A5B",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "53AA0C3333600B35",
+        "tasks": [
+          {
+            "id": "089652F610B6361E",
+            "type": "checkmark"
+          }
+        ]
+      },
+      {
+        "id": "5913F44ED94E1822",
+        "tasks": [
+          {
+            "id": "645FA1C7A1EC9FA8",
+            "type": "checkmark"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "config/ftbquests/quests/chapters/local_guide_01_minecolonies.snbt": [
+    {
+      "published_sha256": "63612547708b6a067020001ef71b66661ec93bf23efb10775a50f76e68a77b90",
+      "runtime_sha256": "e44f47cede107c78262d8ff8eba62c1972f8d76fb8a33452c1f535558adfb0ee"
+    },
+    {
+      "published_sha256": "63612547708b6a067020001ef71b66661ec93bf23efb10775a50f76e68a77b90",
+      "runtime_sha256": "f1896e7d9a93ab00ddb842a4d0ba1679251db262d538c0af600f07c011798634"
+    }
+  ],
+  "config/ftbquests/quests/chapters/local_guide_02_ad_astra.snbt": [
+    {
+      "published_sha256": "f39caea96c48061f34eb1b38e179088a14eaa8a89ae68e9f4c1e415e286e3cd9",
+      "runtime_sha256": "ecbf7b254dbb4e2447ad5b3422f0c14f173e0155bba907fafcf29cb3028fda42"
+    },
+    {
+      "published_sha256": "f39caea96c48061f34eb1b38e179088a14eaa8a89ae68e9f4c1e415e286e3cd9",
+      "runtime_sha256": "f5faf892d9e726b7740b7c47f4d06b71cbec5887869a80e942d2d285a1b78e85"
+    }
+  ],
+  "config/ftbquests/quests/chapters/local_guide_03_advanced_rs.snbt": [
+    {
+      "published_sha256": "2c72edf1f0441f7e168142d7ac2ed1642f8740ed2905dc3d085109c5a0928bb9",
+      "runtime_sha256": "6d473055f7373349ac4c5a691dedbeb5d220faefd484e36849beccbb4529471b"
+    },
+    {
+      "published_sha256": "2c72edf1f0441f7e168142d7ac2ed1642f8740ed2905dc3d085109c5a0928bb9",
+      "runtime_sha256": "8fe12a398b8e48c32c197a55e2ccd62147c21b46cda971616f69a260b4d15b49"
+    }
+  ],
+  "config/ftbquests/quests/chapters/local_guide_04_economy.snbt": [
+    {
+      "published_sha256": "1b6fbd799521883f9576a0e09708ada0594fa239ee63f4d7144c08294dff0dfa",
+      "runtime_sha256": "46df40edcb640fe73cfcdc1084721074ea738336b9b0f4fadc72423fe9848c04"
+    },
+    {
+      "published_sha256": "1b6fbd799521883f9576a0e09708ada0594fa239ee63f4d7144c08294dff0dfa",
+      "runtime_sha256": "9f15ea6504546e7afe26fb5dfa9fb8e18b655f46d58a0507c8417c7657a801a2"
+    }
+  ],
+  "config/ftbquests/quests/chapters/local_guide_05_enderio.snbt": [
+    {
+      "published_sha256": "693d6a8e65007d6d505dc6e536a564d07c705582b21a3a7f53afa6bc29b722e4",
+      "runtime_sha256": "84b118b7a78a25d819aeeb23df7662eff7e14b9c6aed3638d5711098abbd8724"
+    },
+    {
+      "published_sha256": "693d6a8e65007d6d505dc6e536a564d07c705582b21a3a7f53afa6bc29b722e4",
+      "runtime_sha256": "ed4c4e118da572821c42ee7c0e10cf74e21eaa21aebd8b64cb66ce2f3389bcd2"
+    }
+  ],
+  "config/ftbquests/quests/chapters/local_guide_06_astral.snbt": [
+    {
+      "published_sha256": "491771102835ba62db9d08772a1f01b12d58e0ec156d36978583abb83a01563a",
+      "runtime_sha256": "2bd3cb02a3ab1e10c5149c035037001733cc05b8d7fe82d3a11bf8fefd5e77c6"
+    },
+    {
+      "published_sha256": "491771102835ba62db9d08772a1f01b12d58e0ec156d36978583abb83a01563a",
+      "runtime_sha256": "4dc958acabd46bb6fb5c12fb5ef7c28035ca1b197abfffb70fae7bfb13c3025a"
+    }
+  ],
+  "config/ftbquests/quests/chapters/local_guide_07_sfm.snbt": [
+    {
+      "published_sha256": "4406e66bcbefdeab2a352bc0c6a7692f1ff205b0583a79fdb3ed0682e109d7f6",
+      "runtime_sha256": "648f45094b8a49997796579cd70efc048c05a6fe2475a94d7e9f53957834bc32"
+    },
+    {
+      "published_sha256": "4406e66bcbefdeab2a352bc0c6a7692f1ff205b0583a79fdb3ed0682e109d7f6",
+      "runtime_sha256": "a7979473e7cff436190d26f79622601aa259aeee88422d276b31cb82721f6535"
+    }
+  ],
+  "config/ftbquests/quests/chapters/local_guide_08_xnet.snbt": [
+    {
+      "published_sha256": "3403dc8220ffebf653ca4fcef7c422aaffe663c16e17fdf7be7def8dcb731b12",
+      "runtime_sha256": "340ed69bf1940749964faf833fbfef067c087ed10b46c6c2cb8af4b80ab085f8"
+    },
+    {
+      "published_sha256": "3403dc8220ffebf653ca4fcef7c422aaffe663c16e17fdf7be7def8dcb731b12",
+      "runtime_sha256": "56017f44fe97eac80ffe1ef507a40725b09b16ff08cb3f54b1a357c65cfca994"
+    }
+  ],
+  "config/ftbquests/quests/chapters/local_guide_09_computercraft.snbt": [
+    {
+      "published_sha256": "9c25fbc241c44dab292ff7bb58cde2cac41bb4ffefe4914ff8ec5fbec8731bc3",
+      "runtime_sha256": "1a4fc5cafd487ba3beebae4290fa5fcea1e1383b8b454d8fe7f0064aeed4e94a"
+    },
+    {
+      "published_sha256": "9c25fbc241c44dab292ff7bb58cde2cac41bb4ffefe4914ff8ec5fbec8731bc3",
+      "runtime_sha256": "2dfdb33491e1422a3b5ea34c69ff2e6c87a181a3e9873d34994a427fd262f31a"
+    }
+  ],
+  "config/ftbquests/quests/chapters/local_guide_10_rftools.snbt": [
+    {
+      "published_sha256": "6e3cf50df2c7c0e6e3b15878f1135d5140a01697be01e2be056113c7930b32e6",
+      "runtime_sha256": "5c1f987ec793c52aee4643e679c2e77a46dea3dccc983dfc260d71a62e38694e"
+    },
+    {
+      "published_sha256": "6e3cf50df2c7c0e6e3b15878f1135d5140a01697be01e2be056113c7930b32e6",
+      "runtime_sha256": "b8c6aeb63479b95148daff68350afbdc1eeac907ece30e593f2b51a00e698ff5"
+    }
+  ]
+}

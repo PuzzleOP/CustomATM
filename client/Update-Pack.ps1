@@ -4,7 +4,7 @@ param([string]$Profile, [switch]$CheckOnly, [switch]$LibraryOnly)
 $ErrorActionPreference = 'Stop'
 $ProgressPreference = 'SilentlyContinue'
 $script:Repo = 'PuzzleOP/CustomATM'
-$script:ClientVersion = 3
+$script:ClientVersion = 4
 $script:Headers = @{ 'User-Agent'='CustomATM-Updater/1'; 'Accept'='application/vnd.github+json' }
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Add-Type -AssemblyName System.IO.Compression
@@ -72,6 +72,12 @@ function Assert-Manifest($Manifest,[string]$Root) {
         $null=Safe-Path $Root $f.path
         if ($seen.ContainsKey($f.path)) { throw "Duplicate update path: $($f.path)" };$seen[$f.path]=$true
         if ($f.sha256 -notmatch '^[0-9a-f]{64}$' -or $f.size -lt 0) { throw "Invalid file metadata: $($f.path)" }
+        if ($f.previous_forms) {
+            if ($f.path -notmatch '^config/ftbquests/quests/chapters/local_guide_[0-9]{2}_[a-z_]+\.snbt$' -or @($f.previous_forms).Count -gt 10) { throw 'Runtime rewrite allowances are restricted to our quest chapters.' }
+            foreach($form in @($f.previous_forms)) {
+                if ($form.published_sha256 -notmatch '^[0-9a-f]{64}$' -or $form.runtime_sha256 -notmatch '^[0-9a-f]{64}$') { throw 'Invalid quest rewrite checksum.' }
+            }
+        }
         if ($f.source -eq 'url') { Assert-DownloadUrl $f.url }
         elseif ($f.source -ne 'payload') { throw 'Unknown download type.' }
     }
@@ -100,6 +106,13 @@ function Assert-GameClosed {
     # Conservative: prevents changes under an active game, even when its command line is unavailable.
     if (@(Get-Process -Name java,javaw -ErrorAction SilentlyContinue).Count) { throw 'Close Minecraft (and any other Java program) before updating, then try again.' }
 }
+function Test-KnownQuestRewrite($File,[string]$PublishedHash,[string]$ActualHash) {
+    if ($File.path -notmatch '^config/ftbquests/quests/chapters/local_guide_[0-9]{2}_[a-z_]+\.snbt$') { return $false }
+    foreach($form in @($File.previous_forms)) {
+        if ($form -and $form.published_sha256 -eq $PublishedHash -and $form.runtime_sha256 -eq $ActualHash) { return $true }
+    }
+    return $false
+}
 function Get-Plan([string]$Root,$Manifest,$Previous) {
     $desired=@{};$old=@{};$removed=@{};$plan=New-Object Collections.Generic.List[object]
     foreach($f in @($Manifest.files)) { $desired[$f.path]=$f }
@@ -115,7 +128,7 @@ function Get-Plan([string]$Root,$Manifest,$Previous) {
             # Mods commonly expand/reformat configs on launch. Preserve those changes when
             # the published config itself has not changed; still pin every mod jar exactly.
             if ($actual -and !$f.path.StartsWith('mods/') -and $old.ContainsKey($f.path) -and $old[$f.path] -eq $f.sha256) { continue }
-            if ($actual -and $old.ContainsKey($f.path) -and $actual -ne $old[$f.path]) { throw "Local edits detected in $($f.path). Keep a copy of your edits, then restore the previous published version or ask the pack maintainer to include your change." }
+            if ($actual -and $old.ContainsKey($f.path) -and $actual -ne $old[$f.path] -and !(Test-KnownQuestRewrite $f $old[$f.path] $actual)) { throw "Local edits detected in $($f.path). Keep a copy of your edits, then restore the previous published version or ask the pack maintainer to include your change." }
             if ($actual -and !$old.ContainsKey($f.path) -and $f.path.StartsWith('mods/')) { throw "Unexpected contents in $($f.path). Repair that mod through CurseForge before updating." }
             $plan.Add([pscustomobject]@{path=$f.path;oldHash=$actual;newHash=$f.sha256;action='write';source=$f})
         }

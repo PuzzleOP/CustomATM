@@ -24,6 +24,8 @@ Full base-pack upgrades require a separate migration and a new base requirement.
 
 ## Profile bootstrap
 
+Release 1.3.0 requires client version 4 and a one-time Setup ZIP refresh. `pack/known-runtime-forms.json` contains exact FTB-saved quest hashes tied to their old published hashes, verified with `QuestRewriteCheck.java`. Add a rewrite only after comparing its semantic content to the corresponding published chapter; never add arbitrary personal edits or allow whole config directories. All replacements still use normal transaction backups.
+
 Client version 3 creates a native CurseForge profile through the running Standalone app's local agent. A GUID-bound `.customatm/bootstrap.json` receipt identifies profiles it owns; setup never adopts unrelated profiles just because they have the same display name. The ATM10 archive is downloaded from its original ForgeCDN URL and checked against a pinned SHA256. Only its base overrides are extracted locally; they are not republished. Four original shader packs are pinned in `client/base-extras.json`. The published mod manifest supplies the complete customized mod set.
 
 `Setup-Profile.ps1` contains the adapter for the local agent API. Its temporary connection key stays in memory and is not shipped or logged. This is an internal interface verified with the installed Standalone build; future CurseForge changes may require updating this adapter. CurseForge must be installed and its Minecraft setup completed once. The bootstrap does not install CurseForge itself or support the Overwolf edition.

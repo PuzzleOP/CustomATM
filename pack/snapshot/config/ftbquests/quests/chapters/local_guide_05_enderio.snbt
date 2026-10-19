@@ -1,6 +1,6 @@
 {
   "default_hide_dependency_lines": false,
-  "default_quest_shape": "square",
+  "default_quest_shape": "hexagon",
   "filename": "local_guide_05_enderio",
   "group": "28D38D1EC21B4002",
   "icon": {
@@ -21,13 +21,14 @@
           "type": "checkmark"
         }
       ],
-      "x": 0.0,
-      "y": 0.0,
-      "shape": "gear",
+      "x": -3,
+      "y": 0,
+      "shape": "diamond",
       "icon": {
         "id": "enderio:alloy_smelter",
         "count": 1
-      }
+      },
+      "size": 1.5
     },
     {
       "id": "3E769EE8AD936310",
@@ -40,32 +41,51 @@
           "type": "checkmark"
         }
       ],
-      "x": 3.0,
-      "y": 0.0,
+      "x": -3,
+      "y": 3,
       "shape": "square",
       "icon": {
         "id": "minecraft:book",
         "count": 1
-      }
+      },
+      "optional": true
     },
     {
       "id": "2E87657515D476F3",
       "dependencies": [
-        "3E769EE8AD936310"
+        "7C4EF9DE3DEF3BA6"
       ],
       "tasks": [
         {
+          "id": "5A03F9852F964490",
+          "type": "item",
+          "item": {
+            "id": "enderio:conduit_binder",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
           "id": "41159FEA92B86C19",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
+      "x": 0.0,
       "y": 0.0,
-      "shape": "square",
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "enderio:conduit_binder",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "62C774560475AB6B",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "2F7775F6E4C7C850",
@@ -85,16 +105,24 @@
         },
         {
           "id": "3A5880F1DD16574C",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
+      "x": 3.0,
       "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "enderio:basic_capacitor_bank",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "55A9E0013FF152C6",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "052DA5A01BF9913D",
@@ -114,16 +142,24 @@
         },
         {
           "id": "4EEE8D270E09E0C0",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
+      "x": 6.0,
       "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "enderio:alloy_smelter",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "6E19BEA1FE8CEFB0",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "4D6BABA78A1A59FF",
@@ -138,17 +174,34 @@
             "id": "enderio:energetic_alloy_ingot",
             "count": 1
           },
-          "count": 1,
+          "count": 4,
+          "consume_items": false
+        },
+        {
+          "id": "070BB7BD068B7688",
+          "type": "item",
+          "item": {
+            "id": "enderio:conductive_alloy_ingot",
+            "count": 1
+          },
+          "count": 4,
           "consume_items": false
         }
       ],
-      "x": 12.0,
-      "y": 3.0,
+      "x": 9.0,
+      "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "enderio:energetic_alloy_ingot",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "2E4A810282DE91EC",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "519FCA5725322C0C",
@@ -168,16 +221,24 @@
         },
         {
           "id": "5A5012AC97C2692E",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 3.0,
+      "x": 12.0,
+      "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "enderio:sag_mill",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "1EB8D2A88817D340",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "5B861CA204819EB3",
@@ -186,22 +247,40 @@
       ],
       "tasks": [
         {
+          "id": "6B91E26BFCA7DC83",
+          "type": "item",
+          "item": {
+            "id": "enderio:yeta_wrench",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "002F7773E819906D",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
-      "y": 3.0,
-      "shape": "square",
+      "x": 15.0,
+      "y": 0.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "enderio:yeta_wrench",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "2290F852B1CA5C66",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "495FB0FFBFA9A604",
       "dependencies": [
-        "5B861CA204819EB3"
+        "052DA5A01BF9913D"
       ],
       "tasks": [
         {
@@ -215,16 +294,16 @@
             }
           },
           "count": 1,
-          "consume_items": false,
-          "match_components": "strict"
+          "consume_items": false
         },
         {
           "id": "0945C5CE033D8D93",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 3.0,
-      "y": 3.0,
+      "x": 0.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "enderio:conduit",
@@ -232,7 +311,14 @@
         "components": {
           "enderio:conduit": "enderio:item"
         }
-      }
+      },
+      "rewards": [
+        {
+          "id": "41DC47AED8D9DE6D",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "7A32722C6F05946B",
@@ -241,17 +327,35 @@
       ],
       "tasks": [
         {
+          "id": "013E13E7296C2DF8",
+          "type": "item",
+          "item": {
+            "id": "enderio:basic_item_filter",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "5F5A18F91DDA818B",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 0.0,
-      "y": 3.0,
-      "shape": "square",
+      "x": 3.0,
+      "y": 4.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "enderio:basic_item_filter",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "54B784F3DF146C26",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "1958E66FB7A2F755",
@@ -264,8 +368,8 @@
           "type": "checkmark"
         }
       ],
-      "x": 0.0,
-      "y": 6.0,
+      "x": 6.0,
+      "y": 4.0,
       "shape": "square",
       "icon": {
         "id": "minecraft:book",
@@ -279,67 +383,114 @@
       ],
       "tasks": [
         {
+          "id": "7F2288B2B557F3DD",
+          "type": "item",
+          "item": {
+            "id": "enderio:fluid_tank",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "17F0BC12A9B40C4D",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 3.0,
-      "y": 6.0,
-      "shape": "square",
+      "x": 9.0,
+      "y": 4.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "enderio:fluid_tank",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "7F496A41E01C4416",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "36DB0C7DDC0204CC",
+      "dependencies": [
+        "5B861CA204819EB3"
+      ],
+      "tasks": [
+        {
+          "id": "53690E880B10EC56",
+          "type": "item",
+          "item": {
+            "id": "enderio:double_layer_capacitor",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "307020DCB30DD339",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 18.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "enderio:double_layer_capacitor",
+        "count": 1
+      },
+      "rewards": [
+        {
+          "id": "6B2A36B0F3D5D5F8",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "1CF4535FA329C06F",
       "dependencies": [
         "0847046BBB793BC3"
       ],
       "tasks": [
         {
-          "id": "307020DCB30DD339",
-          "type": "checkmark"
-        }
-      ],
-      "x": 6.0,
-      "y": 6.0,
-      "shape": "square",
-      "icon": {
-        "id": "minecraft:book",
-        "count": 1
-      }
-    },
-    {
-      "id": "1CF4535FA329C06F",
-      "dependencies": [
-        "36DB0C7DDC0204CC"
-      ],
-      "tasks": [
+          "id": "751FC9E4561F3BD3",
+          "type": "item",
+          "item": {
+            "id": "enderio:energetic_alloy_ingot",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        },
         {
           "id": "232E974278F09CD3",
           "type": "checkmark"
         }
       ],
-      "x": 9.0,
-      "y": 6.0,
-      "shape": "gear",
+      "x": 12.0,
+      "y": 4.0,
+      "shape": "diamond",
       "icon": {
-        "id": "minecraft:book",
+        "id": "enderio:energetic_alloy_ingot",
         "count": 1
       },
+      "size": 1.5,
       "rewards": [
         {
-          "id": "3BA5739D9E428197",
+          "id": "18409E6150A19206",
           "type": "xp",
-          "xp": 25
+          "xp": 75
         }
       ]
     },
     {
       "id": "18CB692F90461B2E",
       "dependencies": [
-        "1CF4535FA329C06F"
+        "4D6BABA78A1A59FF"
       ],
       "tasks": [
         {
@@ -354,21 +505,30 @@
         },
         {
           "id": "2DD0CAAAE0AA3A72",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 6.0,
+      "x": 0.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "enderio:soul_vial",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "4DB63D3396A4D752",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "50F2AAA0133514C2",
       "dependencies": [
-        "18CB692F90461B2E"
+        "18CB692F90461B2E",
+        "052DA5A01BF9913D"
       ],
       "tasks": [
         {
@@ -383,16 +543,24 @@
         },
         {
           "id": "05E2A68F2E0D9E42",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 9.0,
+      "x": 3.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "enderio:soul_binder",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "546C81D1580B8DF1",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "69E2304783FD1AF7",
@@ -412,16 +580,24 @@
         },
         {
           "id": "52911EDE9F2DC0A1",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 9.0,
+      "x": 6.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "enderio:powered_spawner",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "01233C4466A4E269",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "3F0678911B3AD0EC",
@@ -441,21 +617,29 @@
         },
         {
           "id": "1E12761C0F40FCC5",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
-      "y": 9.0,
+      "x": 9.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "enderio:xp_obelisk",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "082E3FC9A6C22766",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "7DE59D4E25BF5649",
       "dependencies": [
-        "3F0678911B3AD0EC"
+        "4D6BABA78A1A59FF"
       ],
       "tasks": [
         {
@@ -470,61 +654,364 @@
         },
         {
           "id": "1FE56A231F891D03",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 3.0,
-      "y": 9.0,
+      "x": 0.0,
+      "y": 12.0,
       "shape": "hexagon",
       "icon": {
         "id": "enderio:farming_station",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "39CA31888DFB8583",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "0173532A28D86EA6",
       "dependencies": [
-        "7DE59D4E25BF5649"
+        "052DA5A01BF9913D"
       ],
       "tasks": [
         {
+          "id": "26EFD52EBE111C29",
+          "type": "item",
+          "item": {
+            "id": "enderio:enchanter",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "36B12A9E61626741",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 0.0,
-      "y": 9.0,
-      "shape": "square",
+      "x": 3.0,
+      "y": 12.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "enderio:enchanter",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "5D761C6B627859B6",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "114C498123F7AD6F",
       "dependencies": [
-        "0173532A28D86EA6"
+        "1CF4535FA329C06F"
       ],
       "tasks": [
+        {
+          "id": "43EBFE6E28A3170E",
+          "type": "item",
+          "item": {
+            "id": "enderio:vibrant_alloy_ingot",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        },
         {
           "id": "31B2DD453A0061F3",
           "type": "checkmark"
         }
       ],
-      "x": 0.0,
-      "y": 12.0,
-      "shape": "gear",
+      "x": 15.0,
+      "y": 4.0,
+      "shape": "diamond",
       "icon": {
-        "id": "minecraft:book",
+        "id": "enderio:vibrant_alloy_ingot",
         "count": 1
       },
+      "size": 1.5,
       "rewards": [
         {
-          "id": "1B7587B3B54F395C",
+          "id": "6E72404125F84E0A",
+          "type": "xp",
+          "xp": 75
+        }
+      ]
+    },
+    {
+      "id": "15DA28DCBC196B41",
+      "dependencies": [
+        "2E87657515D476F3"
+      ],
+      "tasks": [
+        {
+          "id": "46BFD9B6F1006640",
+          "type": "item",
+          "item": {
+            "id": "enderio:conduit_binder",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        },
+        {
+          "id": "3C2392B71A064B57",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 0.0,
+      "y": 1.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "enderio:conduit_binder",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "5260D2CB4AF6FB10",
           "type": "xp",
           "xp": 25
         }
       ]
+    },
+    {
+      "id": "495F6D63B901B423",
+      "dependencies": [
+        "052DA5A01BF9913D"
+      ],
+      "tasks": [
+        {
+          "id": "6996CA6F8E2B36DE",
+          "type": "item",
+          "item": {
+            "id": "enderio:conductive_alloy_ingot",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
+          "id": "6FF245242EBAC9D6",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 6.0,
+      "y": 1.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "enderio:conductive_alloy_ingot",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "31918F3515E22779",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "28D7FBF6F7D5296E",
+      "dependencies": [
+        "4D6BABA78A1A59FF"
+      ],
+      "tasks": [
+        {
+          "id": "14B95EB4297BEA58",
+          "type": "item",
+          "item": {
+            "id": "enderio:vibrant_alloy_ingot",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
+          "id": "17079987F1593F28",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 9.0,
+      "y": 1.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "enderio:vibrant_alloy_ingot",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "194A1A1AEA8AE8D4",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "308340B2013E9493",
+      "dependencies": [
+        "519FCA5725322C0C"
+      ],
+      "tasks": [
+        {
+          "id": "71FCD9465933DB69",
+          "type": "item",
+          "item": {
+            "id": "enderio:sag_mill",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2306ED35505819A5",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 12.0,
+      "y": 1.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "enderio:sag_mill",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "005EC35149B77663",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "5DAA7033E72D7051",
+      "dependencies": [
+        "36DB0C7DDC0204CC"
+      ],
+      "tasks": [
+        {
+          "id": "450243152AEEB5DC",
+          "type": "item",
+          "item": {
+            "id": "enderio:advanced_capacitor_bank",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "6FEA6F97FDA9E7EC",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 18.0,
+      "y": 1.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "enderio:advanced_capacitor_bank",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "41364B7431A49DE2",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "3BFAF61D9C21CB29",
+      "dependencies": [
+        "3F0678911B3AD0EC"
+      ],
+      "tasks": [
+        {
+          "id": "22DD24142550CC5C",
+          "type": "item",
+          "item": {
+            "id": "enderio:xp_obelisk",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "489302E66608074B",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 9.0,
+      "y": 9.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "enderio:xp_obelisk",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "25D333EBAEAE3587",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "76251875E0E332C7",
+      "image": "customatm:textures/quests/enderio_lane_0.png",
+      "x": 5.0,
+      "y": -1.15,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "42AC2504230DB21F",
+      "image": "customatm:textures/quests/enderio_lane_1.png",
+      "x": 5.0,
+      "y": 2.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "341D1700864EC51E",
+      "image": "customatm:textures/quests/enderio_lane_2.png",
+      "x": 5.0,
+      "y": 6.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "0A8C1F2AA7B5AD61",
+      "image": "customatm:textures/quests/enderio_lane_3.png",
+      "x": 5.0,
+      "y": 10.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
     }
   ]
 }

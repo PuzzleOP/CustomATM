@@ -16,6 +16,8 @@ The first run installs a permanent **Update Pack.cmd** inside the profile and an
 
 ## Future updates
 
+**Updating to 1.3.0: download and extract the new CustomATM-Setup.zip once, then run its Update Pack.cmd with Minecraft closed.** Updater version 4 recognizes verified FTB quest-file rewrites. Older shortcuts stop with an instruction to get the new Setup ZIP. Setup reuses your existing CustomATM tile and refreshes its updater/shortcut; it does not reinstall the base or copy worlds.
+
 Close Minecraft and double-click **Update Pack.cmd** when the pack maintainer publishes an update. It checks the latest published release and downloads changed/missing managed files. You do not need to reinstall the whole pack or download the Setup ZIP again unless an update explicitly requires a newer updater.
 
 Both players and the server need the matching release. This updater manages client profiles; it does not configure or update a dedicated server yet.

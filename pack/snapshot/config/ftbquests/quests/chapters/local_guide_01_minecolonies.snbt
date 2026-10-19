@@ -1,6 +1,6 @@
 {
   "default_hide_dependency_lines": false,
-  "default_quest_shape": "square",
+  "default_quest_shape": "hexagon",
   "filename": "local_guide_01_minecolonies",
   "group": "28D38D1EC21B4002",
   "icon": {
@@ -21,13 +21,14 @@
           "type": "checkmark"
         }
       ],
-      "x": 0.0,
-      "y": 0.0,
-      "shape": "gear",
+      "x": -3,
+      "y": 0,
+      "shape": "diamond",
       "icon": {
         "id": "minecolonies:blockhuttownhall",
         "count": 1
-      }
+      },
+      "size": 1.5
     },
     {
       "id": "55EDA03B1FB4A0D6",
@@ -40,32 +41,51 @@
           "type": "checkmark"
         }
       ],
-      "x": 3.0,
-      "y": 0.0,
+      "x": -3,
+      "y": 3,
       "shape": "square",
       "icon": {
         "id": "minecraft:book",
         "count": 1
-      }
+      },
+      "optional": true
     },
     {
       "id": "40376CAADCA40739",
       "dependencies": [
-        "55EDA03B1FB4A0D6"
+        "59C2E82B3B2557C7"
       ],
       "tasks": [
         {
+          "id": "7C3D87A5EE39D8F0",
+          "type": "item",
+          "item": {
+            "id": "structurize:sceptergold",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "40521F65525C7D15",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
+      "x": 0.0,
       "y": 0.0,
-      "shape": "square",
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "structurize:sceptergold",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "0C697C40343F0DEC",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "71ADC4A26B994969",
@@ -78,7 +98,7 @@
           "type": "checkmark"
         }
       ],
-      "x": 9.0,
+      "x": 3.0,
       "y": 0.0,
       "shape": "square",
       "icon": {
@@ -104,16 +124,24 @@
         },
         {
           "id": "072E1C7622F3D5F3",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
+      "x": 6.0,
       "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "minecolonies:blockhuttownhall",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "39EBA54AC28281B9",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "6DCD38F81AE6889F",
@@ -133,16 +161,24 @@
         },
         {
           "id": "2D3016661DBDBA7A",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 3.0,
+      "x": 9.0,
+      "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "minecolonies:blockhutbuilder",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "30214645AAD4D0BA",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "5CE76239A3358618",
@@ -162,21 +198,29 @@
         },
         {
           "id": "20A6328863326D41",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 3.0,
+      "x": 12.0,
+      "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "minecolonies:clipboard",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "69B005D3C065E464",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "61C01C6EB265C963",
       "dependencies": [
-        "5CE76239A3358618"
+        "58F86761CC305FCA"
       ],
       "tasks": [
         {
@@ -191,21 +235,29 @@
         },
         {
           "id": "789FE9B5023ED13F",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
-      "y": 3.0,
+      "x": 3.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "minecolonies:blockhutcook",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "3D7EC3D4BA92905D",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "58F86761CC305FCA",
       "dependencies": [
-        "61C01C6EB265C963"
+        "7BC3A2AC07F7B091"
       ],
       "tasks": [
         {
@@ -220,21 +272,29 @@
         },
         {
           "id": "310E33F64326FBFA",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 3.0,
-      "y": 3.0,
+      "x": 0.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "minecolonies:blockhutcitizen",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "21647E556F721B7B",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "082E6F2C61EF913B",
       "dependencies": [
-        "58F86761CC305FCA"
+        "6DCD38F81AE6889F"
       ],
       "tasks": [
         {
@@ -249,21 +309,29 @@
         },
         {
           "id": "581D5E484F8DFBFC",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
       "x": 0.0,
-      "y": 3.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "minecolonies:blockhutlumberjack",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "1EAC5965855EFE16",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "2A3B0630147CC528",
       "dependencies": [
-        "082E6F2C61EF913B"
+        "6DCD38F81AE6889F"
       ],
       "tasks": [
         {
@@ -278,16 +346,24 @@
         },
         {
           "id": "2B4CE46E6CBCAD74",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 0.0,
-      "y": 6.0,
+      "x": 3.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "minecolonies:blockhutwarehouse",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "5C21E9800E21624F",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "302E3FA9C8C56751",
@@ -307,21 +383,29 @@
         },
         {
           "id": "3A7962CE16538B8F",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 3.0,
-      "y": 6.0,
+      "x": 6.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "minecolonies:blockhutdeliveryman",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "079AA1DDF6B059B7",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "41054430E156DC83",
       "dependencies": [
-        "302E3FA9C8C56751"
+        "61C01C6EB265C963"
       ],
       "tasks": [
         {
@@ -336,21 +420,30 @@
         },
         {
           "id": "578044AF1711F7EF",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
       "x": 6.0,
-      "y": 6.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "minecolonies:blockhutfarmer",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "61C25E2D884A5A6D",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "29940787C35F8C0A",
       "dependencies": [
-        "41054430E156DC83"
+        "325942E4FB3ECE8D",
+        "082E6F2C61EF913B"
       ],
       "tasks": [
         {
@@ -365,21 +458,29 @@
         },
         {
           "id": "405FAD816EBDC3DC",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 6.0,
+      "x": 12.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "minecolonies:blockhutsawmill",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "6508CCE10DFC7056",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "0DEF901F188B8E8D",
       "dependencies": [
-        "29940787C35F8C0A"
+        "325942E4FB3ECE8D"
       ],
       "tasks": [
         {
@@ -394,21 +495,30 @@
         },
         {
           "id": "5382EBCDBF41CBCA",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 6.0,
+      "x": 15.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "minecolonies:blockhutstonemason",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "79351E689BF7E1C2",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "325942E4FB3ECE8D",
       "dependencies": [
-        "0DEF901F188B8E8D"
+        "2A3B0630147CC528",
+        "302E3FA9C8C56751"
       ],
       "tasks": [
         {
@@ -423,40 +533,66 @@
         },
         {
           "id": "311F5C88EA092A09",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 9.0,
+      "x": 9.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "minecolonies:blockhutuniversity",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "649ABF668A60F24D",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "43F029CD893A6FF1",
       "dependencies": [
-        "325942E4FB3ECE8D"
+        "6DCD38F81AE6889F"
       ],
       "tasks": [
         {
+          "id": "0AB176836246D1D7",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:clipboard",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "1FD8742FE8DE0365",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 9.0,
-      "shape": "square",
+      "x": 15.0,
+      "y": 0.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecolonies:clipboard",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "03D26F70354FD0C6",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "3FCF38C8A5D69203",
       "dependencies": [
-        "43F029CD893A6FF1"
+        "055FBE8444D16357"
       ],
       "tasks": [
         {
@@ -471,21 +607,29 @@
         },
         {
           "id": "419FB675F6DBA4A1",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
-      "y": 9.0,
+      "x": 12.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "minecolonies:blockhutguardtower",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "4514070F62B78872",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "055FBE8444D16357",
       "dependencies": [
-        "3FCF38C8A5D69203"
+        "41054430E156DC83"
       ],
       "tasks": [
         {
@@ -500,21 +644,29 @@
         },
         {
           "id": "2E018C6E27723ABD",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 3.0,
-      "y": 9.0,
+      "x": 9.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "minecolonies:blockhuttavern",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "640AB08B6C04B88C",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "68E68A1EDDCDE2AC",
       "dependencies": [
-        "055FBE8444D16357"
+        "6DCD38F81AE6889F"
       ],
       "tasks": [
         {
@@ -523,7 +675,7 @@
         }
       ],
       "x": 0.0,
-      "y": 9.0,
+      "y": 12.0,
       "shape": "square",
       "icon": {
         "id": "minecraft:book",
@@ -533,28 +685,317 @@
     {
       "id": "1B6DFE41CB364491",
       "dependencies": [
-        "68E68A1EDDCDE2AC"
+        "302E3FA9C8C56751",
+        "29940787C35F8C0A",
+        "0DEF901F188B8E8D"
       ],
       "tasks": [
+        {
+          "id": "2FD267B439EB7FF6",
+          "type": "item",
+          "item": {
+            "id": "minecraft:oak_stairs",
+            "count": 1
+          },
+          "count": 32,
+          "consume_items": false
+        },
+        {
+          "id": "360E2D1B7DEF6230",
+          "type": "item",
+          "item": {
+            "id": "minecraft:stone_bricks",
+            "count": 1
+          },
+          "count": 32,
+          "consume_items": false
+        },
         {
           "id": "757ABD17CEF8742D",
           "type": "checkmark"
         }
       ],
-      "x": 0.0,
+      "x": 3.0,
       "y": 12.0,
-      "shape": "gear",
+      "shape": "diamond",
       "icon": {
-        "id": "minecraft:book",
+        "id": "minecraft:oak_stairs",
         "count": 1
       },
+      "size": 1.5,
       "rewards": [
         {
-          "id": "0B27911121CD236C",
+          "id": "7617A0DF6D354B02",
+          "type": "xp",
+          "xp": 75
+        }
+      ]
+    },
+    {
+      "id": "2792DEA314B1D737",
+      "dependencies": [
+        "40376CAADCA40739"
+      ],
+      "tasks": [
+        {
+          "id": "6BDFA4C55FC8FF93",
+          "type": "item",
+          "item": {
+            "id": "structurize:sceptergold",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "065E60AEF153265E",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 0.0,
+      "y": 1.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "structurize:sceptergold",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "07EE018EF3F12412",
           "type": "xp",
           "xp": 25
         }
       ]
+    },
+    {
+      "id": "6240DEF3628AD483",
+      "dependencies": [
+        "082E6F2C61EF913B"
+      ],
+      "tasks": [
+        {
+          "id": "2DC41D9514F1853A",
+          "type": "item",
+          "item": {
+            "id": "minecraft:oak_log",
+            "count": 1
+          },
+          "count": 32,
+          "consume_items": false
+        },
+        {
+          "id": "3C20201829CC9C3D",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 0.0,
+      "y": 9.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecraft:oak_log",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "40ED8AE4A6B176E3",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "0F19DC9B4E73CE79",
+      "dependencies": [
+        "29940787C35F8C0A"
+      ],
+      "tasks": [
+        {
+          "id": "4B612A81550BFF68",
+          "type": "item",
+          "item": {
+            "id": "minecraft:oak_stairs",
+            "count": 1
+          },
+          "count": 32,
+          "consume_items": false
+        },
+        {
+          "id": "6CC26FB63CBA7023",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 12.0,
+      "y": 9.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecraft:oak_stairs",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "2BA2676B51E8EAB5",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "52B6CD346F8A754D",
+      "dependencies": [
+        "325942E4FB3ECE8D"
+      ],
+      "tasks": [
+        {
+          "id": "79B513A24B08A6E9",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:blockhutblacksmith",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "02B5E48DE9AEC994",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 9.0,
+      "y": 9.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:blockhutblacksmith",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "14C429EF0BA77E60",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "4B56544D92EC807A",
+      "dependencies": [
+        "41054430E156DC83"
+      ],
+      "tasks": [
+        {
+          "id": "2DB864ACF087F56F",
+          "type": "item",
+          "item": {
+            "id": "minecraft:bread",
+            "count": 1
+          },
+          "count": 32,
+          "consume_items": false
+        },
+        {
+          "id": "2E6348F250A7D9D9",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 6.0,
+      "y": 5.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecraft:bread",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "54DB1941773A321D",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "15073C9BAA85201C",
+      "dependencies": [
+        "43F029CD893A6FF1"
+      ],
+      "tasks": [
+        {
+          "id": "0729E4FE7202E5CE",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:blockhutbuilder",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "3FCD96571384FCEE",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 15.0,
+      "y": 1.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:blockhutbuilder",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "6F286B009DA27ED9",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "28B9AFB955A465BD",
+      "image": "customatm:textures/quests/minecolonies_lane_0.png",
+      "x": 5.0,
+      "y": -1.15,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "0BF89E13CB142E8F",
+      "image": "customatm:textures/quests/minecolonies_lane_1.png",
+      "x": 5.0,
+      "y": 2.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "0178B1EB314D16E1",
+      "image": "customatm:textures/quests/minecolonies_lane_2.png",
+      "x": 5.0,
+      "y": 6.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "285F24BDDD91E87C",
+      "image": "customatm:textures/quests/minecolonies_lane_3.png",
+      "x": 5.0,
+      "y": 10.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
     }
   ]
 }

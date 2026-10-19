@@ -1,6 +1,6 @@
 {
   "default_hide_dependency_lines": false,
-  "default_quest_shape": "square",
+  "default_quest_shape": "hexagon",
   "filename": "local_guide_06_astral",
   "group": "28D38D1EC21B4002",
   "icon": {
@@ -21,13 +21,14 @@
           "type": "checkmark"
         }
       ],
-      "x": 0.0,
-      "y": 0.0,
-      "shape": "gear",
+      "x": -3,
+      "y": 0,
+      "shape": "diamond",
       "icon": {
         "id": "astralsorcery:tome",
         "count": 1
-      }
+      },
+      "size": 1.5
     },
     {
       "id": "6537F2A7876A677B",
@@ -40,18 +41,19 @@
           "type": "checkmark"
         }
       ],
-      "x": 3.0,
-      "y": 0.0,
+      "x": -3,
+      "y": 3,
       "shape": "square",
       "icon": {
         "id": "minecraft:book",
         "count": 1
-      }
+      },
+      "optional": true
     },
     {
       "id": "329B06384D220AE6",
       "dependencies": [
-        "6537F2A7876A677B"
+        "492340992A6EADAC"
       ],
       "tasks": [
         {
@@ -65,13 +67,20 @@
           "consume_items": false
         }
       ],
-      "x": 6.0,
+      "x": 0.0,
       "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:tome",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "6ED58CF4D467D987",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "0A5DD29211B6E891",
@@ -86,17 +95,34 @@
             "id": "astralsorcery:aquamarine",
             "count": 1
           },
-          "count": 1,
+          "count": 8,
+          "consume_items": false
+        },
+        {
+          "id": "1C3E318E9B193ED7",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:marble_raw",
+            "count": 1
+          },
+          "count": 32,
           "consume_items": false
         }
       ],
-      "x": 9.0,
+      "x": 3.0,
       "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:aquamarine",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "06128A3085C16CEF",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "142538FFC0673A1D",
@@ -115,13 +141,20 @@
           "consume_items": false
         }
       ],
-      "x": 12.0,
+      "x": 6.0,
       "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:constellation_paper",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "5858D2D8C34F46C7",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "62AAFA8076D01B14",
@@ -141,16 +174,24 @@
         },
         {
           "id": "64CBA76933310A70",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 3.0,
+      "x": 9.0,
+      "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:astrolabe",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "3C456A45F0D5475A",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "3FC719625D2AAD38",
@@ -159,17 +200,35 @@
       ],
       "tasks": [
         {
+          "id": "50EEB79A36A13B5E",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:astrolabe",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "452A34257426BE34",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 3.0,
-      "shape": "square",
+      "x": 12.0,
+      "y": 0.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "astralsorcery:astrolabe",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "1A6863C18A6997CB",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "62B3F6E1E3B71A8E",
@@ -188,13 +247,20 @@
           "consume_items": false
         }
       ],
-      "x": 6.0,
-      "y": 3.0,
+      "x": 15.0,
+      "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:wand",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "01F21CDF93236735",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "41196F16F623D4D8",
@@ -213,13 +279,20 @@
           "consume_items": false
         }
       ],
-      "x": 3.0,
-      "y": 3.0,
+      "x": 18.0,
+      "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:rock_crystal",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "6772919778BD9831",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "0CEBE470008B5F33",
@@ -239,16 +312,24 @@
         },
         {
           "id": "688357CF11E01AE0",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 0.0,
-      "y": 3.0,
+      "x": 21.0,
+      "y": 0.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:altar_illumination",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "610B7BCE8CC4CFAA",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "422823A2345D74FF",
@@ -268,16 +349,24 @@
         },
         {
           "id": "604C80EC71C6BA8D",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
       "x": 0.0,
-      "y": 6.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:lightwell",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "06CCE3A49690055C",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "3EBCB8FDC0B1D518",
@@ -294,15 +383,32 @@
           },
           "count": 1,
           "consume_items": false
+        },
+        {
+          "id": "258512D445CA5E10",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:stardust",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
         }
       ],
       "x": 3.0,
-      "y": 6.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:starmetal_ingot",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "6373E8F107DC05BF",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "2E04B992EDF7CAE9",
@@ -317,25 +423,35 @@
             "id": "astralsorcery:focus_relay",
             "count": 1
           },
-          "count": 1,
+          "count": 4,
           "consume_items": false
         },
         {
           "id": "2AAE5DBBA833A5ED",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
       "x": 6.0,
-      "y": 6.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:focus_relay",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "5FEA31A190EDE109",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "41EC1C221A41A935",
       "dependencies": [
+        "0CEBE470008B5F33",
+        "422823A2345D74FF",
         "2E04B992EDF7CAE9"
       ],
       "tasks": [
@@ -351,16 +467,24 @@
         },
         {
           "id": "7FF2F70BB41FD99E",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
       "x": 9.0,
-      "y": 6.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:altar_resonance",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "4E8FD37FF5F4025D",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "765A95C8D7785933",
@@ -380,20 +504,29 @@
         },
         {
           "id": "2626ADC5ED0687FE",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
       "x": 12.0,
-      "y": 6.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:infuser",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "3853C8BCB5CD4F94",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "1BD6E00F6CC87805",
       "dependencies": [
+        "41EC1C221A41A935",
         "765A95C8D7785933"
       ],
       "tasks": [
@@ -409,16 +542,24 @@
         },
         {
           "id": "28B7C444D3436231",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 12.0,
-      "y": 9.0,
+      "x": 15.0,
+      "y": 4.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:altar_luminance",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "67A08A8CE7084EF8",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "19A8EA75AB2C1D69",
@@ -438,16 +579,24 @@
         },
         {
           "id": "33C78D4579E27037",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
-      "y": 9.0,
+      "x": 0.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:attunement_altar",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "0542CA59D5F8A84A",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "214EFBFC84DD00A8",
@@ -456,22 +605,40 @@
       ],
       "tasks": [
         {
+          "id": "767CC56324F2F9F1",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:attuned_rock_crystal",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "7E82CFE521BD447B",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
-      "y": 9.0,
-      "shape": "square",
+      "x": 3.0,
+      "y": 8.0,
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "astralsorcery:attuned_rock_crystal",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "3C73CA77AF5F2E26",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "76F0829EBB40EC66",
       "dependencies": [
-        "214EFBFC84DD00A8"
+        "1BD6E00F6CC87805"
       ],
       "tasks": [
         {
@@ -486,16 +653,24 @@
         },
         {
           "id": "175D846542F50902",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 3.0,
-      "y": 9.0,
+      "x": 0.0,
+      "y": 12.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:lumen_array",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "3099A58811C5B1F6",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "3D0E870194144E90",
@@ -515,21 +690,29 @@
         },
         {
           "id": "689649FA12081504",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 0.0,
-      "y": 9.0,
+      "x": 3.0,
+      "y": 12.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:lumen_filament",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "16F6519B8550A270",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "7F6D201DD011DABA",
       "dependencies": [
-        "3D0E870194144E90"
+        "214EFBFC84DD00A8"
       ],
       "tasks": [
         {
@@ -543,22 +726,41 @@
           "consume_items": false
         },
         {
+          "id": "0ECD4053A2E9BD71",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:linking_tool",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "7EF0183F13EC99A5",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 0.0,
-      "y": 12.0,
+      "x": 6.0,
+      "y": 8.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:starlight_focus_rock_crystal",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "42172223753E71E0",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "597437B03E959B34",
       "dependencies": [
-        "7F6D201DD011DABA"
+        "76F0829EBB40EC66",
+        "3D0E870194144E90"
       ],
       "tasks": [
         {
@@ -573,20 +775,30 @@
         },
         {
           "id": "5A0183FAC1C5EBE8",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 3.0,
+      "x": 6.0,
       "y": 12.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:lumen_alchemy_array",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "21AE569ED0F81975",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "2E7D2E5692E2083C",
       "dependencies": [
+        "1BD6E00F6CC87805",
+        "7F6D201DD011DABA",
         "597437B03E959B34"
       ],
       "tasks": [
@@ -602,16 +814,24 @@
         },
         {
           "id": "00382111575E6B42",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 6.0,
+      "x": 9.0,
       "y": 12.0,
       "shape": "hexagon",
       "icon": {
         "id": "astralsorcery:altar_radiance",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "6CB26FFAC09CD874",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "05DF96953BD401F0",
@@ -620,17 +840,35 @@
       ],
       "tasks": [
         {
+          "id": "7848DE99FE439B85",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:iridescent_crystal_pickaxe",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "49065D39557691BD",
-          "type": "checkmark"
+          "type": "checkmark",
+          "optional_task": true
         }
       ],
-      "x": 9.0,
+      "x": 12.0,
       "y": 12.0,
-      "shape": "square",
+      "shape": "hexagon",
       "icon": {
-        "id": "minecraft:book",
+        "id": "astralsorcery:iridescent_crystal_pickaxe",
         "count": 1
-      }
+      },
+      "rewards": [
+        {
+          "id": "482B82A37189F29C",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
     },
     {
       "id": "79DFA6E51292A76D",
@@ -639,24 +877,301 @@
       ],
       "tasks": [
         {
+          "id": "770C17A113D7B303",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:lumen_crystal",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
           "id": "51604B60C71F2C24",
           "type": "checkmark"
         }
       ],
-      "x": 12.0,
+      "x": 15.0,
       "y": 12.0,
-      "shape": "gear",
+      "shape": "diamond",
       "icon": {
-        "id": "minecraft:book",
+        "id": "astralsorcery:lumen_crystal",
         "count": 1
       },
+      "size": 1.5,
       "rewards": [
         {
-          "id": "03EA0822EB880473",
+          "id": "5568785903876A5D",
+          "type": "xp",
+          "xp": 75
+        }
+      ]
+    },
+    {
+      "id": "3C0BAC272E0E96DF",
+      "dependencies": [
+        "0CEBE470008B5F33"
+      ],
+      "tasks": [
+        {
+          "id": "06237BC087A22F0A",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:marble_pillar",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
+          "id": "1F9014CA03D9FF8E",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 21.0,
+      "y": 1.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:marble_pillar",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "711B0C4916B34579",
           "type": "xp",
           "xp": 25
         }
       ]
+    },
+    {
+      "id": "6B6F2A6464B4477B",
+      "dependencies": [
+        "422823A2345D74FF"
+      ],
+      "tasks": [
+        {
+          "id": "63D5448F8F5E0D22",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:liquid_starlight_bucket",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "435C304D290FE235",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 0.0,
+      "y": 5.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:liquid_starlight_bucket",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "6E579BE74F4751D6",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "12BC7DE2C89C489A",
+      "dependencies": [
+        "765A95C8D7785933"
+      ],
+      "tasks": [
+        {
+          "id": "6DD91142289DCF5E",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:chalice",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2CE6313B91CE35FB",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 12.0,
+      "y": 5.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:chalice",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "74695EA2AD39B458",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "7721599BA974CCAC",
+      "dependencies": [
+        "41196F16F623D4D8"
+      ],
+      "tasks": [
+        {
+          "id": "7A5EB762C6532EC7",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:rock_crystal",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        },
+        {
+          "id": "2ED82F8CDEFFBB72",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 18.0,
+      "y": 1.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:rock_crystal",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "73AA09631CFC5098",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "5FE1EE60CF778BA5",
+      "dependencies": [
+        "3D0E870194144E90"
+      ],
+      "tasks": [
+        {
+          "id": "4FC8C506300543DE",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:lumen_crystal",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "1AD8F530470CCFA7",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 3.0,
+      "y": 13.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:lumen_crystal",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "7AD9F2FC16E96D1A",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    },
+    {
+      "id": "3D87955B8983E5B3",
+      "dependencies": [
+        "7F6D201DD011DABA"
+      ],
+      "tasks": [
+        {
+          "id": "6464D5D647F9C64E",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:linking_tool",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "548E7A1F48D23827",
+          "type": "checkmark",
+          "optional_task": true
+        }
+      ],
+      "x": 6.0,
+      "y": 9.7,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:linking_tool",
+        "count": 1
+      },
+      "optional": true,
+      "rewards": [
+        {
+          "id": "39317A4412DEBA6B",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "0079A65EAB304A08",
+      "image": "customatm:textures/quests/astral_lane_0.png",
+      "x": 5.0,
+      "y": -1.15,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "0FFDE008F78E3C04",
+      "image": "customatm:textures/quests/astral_lane_1.png",
+      "x": 5.0,
+      "y": 2.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "2B0079EDB1194FC7",
+      "image": "customatm:textures/quests/astral_lane_2.png",
+      "x": 5.0,
+      "y": 6.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
+    },
+    {
+      "id": "38EF98FBD1CBB57C",
+      "image": "customatm:textures/quests/astral_lane_3.png",
+      "x": 5.0,
+      "y": 10.85,
+      "width": 11.0,
+      "height": 0.85,
+      "rotation": 0.0
     }
   ]
 }

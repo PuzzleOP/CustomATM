@@ -88,7 +88,12 @@ $mBase=[pscustomobject]@{base=$base}
 Save-Json (Join-Path $root6 'minecraftinstance.json') @{projectID=925200;fileID=9190157;gameVersion='1.21.1';baseModLoader=@{name='neoforge-21.1.259'}}
 Assert-Base $root6 $mBase;Assert $true 'matching CurseForge base accepted'
 $base.curseforge_file_id=1;Expect-Failure {Assert-Base $root6 $mBase} 'wrong base pack version rejected'
-# Exercise the complete entry point with local release bytes and mocked HTTP only.
+# Exercise the complete entry point with local release bytes and a fake profile.
+# A running game is irrelevant to these isolated fixtures; never permit a real profile here.
+function Assert-GameClosed {
+ $fixturePath=[IO.Path]::GetFullPath($Profile)
+ if (!$fixturePath.StartsWith($testRoot+[IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)) { throw 'Test updater may only touch its isolated fixture directory' }
+}
 $full=Fixture 'full-flow'
 Save-Json (Join-Path $full 'minecraftinstance.json') @{projectID=925200;fileID=9190157;gameVersion='1.21.1';baseModLoader=@{name='neoforge-21.1.259'}}
 $null=Make-File $full 'config/ftbquests/quests/chapter_groups.snbt' "{ chapter_groups: [ { id: `"1111111111111111`" } ] }"
@@ -123,4 +128,27 @@ Assert ($newOptions.Contains('soundCategory_master:0.7')) 'casino migration pres
 Assert ((Get-CasinoOptions $newOptions) -eq $newOptions) 'casino migration is idempotent'
 $customOptions="key_key.casinomod.open_casino:key.keyboard.j`n"
 Assert ((Get-CasinoOptions $customOptions) -eq $customOptions) 'explicit custom casino key is preserved'
+# Accept only verified FTB rewrites tied to the previous published hash.
+$questRoot=Join-Path $testRoot 'quest-rewrite';[IO.Directory]::CreateDirectory($questRoot) | Out-Null
+$questRel='config/ftbquests/quests/chapters/local_guide_01_test.snbt'
+$publishedQuest=Make-File $testRoot 'published-quest.snbt' 'published quest'
+$runtimeQuest=Make-File $questRoot $questRel 'verified FTB rewrite'
+$questEntry=Entry $questRel 'new quest'
+$questEntry | Add-Member -NotePropertyName previous_forms -NotePropertyValue @([pscustomobject]@{published_sha256=(Hash-File $publishedQuest);runtime_sha256=(Hash-File $runtimeQuest)})
+$questManifest=[pscustomobject]@{schema=1;repository=$script:Repo;client_version=4;version='1.3.0';quest_group=$manifest.quest_group;files=@($questEntry);obsolete=@()}
+$questPrevious=[pscustomobject]@{repository=$script:Repo;files=@([pscustomobject]@{path=$questRel;sha256=(Hash-File $publishedQuest)})}
+Assert-Manifest $questManifest $questRoot
+$questPlan=@(Get-Plan $questRoot $questManifest $questPrevious)
+Assert ($questPlan.Count -eq 1) 'verified FTB rewrite can upgrade'
+Assert ($questPlan[0].oldHash -eq (Hash-File $runtimeQuest)) 'rollback uses the actual prior quest bytes'
+$questPrevious.files[0].sha256='a'*64
+Expect-Failure {Get-Plan $questRoot $questManifest $questPrevious} 'rewrite allowance requires the matching previous published hash'
+$questPrevious.files[0].sha256=Hash-File $publishedQuest
+$null=Make-File $questRoot $questRel 'personal quest changes'
+Expect-Failure {Get-Plan $questRoot $questManifest $questPrevious} 'unknown personal quest edits remain protected'
+$questEntry.path='config/personal.toml'
+Expect-Failure {Assert-Manifest $questManifest $questRoot} 'rewrite allowances cannot relax protection for other configs'
+Assert (!(Test-KnownQuestRewrite $questEntry $questPrevious.files[0].sha256 $questEntry.previous_forms[0].runtime_sha256)) 'planning independently restricts rewrite allowances to custom quest chapters'
+$questEntry.path=$questRel;$questEntry.previous_forms[0].runtime_sha256='invalid'
+Expect-Failure {Assert-Manifest $questManifest $questRoot} 'invalid rewrite checksums are rejected'
 Write-Host "ALL $script:passed CHECKS PASSED. Fixtures: $testRoot"
