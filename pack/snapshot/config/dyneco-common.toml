@@ -1,0 +1,9 @@
+# Local ATM10 broad-market setup, 2026-10-19.
+# NeoForge fills in all omitted options with DynEco 1.2.0 defaults on launch.
+# Equipment/machines are enabled by the companion KubeJS server script.
+# Prices, buyer frequency, FE costs and the 500-credit starting balance retain
+# the mod's defaults. Existing balances are not changed.
+
+[eligibility]
+tradeUnclassified = true
+excludeShapedVariants = false

@@ -1,0 +1,539 @@
+{
+  "default_hide_dependency_lines": false,
+  "default_quest_shape": "square",
+  "filename": "local_guide_03_advanced_rs",
+  "group": "28D38D1EC21B4002",
+  "icon": {
+    "id": "refinedstorage:pattern_grid",
+    "count": 1
+  },
+  "id": "44DA95F01132476A",
+  "order_index": 2,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "id": "1F3926F40A6B3002",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "5147BC2D367EF0E9",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "gear",
+      "icon": {
+        "id": "refinedstorage:pattern_grid",
+        "count": 1
+      }
+    },
+    {
+      "id": "3B67BA5B0470AFBB",
+      "dependencies": [
+        "1F3926F40A6B3002"
+      ],
+      "tasks": [
+        {
+          "id": "305C65653D7E7669",
+          "type": "checkmark"
+        }
+      ],
+      "x": 3.0,
+      "y": 0.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "162CDF11A62C8795",
+      "dependencies": [
+        "3B67BA5B0470AFBB"
+      ],
+      "tasks": [
+        {
+          "id": "6A2079E791168D72",
+          "type": "item",
+          "item": {
+            "id": "refinedstorage:controller",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "208752D14F13BB55",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "refinedstorage:controller",
+        "count": 1
+      }
+    },
+    {
+      "id": "091432FDBD674325",
+      "dependencies": [
+        "162CDF11A62C8795"
+      ],
+      "tasks": [
+        {
+          "id": "42F6126595FB962C",
+          "type": "item",
+          "item": {
+            "id": "refinedstorage:external_storage",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "54B2F3573647D789",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "refinedstorage:external_storage",
+        "count": 1
+      }
+    },
+    {
+      "id": "249CA20A77338E51",
+      "dependencies": [
+        "091432FDBD674325"
+      ],
+      "tasks": [
+        {
+          "id": "4ED6BA9FC25618E1",
+          "type": "item",
+          "item": {
+            "id": "refinedstorage:pattern_grid",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "7A5972EFA9B89B47",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "refinedstorage:pattern_grid",
+        "count": 1
+      }
+    },
+    {
+      "id": "39894938C7D1DDFA",
+      "dependencies": [
+        "249CA20A77338E51"
+      ],
+      "tasks": [
+        {
+          "id": "1223F4FD8CF81018",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 3.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "21E76B3B169DDD8D",
+      "dependencies": [
+        "39894938C7D1DDFA"
+      ],
+      "tasks": [
+        {
+          "id": "63EF1A10A5F4909B",
+          "type": "item",
+          "item": {
+            "id": "refinedstorage:autocrafter",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "63C581E35C0FF07A",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "refinedstorage:autocrafter",
+        "count": 1
+      }
+    },
+    {
+      "id": "2A822AF413B88804",
+      "dependencies": [
+        "21E76B3B169DDD8D"
+      ],
+      "tasks": [
+        {
+          "id": "4F56629757EC3447",
+          "type": "item",
+          "item": {
+            "id": "refinedstorage:autocrafting_monitor",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "054302526DF7032B",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "refinedstorage:autocrafting_monitor",
+        "count": 1
+      }
+    },
+    {
+      "id": "232242C253C5C6A2",
+      "dependencies": [
+        "2A822AF413B88804"
+      ],
+      "tasks": [
+        {
+          "id": "42D170E06FEF95CC",
+          "type": "item",
+          "item": {
+            "id": "rsrequestify:requester",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "18809C09EB5CCED1",
+          "type": "checkmark"
+        }
+      ],
+      "x": 3.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "rsrequestify:requester",
+        "count": 1
+      }
+    },
+    {
+      "id": "64DAE0DB64E14365",
+      "dependencies": [
+        "232242C253C5C6A2"
+      ],
+      "tasks": [
+        {
+          "id": "6AC0DCA6EBB136CD",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 3.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "455FACFE88F00D4B",
+      "dependencies": [
+        "64DAE0DB64E14365"
+      ],
+      "tasks": [
+        {
+          "id": "0512854F690710D3",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 6.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "26D538689C43C6AC",
+      "dependencies": [
+        "64DAE0DB64E14365"
+      ],
+      "tasks": [
+        {
+          "id": "7027E6BEAC849B80",
+          "type": "item",
+          "item": {
+            "id": "refinedtypes:64k_energy_storage_disk",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "27A4AA14DC0BEB2E",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 15.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "refinedtypes:64k_energy_storage_disk",
+        "count": 1
+      }
+    },
+    {
+      "id": "3736577BDC3D4F8E",
+      "dependencies": [
+        "64DAE0DB64E14365"
+      ],
+      "tasks": [
+        {
+          "id": "66B66E667642ED97",
+          "type": "item",
+          "item": {
+            "id": "refinedtypes:64b_source_storage_disk",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "403AA4D624A1AF07",
+          "type": "checkmark"
+        }
+      ],
+      "x": 3.0,
+      "y": 15.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "refinedtypes:64b_source_storage_disk",
+        "count": 1
+      }
+    },
+    {
+      "id": "3EC4CB893D60F0E4",
+      "dependencies": [
+        "64DAE0DB64E14365"
+      ],
+      "tasks": [
+        {
+          "id": "0E8C2353930ED018",
+          "type": "item",
+          "item": {
+            "id": "refinedtypes:1k_soul_storage_disk",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "58987DD920E3CDE8",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 15.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "refinedtypes:1k_soul_storage_disk",
+        "count": 1
+      }
+    },
+    {
+      "id": "277D7A61EC52AD2F",
+      "dependencies": [
+        "64DAE0DB64E14365"
+      ],
+      "tasks": [
+        {
+          "id": "58555B618B61160C",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 15.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "264F9DDB12C2AAF2",
+      "dependencies": [
+        "64DAE0DB64E14365"
+      ],
+      "tasks": [
+        {
+          "id": "5C42E94862E754CC",
+          "type": "item",
+          "item": {
+            "id": "universalgrid:wireless_universal_grid",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "464BD1B4A0619184",
+          "type": "checkmark"
+        }
+      ],
+      "x": 3.0,
+      "y": 6.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "universalgrid:wireless_universal_grid",
+        "count": 1
+      }
+    },
+    {
+      "id": "65D2D38EC1C430A7",
+      "dependencies": [
+        "264F9DDB12C2AAF2"
+      ],
+      "tasks": [
+        {
+          "id": "10201EB36E3C142B",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 6.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "4D7545E7E4FAE623",
+      "dependencies": [
+        "65D2D38EC1C430A7"
+      ],
+      "tasks": [
+        {
+          "id": "7BCF2949FFBE4794",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 6.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "3506A089BDA0396F",
+      "dependencies": [
+        "4D7545E7E4FAE623"
+      ],
+      "tasks": [
+        {
+          "id": "7B08C35D2D586FCB",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 6.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "7212A4CE5FEDE709",
+      "dependencies": [
+        "3506A089BDA0396F"
+      ],
+      "tasks": [
+        {
+          "id": "21E2669F65F61376",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 9.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "67C1934FCABD1D48",
+      "dependencies": [
+        "7212A4CE5FEDE709"
+      ],
+      "tasks": [
+        {
+          "id": "51FD3F8183180C41",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 9.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "4B845A9FEBF30760",
+      "dependencies": [
+        "67C1934FCABD1D48"
+      ],
+      "tasks": [
+        {
+          "id": "725A735FD7555F73",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 9.0,
+      "shape": "gear",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      },
+      "rewards": [
+        {
+          "id": "0E6ECBC039F53D84",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    }
+  ]
+}

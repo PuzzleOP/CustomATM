@@ -1,0 +1,560 @@
+{
+  "default_hide_dependency_lines": false,
+  "default_quest_shape": "square",
+  "filename": "local_guide_01_minecolonies",
+  "group": "28D38D1EC21B4002",
+  "icon": {
+    "id": "minecolonies:blockhuttownhall",
+    "count": 1
+  },
+  "id": "681B4DB073FB10D5",
+  "order_index": 0,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "id": "59C2E82B3B2557C7",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "3B7BB3BD7EFFB0B3",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "gear",
+      "icon": {
+        "id": "minecolonies:blockhuttownhall",
+        "count": 1
+      }
+    },
+    {
+      "id": "55EDA03B1FB4A0D6",
+      "dependencies": [
+        "59C2E82B3B2557C7"
+      ],
+      "tasks": [
+        {
+          "id": "1798041B47F38631",
+          "type": "checkmark"
+        }
+      ],
+      "x": 3.0,
+      "y": 0.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "40376CAADCA40739",
+      "dependencies": [
+        "55EDA03B1FB4A0D6"
+      ],
+      "tasks": [
+        {
+          "id": "40521F65525C7D15",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 0.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "71ADC4A26B994969",
+      "dependencies": [
+        "40376CAADCA40739"
+      ],
+      "tasks": [
+        {
+          "id": "662ADB40F6532F72",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 0.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "7BC3A2AC07F7B091",
+      "dependencies": [
+        "71ADC4A26B994969"
+      ],
+      "tasks": [
+        {
+          "id": "4138BC32A991FCD2",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:blockhuttownhall",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "072E1C7622F3D5F3",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:blockhuttownhall",
+        "count": 1
+      }
+    },
+    {
+      "id": "6DCD38F81AE6889F",
+      "dependencies": [
+        "7BC3A2AC07F7B091"
+      ],
+      "tasks": [
+        {
+          "id": "4C594F2BF98C45F6",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:blockhutbuilder",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2D3016661DBDBA7A",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:blockhutbuilder",
+        "count": 1
+      }
+    },
+    {
+      "id": "5CE76239A3358618",
+      "dependencies": [
+        "6DCD38F81AE6889F"
+      ],
+      "tasks": [
+        {
+          "id": "59BA5993BAF6345D",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:clipboard",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "20A6328863326D41",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:clipboard",
+        "count": 1
+      }
+    },
+    {
+      "id": "61C01C6EB265C963",
+      "dependencies": [
+        "5CE76239A3358618"
+      ],
+      "tasks": [
+        {
+          "id": "4A16C456473091B8",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:blockhutcook",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "789FE9B5023ED13F",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:blockhutcook",
+        "count": 1
+      }
+    },
+    {
+      "id": "58F86761CC305FCA",
+      "dependencies": [
+        "61C01C6EB265C963"
+      ],
+      "tasks": [
+        {
+          "id": "08224DDFB67975E7",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:blockhutcitizen",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "310E33F64326FBFA",
+          "type": "checkmark"
+        }
+      ],
+      "x": 3.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:blockhutcitizen",
+        "count": 1
+      }
+    },
+    {
+      "id": "082E6F2C61EF913B",
+      "dependencies": [
+        "58F86761CC305FCA"
+      ],
+      "tasks": [
+        {
+          "id": "089E5415AEE78854",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:blockhutlumberjack",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "581D5E484F8DFBFC",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:blockhutlumberjack",
+        "count": 1
+      }
+    },
+    {
+      "id": "2A3B0630147CC528",
+      "dependencies": [
+        "082E6F2C61EF913B"
+      ],
+      "tasks": [
+        {
+          "id": "2BB6A386A93FF2CA",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:blockhutwarehouse",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2B4CE46E6CBCAD74",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 6.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:blockhutwarehouse",
+        "count": 1
+      }
+    },
+    {
+      "id": "302E3FA9C8C56751",
+      "dependencies": [
+        "2A3B0630147CC528"
+      ],
+      "tasks": [
+        {
+          "id": "1EC13C236D751B3D",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:blockhutdeliveryman",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "3A7962CE16538B8F",
+          "type": "checkmark"
+        }
+      ],
+      "x": 3.0,
+      "y": 6.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:blockhutdeliveryman",
+        "count": 1
+      }
+    },
+    {
+      "id": "41054430E156DC83",
+      "dependencies": [
+        "302E3FA9C8C56751"
+      ],
+      "tasks": [
+        {
+          "id": "3521BAA969A50D95",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:blockhutfarmer",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "578044AF1711F7EF",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 6.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:blockhutfarmer",
+        "count": 1
+      }
+    },
+    {
+      "id": "29940787C35F8C0A",
+      "dependencies": [
+        "41054430E156DC83"
+      ],
+      "tasks": [
+        {
+          "id": "7B7FB0F5AE3134A4",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:blockhutsawmill",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "405FAD816EBDC3DC",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 6.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:blockhutsawmill",
+        "count": 1
+      }
+    },
+    {
+      "id": "0DEF901F188B8E8D",
+      "dependencies": [
+        "29940787C35F8C0A"
+      ],
+      "tasks": [
+        {
+          "id": "08635D9630AED8DB",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:blockhutstonemason",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5382EBCDBF41CBCA",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 6.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:blockhutstonemason",
+        "count": 1
+      }
+    },
+    {
+      "id": "325942E4FB3ECE8D",
+      "dependencies": [
+        "0DEF901F188B8E8D"
+      ],
+      "tasks": [
+        {
+          "id": "56F53C2E29A8830F",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:blockhutuniversity",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "311F5C88EA092A09",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 9.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:blockhutuniversity",
+        "count": 1
+      }
+    },
+    {
+      "id": "43F029CD893A6FF1",
+      "dependencies": [
+        "325942E4FB3ECE8D"
+      ],
+      "tasks": [
+        {
+          "id": "1FD8742FE8DE0365",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 9.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "3FCF38C8A5D69203",
+      "dependencies": [
+        "43F029CD893A6FF1"
+      ],
+      "tasks": [
+        {
+          "id": "6E1558BF49706842",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:blockhutguardtower",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "419FB675F6DBA4A1",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 9.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:blockhutguardtower",
+        "count": 1
+      }
+    },
+    {
+      "id": "055FBE8444D16357",
+      "dependencies": [
+        "3FCF38C8A5D69203"
+      ],
+      "tasks": [
+        {
+          "id": "623F1C4C1DF51284",
+          "type": "item",
+          "item": {
+            "id": "minecolonies:blockhuttavern",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2E018C6E27723ABD",
+          "type": "checkmark"
+        }
+      ],
+      "x": 3.0,
+      "y": 9.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "minecolonies:blockhuttavern",
+        "count": 1
+      }
+    },
+    {
+      "id": "68E68A1EDDCDE2AC",
+      "dependencies": [
+        "055FBE8444D16357"
+      ],
+      "tasks": [
+        {
+          "id": "1D02F69698EF39CF",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 9.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "1B6DFE41CB364491",
+      "dependencies": [
+        "68E68A1EDDCDE2AC"
+      ],
+      "tasks": [
+        {
+          "id": "757ABD17CEF8742D",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 12.0,
+      "shape": "gear",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      },
+      "rewards": [
+        {
+          "id": "0B27911121CD236C",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    }
+  ]
+}

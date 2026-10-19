@@ -1,0 +1,9 @@
+{
+  "files": [
+    "config/dyneco-common.toml",
+    "kubejs/server_scripts/local_customizations/dyneco_broad_market.js",
+    "config/ftbquests/quests/chapters/local_guide_*.snbt",
+    "config/ftbquests/quests/lang/en_us/chapters/local_guide_*.snbt",
+    "config/ftbquests/quests/lang/en_us/local_guides_group.snbt"
+  ]
+}

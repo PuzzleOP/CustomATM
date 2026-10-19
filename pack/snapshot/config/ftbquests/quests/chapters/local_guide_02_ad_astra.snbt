@@ -1,0 +1,623 @@
+{
+  "default_hide_dependency_lines": false,
+  "default_quest_shape": "square",
+  "filename": "local_guide_02_ad_astra",
+  "group": "28D38D1EC21B4002",
+  "icon": {
+    "id": "ad_astra:tier_1_rocket",
+    "count": 1
+  },
+  "id": "2465986E2653D08D",
+  "order_index": 1,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "id": "0427FC81E857F60B",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "7476A524D271277C",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "gear",
+      "icon": {
+        "id": "ad_astra:tier_1_rocket",
+        "count": 1
+      }
+    },
+    {
+      "id": "43205FAABE71A19D",
+      "dependencies": [
+        "0427FC81E857F60B"
+      ],
+      "tasks": [
+        {
+          "id": "2BCC9C185A201064",
+          "type": "checkmark"
+        }
+      ],
+      "x": 3.0,
+      "y": 0.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "5E8B76ADCE0FFF3C",
+      "dependencies": [
+        "43205FAABE71A19D"
+      ],
+      "tasks": [
+        {
+          "id": "5928106C296779C7",
+          "type": "item",
+          "item": {
+            "id": "patchouli:guide_book",
+            "count": 1,
+            "components": {
+              "patchouli:book": "ad_astra:astrodux"
+            }
+          },
+          "count": 1,
+          "consume_items": false,
+          "match_components": "strict"
+        }
+      ],
+      "x": 6.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "patchouli:guide_book",
+        "count": 1,
+        "components": {
+          "patchouli:book": "ad_astra:astrodux"
+        }
+      }
+    },
+    {
+      "id": "602ABAC97C81CCCB",
+      "dependencies": [
+        "5E8B76ADCE0FFF3C"
+      ],
+      "tasks": [
+        {
+          "id": "4C5199BBB36E1093",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:coal_generator",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "4D00AE36EC335238",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:coal_generator",
+        "count": 1
+      }
+    },
+    {
+      "id": "371075639BD2B993",
+      "dependencies": [
+        "602ABAC97C81CCCB"
+      ],
+      "tasks": [
+        {
+          "id": "65EA52E7C98B117A",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:steel_ingot",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 12.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:steel_ingot",
+        "count": 1
+      }
+    },
+    {
+      "id": "46BB06D66C3C9942",
+      "dependencies": [
+        "371075639BD2B993"
+      ],
+      "tasks": [
+        {
+          "id": "613D70BCB0512A59",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:compressor",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2771AE0F5E8DD8A5",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:compressor",
+        "count": 1
+      }
+    },
+    {
+      "id": "7E98C22B11EC4896",
+      "dependencies": [
+        "46BB06D66C3C9942"
+      ],
+      "tasks": [
+        {
+          "id": "31603B822584CB6E",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:fuel_refinery",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "4F1C9CDABAB6B6FB",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:fuel_refinery",
+        "count": 1
+      }
+    },
+    {
+      "id": "35B4A2C4984E736C",
+      "dependencies": [
+        "7E98C22B11EC4896"
+      ],
+      "tasks": [
+        {
+          "id": "5BFC1BDC9EC16480",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:nasa_workbench",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5B26CB233F169A09",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:nasa_workbench",
+        "count": 1
+      }
+    },
+    {
+      "id": "03EBF6343E93AED7",
+      "dependencies": [
+        "35B4A2C4984E736C"
+      ],
+      "tasks": [
+        {
+          "id": "5ABDD3867196BABA",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:tier_1_rocket",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "25F0456FD23592E8",
+          "type": "checkmark"
+        }
+      ],
+      "x": 3.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:tier_1_rocket",
+        "count": 1
+      }
+    },
+    {
+      "id": "1772CF3D1B830C75",
+      "dependencies": [
+        "03EBF6343E93AED7"
+      ],
+      "tasks": [
+        {
+          "id": "7F3AE96BFAC3D67C",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:space_suit",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "30335D77925F0DED",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:space_suit",
+        "count": 1
+      }
+    },
+    {
+      "id": "33D8C2874025A9C2",
+      "dependencies": [
+        "1772CF3D1B830C75"
+      ],
+      "tasks": [
+        {
+          "id": "66AB9B8525EE0CED",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:oxygen_loader",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "13C00520EF55E642",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 6.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:oxygen_loader",
+        "count": 1
+      }
+    },
+    {
+      "id": "370DC82F574E180A",
+      "dependencies": [
+        "33D8C2874025A9C2"
+      ],
+      "tasks": [
+        {
+          "id": "370CCEFA81B6C73D",
+          "type": "checkmark"
+        }
+      ],
+      "x": 3.0,
+      "y": 6.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "575B1E148392A4AA",
+      "dependencies": [
+        "370DC82F574E180A"
+      ],
+      "tasks": [
+        {
+          "id": "5625958D90C6A500",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 6.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "216D2FCAB60B42A8",
+      "dependencies": [
+        "575B1E148392A4AA"
+      ],
+      "tasks": [
+        {
+          "id": "3C953D5FCA190335",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:desh_ingot",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "24BBC45917AE82CE",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 6.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:desh_ingot",
+        "count": 1
+      }
+    },
+    {
+      "id": "1C879BB1FC86D78E",
+      "dependencies": [
+        "216D2FCAB60B42A8"
+      ],
+      "tasks": [
+        {
+          "id": "582BE0FAC76F7BE5",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:oxygen_distributor",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2C33E78F8A36D087",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 6.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:oxygen_distributor",
+        "count": 1
+      }
+    },
+    {
+      "id": "7BE7E6D3362B889B",
+      "dependencies": [
+        "1C879BB1FC86D78E"
+      ],
+      "tasks": [
+        {
+          "id": "55A8EBC6E0810807",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:ti_69",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "6B1E5D4AC612F258",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 9.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:ti_69",
+        "count": 1
+      }
+    },
+    {
+      "id": "15225DADFC0914E0",
+      "dependencies": [
+        "7BE7E6D3362B889B"
+      ],
+      "tasks": [
+        {
+          "id": "1D1D895D13AD4C64",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:tier_2_rocket",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "4E98708C3FECCB03",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 9.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:tier_2_rocket",
+        "count": 1
+      }
+    },
+    {
+      "id": "112081DBB9670E96",
+      "dependencies": [
+        "15225DADFC0914E0"
+      ],
+      "tasks": [
+        {
+          "id": "7E0B7DB90B6EE3CA",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:cryo_freezer",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "39E20508B38F6BAA",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 9.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:cryo_freezer",
+        "count": 1
+      }
+    },
+    {
+      "id": "29B3EBF9795A73D6",
+      "dependencies": [
+        "112081DBB9670E96"
+      ],
+      "tasks": [
+        {
+          "id": "5DF8DAA15E83656A",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:netherite_space_suit",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 9.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:netherite_space_suit",
+        "count": 1
+      }
+    },
+    {
+      "id": "4284386F90782B0B",
+      "dependencies": [
+        "29B3EBF9795A73D6"
+      ],
+      "tasks": [
+        {
+          "id": "7651AFD7BFB931E0",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:tier_3_rocket",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "084F5FA9F06A65BA",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 9.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:tier_3_rocket",
+        "count": 1
+      }
+    },
+    {
+      "id": "337557221E144235",
+      "dependencies": [
+        "4284386F90782B0B"
+      ],
+      "tasks": [
+        {
+          "id": "264331BE0F2821AA",
+          "type": "item",
+          "item": {
+            "id": "ad_astra:tier_4_rocket",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "6345453A4CEF36D1",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 12.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "ad_astra:tier_4_rocket",
+        "count": 1
+      }
+    },
+    {
+      "id": "70A829E91698D799",
+      "dependencies": [
+        "337557221E144235"
+      ],
+      "tasks": [
+        {
+          "id": "7CB8C32D0EA6A9AA",
+          "type": "checkmark"
+        }
+      ],
+      "x": 3.0,
+      "y": 12.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "637DED48D606987A",
+      "dependencies": [
+        "70A829E91698D799"
+      ],
+      "tasks": [
+        {
+          "id": "0EF717AD00C74897",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 12.0,
+      "shape": "gear",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      },
+      "rewards": [
+        {
+          "id": "2788B56FD96CD55A",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    }
+  ]
+}

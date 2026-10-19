@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8.7",
+  "package": "local.atm10.casinodyneco.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["ChipBalanceMixin", "CasinoShopMixin", "CasinoMenuMixin"],
+  "client": ["CasinoHubClientMixin", "CasinoLabelsClientMixin"],
+  "injectors": {"defaultRequire": 1}
+}

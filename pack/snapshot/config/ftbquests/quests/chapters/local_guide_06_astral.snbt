@@ -1,0 +1,662 @@
+{
+  "default_hide_dependency_lines": false,
+  "default_quest_shape": "square",
+  "filename": "local_guide_06_astral",
+  "group": "28D38D1EC21B4002",
+  "icon": {
+    "id": "astralsorcery:tome",
+    "count": 1
+  },
+  "id": "2152B0EE8804F761",
+  "order_index": 5,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "id": "492340992A6EADAC",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "7403BBBAB0BEDB9B",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 0.0,
+      "shape": "gear",
+      "icon": {
+        "id": "astralsorcery:tome",
+        "count": 1
+      }
+    },
+    {
+      "id": "6537F2A7876A677B",
+      "dependencies": [
+        "492340992A6EADAC"
+      ],
+      "tasks": [
+        {
+          "id": "570F82C60EE7C55F",
+          "type": "checkmark"
+        }
+      ],
+      "x": 3.0,
+      "y": 0.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "329B06384D220AE6",
+      "dependencies": [
+        "6537F2A7876A677B"
+      ],
+      "tasks": [
+        {
+          "id": "7604E3CD82CD4F75",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:tome",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 6.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:tome",
+        "count": 1
+      }
+    },
+    {
+      "id": "0A5DD29211B6E891",
+      "dependencies": [
+        "329B06384D220AE6"
+      ],
+      "tasks": [
+        {
+          "id": "53438C48B4C5D1EC",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:aquamarine",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 9.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:aquamarine",
+        "count": 1
+      }
+    },
+    {
+      "id": "142538FFC0673A1D",
+      "dependencies": [
+        "0A5DD29211B6E891"
+      ],
+      "tasks": [
+        {
+          "id": "6641A1D442B58DDC",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:constellation_paper",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 12.0,
+      "y": 0.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:constellation_paper",
+        "count": 1
+      }
+    },
+    {
+      "id": "62AAFA8076D01B14",
+      "dependencies": [
+        "142538FFC0673A1D"
+      ],
+      "tasks": [
+        {
+          "id": "13DB99782149570B",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:astrolabe",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "64CBA76933310A70",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:astrolabe",
+        "count": 1
+      }
+    },
+    {
+      "id": "3FC719625D2AAD38",
+      "dependencies": [
+        "62AAFA8076D01B14"
+      ],
+      "tasks": [
+        {
+          "id": "452A34257426BE34",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 3.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "62B3F6E1E3B71A8E",
+      "dependencies": [
+        "3FC719625D2AAD38"
+      ],
+      "tasks": [
+        {
+          "id": "43C376BD5DC5079E",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:wand",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 6.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:wand",
+        "count": 1
+      }
+    },
+    {
+      "id": "41196F16F623D4D8",
+      "dependencies": [
+        "62B3F6E1E3B71A8E"
+      ],
+      "tasks": [
+        {
+          "id": "1A9DA4BFCAE14652",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:rock_crystal",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:rock_crystal",
+        "count": 1
+      }
+    },
+    {
+      "id": "0CEBE470008B5F33",
+      "dependencies": [
+        "41196F16F623D4D8"
+      ],
+      "tasks": [
+        {
+          "id": "161FCAF38FE88B22",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:altar_illumination",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "688357CF11E01AE0",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 3.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:altar_illumination",
+        "count": 1
+      }
+    },
+    {
+      "id": "422823A2345D74FF",
+      "dependencies": [
+        "0CEBE470008B5F33"
+      ],
+      "tasks": [
+        {
+          "id": "3B6E565E6870A50F",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:lightwell",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "604C80EC71C6BA8D",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 6.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:lightwell",
+        "count": 1
+      }
+    },
+    {
+      "id": "3EBCB8FDC0B1D518",
+      "dependencies": [
+        "422823A2345D74FF"
+      ],
+      "tasks": [
+        {
+          "id": "32061A4EA41DD540",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:starmetal_ingot",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 6.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:starmetal_ingot",
+        "count": 1
+      }
+    },
+    {
+      "id": "2E04B992EDF7CAE9",
+      "dependencies": [
+        "3EBCB8FDC0B1D518"
+      ],
+      "tasks": [
+        {
+          "id": "3C841FA4D90AB53E",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:focus_relay",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2AAE5DBBA833A5ED",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 6.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:focus_relay",
+        "count": 1
+      }
+    },
+    {
+      "id": "41EC1C221A41A935",
+      "dependencies": [
+        "2E04B992EDF7CAE9"
+      ],
+      "tasks": [
+        {
+          "id": "3C8FB5CC91DBDA24",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:altar_resonance",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "7FF2F70BB41FD99E",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 6.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:altar_resonance",
+        "count": 1
+      }
+    },
+    {
+      "id": "765A95C8D7785933",
+      "dependencies": [
+        "41EC1C221A41A935"
+      ],
+      "tasks": [
+        {
+          "id": "5D28B4059F814C75",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:infuser",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2626ADC5ED0687FE",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 6.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:infuser",
+        "count": 1
+      }
+    },
+    {
+      "id": "1BD6E00F6CC87805",
+      "dependencies": [
+        "765A95C8D7785933"
+      ],
+      "tasks": [
+        {
+          "id": "1FD3CEA094FB9C86",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:altar_luminance",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "28B7C444D3436231",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 9.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:altar_luminance",
+        "count": 1
+      }
+    },
+    {
+      "id": "19A8EA75AB2C1D69",
+      "dependencies": [
+        "1BD6E00F6CC87805"
+      ],
+      "tasks": [
+        {
+          "id": "65EDC4C68C2AA574",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:attunement_altar",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "33C78D4579E27037",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 9.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:attunement_altar",
+        "count": 1
+      }
+    },
+    {
+      "id": "214EFBFC84DD00A8",
+      "dependencies": [
+        "19A8EA75AB2C1D69"
+      ],
+      "tasks": [
+        {
+          "id": "7E82CFE521BD447B",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 9.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "76F0829EBB40EC66",
+      "dependencies": [
+        "214EFBFC84DD00A8"
+      ],
+      "tasks": [
+        {
+          "id": "251142A7E2872F6D",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:lumen_array",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "175D846542F50902",
+          "type": "checkmark"
+        }
+      ],
+      "x": 3.0,
+      "y": 9.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:lumen_array",
+        "count": 1
+      }
+    },
+    {
+      "id": "3D0E870194144E90",
+      "dependencies": [
+        "76F0829EBB40EC66"
+      ],
+      "tasks": [
+        {
+          "id": "3D36D9426A3AE524",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:lumen_filament",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "689649FA12081504",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 9.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:lumen_filament",
+        "count": 1
+      }
+    },
+    {
+      "id": "7F6D201DD011DABA",
+      "dependencies": [
+        "3D0E870194144E90"
+      ],
+      "tasks": [
+        {
+          "id": "548B49E863D2E2C4",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:starlight_focus_rock_crystal",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "7EF0183F13EC99A5",
+          "type": "checkmark"
+        }
+      ],
+      "x": 0.0,
+      "y": 12.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:starlight_focus_rock_crystal",
+        "count": 1
+      }
+    },
+    {
+      "id": "597437B03E959B34",
+      "dependencies": [
+        "7F6D201DD011DABA"
+      ],
+      "tasks": [
+        {
+          "id": "40D1225013392DC3",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:lumen_alchemy_array",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5A0183FAC1C5EBE8",
+          "type": "checkmark"
+        }
+      ],
+      "x": 3.0,
+      "y": 12.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:lumen_alchemy_array",
+        "count": 1
+      }
+    },
+    {
+      "id": "2E7D2E5692E2083C",
+      "dependencies": [
+        "597437B03E959B34"
+      ],
+      "tasks": [
+        {
+          "id": "6B7EF270BE70B898",
+          "type": "item",
+          "item": {
+            "id": "astralsorcery:altar_radiance",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "00382111575E6B42",
+          "type": "checkmark"
+        }
+      ],
+      "x": 6.0,
+      "y": 12.0,
+      "shape": "hexagon",
+      "icon": {
+        "id": "astralsorcery:altar_radiance",
+        "count": 1
+      }
+    },
+    {
+      "id": "05DF96953BD401F0",
+      "dependencies": [
+        "2E7D2E5692E2083C"
+      ],
+      "tasks": [
+        {
+          "id": "49065D39557691BD",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 12.0,
+      "shape": "square",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      }
+    },
+    {
+      "id": "79DFA6E51292A76D",
+      "dependencies": [
+        "05DF96953BD401F0"
+      ],
+      "tasks": [
+        {
+          "id": "51604B60C71F2C24",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 12.0,
+      "shape": "gear",
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      },
+      "rewards": [
+        {
+          "id": "03EA0822EB880473",
+          "type": "xp",
+          "xp": 25
+        }
+      ]
+    }
+  ]
+}

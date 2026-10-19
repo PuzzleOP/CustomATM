@@ -1,0 +1,10 @@
+[
+  {
+    "path": "mods/borderless-neoforge-1.21.1-1.7.5_1-all.jar",
+    "sha256": "2f7055216da0ee436e558315f8a15e6a53d866e04c58740d02f2eb5984aeaffd"
+  },
+  {
+    "path": "mods/cc-tweaked-1.21.1-forge-1.113.1.jar",
+    "sha256": "f001e5fb2064d9007bb1e5a8177860fa15d9d92b75724871b0e0ae2177ca2f3f"
+  }
+]
