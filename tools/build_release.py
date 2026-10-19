@@ -37,11 +37,21 @@ def main():
         for rel,src in sorted(payload.items()):
             info=zipfile.ZipInfo(rel,(2026,10,19,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED
             z.writestr(info,src.read_bytes())
-    manifest={'schema':1,'repository':'PuzzleOP/CustomATM','client_version':1,'version':version,
+    manifest={'schema':1,'repository':'PuzzleOP/CustomATM','client_version':2,'version':version,
               'base':{'name':'All the Mods 10 - ATM10','version':'8.3','minecraft':'1.21.1','loader':'neoforge-21.1.259','curseforge_project_id':925200,'curseforge_file_id':9190157},
               'quest_group':'28D38D1EC21B4002','files':sorted(files,key=lambda f:f['path']),
               'obsolete':json.loads((ROOT/'pack/obsolete.json').read_text()),
               'payload':{'name':'customatm-payload.zip','sha256':digest(out/'customatm-payload.zip')}}
+    # Keep removals cumulative so a new friend starting from the original base also
+    # removes jars retired by earlier CustomATM releases.
+    previous=ROOT/'pack/current-manifest.json'
+    removals={x['path']:x for x in manifest['obsolete']}
+    current_paths={x['path'] for x in files}
+    if previous.exists():
+        for old in json.loads(previous.read_text())['files']:
+            if old['path'] not in current_paths:removals[old['path']]={'path':old['path'],'sha256':old['sha256']}
+    manifest['obsolete']=[v for k,v in sorted(removals.items()) if k not in current_paths]
+    (ROOT/'pack/obsolete.json').write_text(json.dumps(manifest['obsolete'],indent=2)+'\n')
     (out/'pack-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
     with zipfile.ZipFile(out/'CustomATM-Setup.zip','w',zipfile.ZIP_DEFLATED) as z:
         for f in sorted((ROOT/'client').iterdir()):

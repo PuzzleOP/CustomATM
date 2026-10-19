@@ -1,2 +1,2 @@
 * text=auto
-pack/snapshot/** -text
+pack/snapshot/** -text whitespace=cr-at-eol

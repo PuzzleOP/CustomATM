@@ -3,7 +3,7 @@
 param([string]$Profile, [switch]$CheckOnly, [switch]$LibraryOnly)
 $ErrorActionPreference = 'Stop'
 $script:Repo = 'PuzzleOP/CustomATM'
-$script:ClientVersion = 1
+$script:ClientVersion = 2
 $script:Headers = @{ 'User-Agent'='CustomATM-Updater/1'; 'Accept'='application/vnd.github+json' }
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Add-Type -AssemblyName System.IO.Compression
@@ -17,7 +17,14 @@ function Write-Utf8([string]$Path,[string]$Text) {
     [IO.Directory]::CreateDirectory([IO.Path]::GetDirectoryName($Path)) | Out-Null
     [IO.File]::WriteAllText($Path,$Text,(New-Object Text.UTF8Encoding($false)))
 }
-function Save-Json([string]$Path,$Value) { Write-Utf8 $Path ($Value | ConvertTo-Json -Depth 30) }
+function Save-Json([string]$Path,$Value) {
+    $pending=$Path+'.pending-'+[Guid]::NewGuid().ToString('N')
+    try {
+        Write-Utf8 $pending ($Value | ConvertTo-Json -Depth 30)
+        if ([IO.File]::Exists($Path)) { [IO.File]::Replace($pending,$Path,[NullString]::Value) }
+        else { [IO.File]::Move($pending,$Path) }
+    } finally { if ([IO.File]::Exists($pending)) { [IO.File]::Delete($pending) } }
+}
 function Read-Json([string]$Path) { return (Get-Content -LiteralPath $Path -Raw | ConvertFrom-Json) }
 function Safe-Path([string]$Root,[string]$Relative) {
     if (!$Relative -or $Relative.Contains('\') -or $Relative.Contains(':') -or $Relative.StartsWith('/') -or $Relative -match '[\x00-\x1f]') { throw "Unsafe path: $Relative" }
@@ -98,6 +105,9 @@ function Get-Plan([string]$Root,$Manifest,$Previous) {
     foreach($f in @($Manifest.files)) {
         $dest=Safe-Path $Root $f.path;$actual=Hash-File $dest
         if ($actual -ne $f.sha256) {
+            # Mods commonly expand/reformat configs on launch. Preserve those changes when
+            # the published config itself has not changed; still pin every mod jar exactly.
+            if ($actual -and !$f.path.StartsWith('mods/') -and $old.ContainsKey($f.path) -and $old[$f.path] -eq $f.sha256) { continue }
             if ($actual -and $old.ContainsKey($f.path) -and $actual -ne $old[$f.path]) { throw "Local edits detected in $($f.path). Keep a copy of your edits, then restore the previous published version or ask the pack maintainer to include your change." }
             if ($actual -and !$old.ContainsKey($f.path) -and $f.path.StartsWith('mods/')) { throw "Unexpected contents in $($f.path). Repair that mod through CurseForge before updating." }
             $plan.Add([pscustomobject]@{path=$f.path;oldHash=$actual;newHash=$f.sha256;action='write';source=$f})
@@ -158,6 +168,8 @@ function Restore-Transaction([string]$Root,[string]$Txn) {
     foreach($entry in @($j.entries)) {
         $dest=Safe-Path $Root $entry.path;$current=Hash-File $dest
         if ($current -and $current -ne $entry.newHash -and $current -ne $entry.oldHash) { throw "Recovery stopped: $($entry.path) changed outside the updater. Backup: $Txn" }
+        $stale=Safe-Path $Root ($entry.path+'.customatm-tmp')
+        if ([IO.File]::Exists($stale)) { [IO.File]::Delete($stale) }
         if ($entry.oldHash) {
             $backup=Safe-Path (Join-Path $Txn 'backup') $entry.path
             if ((Hash-File $backup) -ne $entry.oldHash) { throw "Recovery backup failed verification: $($entry.path)" }

@@ -42,7 +42,10 @@ Assert ([IO.File]::ReadAllText((Join-Path $root 'journeymap/map.dat')) -eq 'pers
 $previous=[pscustomobject]@{repository='PuzzleOP/CustomATM';version='1.0.0';files=$manifest.files}
 Assert (@(Get-Plan $root $manifest $previous).Count -eq 0) 'repeat update is idempotent'
 $null=Make-File $root 'config/example.toml' 'local change'
-Expect-Failure {Get-Plan $root $manifest $previous} 'locally edited managed files are protected'
+Assert (@(Get-Plan $root $manifest $previous).Count -eq 0) 'unchanged published configs preserve local/runtime changes'
+$changed=$manifest | ConvertTo-Json -Depth 20 | ConvertFrom-Json
+$changed.files[2].sha256='1'*64
+Expect-Failure {Get-Plan $root $changed $previous} 'new config updates do not overwrite conflicting local edits'
 $root2=Fixture 'extra';$null=Make-File $root2 'mods/unknown.jar' 'unknown'
 Expect-Failure {Get-Plan $root2 $manifest $null} 'unknown extra mods are not deleted'
 $root3=Fixture 'obsolete-modified';$null=Make-File $root3 'mods/old.jar' 'modified old'
@@ -74,10 +77,12 @@ $root6=Fixture 'interrupt';$tx6=Join-Path $root6 '.customatm/transactions/interr
 $oldHash=Hash-File (Join-Path $root6 'config/example.toml')
 $null=Make-File $tx6 'backup/config/example.toml' 'before'
 $newFile=Make-File $root6 'config/example.toml' 'after'
+$null=Make-File $root6 'config/example.toml.customatm-tmp' 'interrupted partial write'
 Save-Json (Join-Path $tx6 'journal.json') ([pscustomobject]@{status='applying';entries=@([pscustomobject]@{path='config/example.toml';oldHash=$oldHash;newHash=(Hash-File $newFile);action='write'})})
 Recover-Pending $root6
 Assert ([IO.File]::ReadAllText($newFile) -eq 'before') 'next-run recovery restores an interrupted transaction'
 Assert ((Read-Json (Join-Path $tx6 'journal.json')).status -eq 'rolled-back') 'recovery journal records completion'
+Assert (!(Test-Path -LiteralPath (Join-Path $root6 'config/example.toml.customatm-tmp'))) 'hard-interruption temporary file is recovered'
 $base=[pscustomobject]@{version='8.3';minecraft='1.21.1';loader='neoforge-21.1.259';curseforge_file_id=9190157}
 $mBase=[pscustomobject]@{base=$base}
 Save-Json (Join-Path $root6 'minecraftinstance.json') @{projectID=925200;fileID=9190157;gameVersion='1.21.1';baseModLoader=@{name='neoforge-21.1.259'}}
