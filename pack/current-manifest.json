@@ -2,7 +2,7 @@
   "schema": 1,
   "repository": "PuzzleOP/CustomATM",
   "client_version": 3,
-  "version": "1.2.0",
+  "version": "1.2.1",
   "base": {
     "name": "All the Mods 10 - ATM10",
     "version": "8.3",
@@ -147,8 +147,8 @@
     },
     {
       "path": "kubejs/server_scripts/local_customizations/dyneco_broad_market.js",
-      "sha256": "a4e1e78818ef25a7a6c28d5a205394da5a1c7e92122430aa17e749c3c92cb824",
-      "size": 2183,
+      "sha256": "68028c9919a8cabb54ad49eab0fe093bcc82faf95a9250b4dd0ff03398a7f3ed",
+      "size": 2517,
       "source": "payload"
     },
     {
@@ -3692,6 +3692,6 @@
   ],
   "payload": {
     "name": "customatm-payload.zip",
-    "sha256": "984d38879039b9a4e9f4effb7359e31b2b2425aff2e677879ad7db794fb03e66"
+    "sha256": "113c6cf86e9c8957043df9cbaf10ee9ae22cca4b8830d129c2c3774c6899e817"
   }
 }

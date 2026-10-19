@@ -10,17 +10,22 @@ if (Platform.isLoaded('dyneco')) {
     const TreeSet = Java.loadClass('java.util.TreeSet')
     const ArrayList = Java.loadClass('java.util.ArrayList')
     const allowed = new TreeSet()
-    const deniedItems = new TreeSet(config.DENY_ITEMS.get())
-    const deniedMods = new TreeSet(config.DENY_MODS.get())
+    // Rhino can select TreeSet(SortedSet) for a config List. Avoid overloaded
+    // collection constructors so world loading works with the actual config.
+    const deniedItems = new TreeSet()
+    deniedItems.addAll(config.DENY_ITEMS.get())
+    const deniedMods = new TreeSet()
+    deniedMods.addAll(config.DENY_MODS.get())
 
     // Preserve the user's explicit allow list. DynEco's deny lists still win.
     allowed.addAll(config.ALLOW_ITEMS.get())
     const ids = registry.keySet().iterator()
     while (ids.hasNext()) {
-      const key = ids.next()
-      const id = String(key.toString())
-      const namespace = String(key.getNamespace())
-      const path = String(key.getPath())
+      // Rhino's const bindings in this loop retain the first iteration's value.
+      let key = ids.next()
+      let id = String(key.toString())
+      let namespace = String(key.getNamespace())
+      let path = String(key.getPath())
 
       // Keep administrative and creative-tier items outside the automatic list.
       // Spawn eggs and internal display items also retain DynEco's filtering.
@@ -35,7 +40,9 @@ if (Platform.isLoaded('dyneco')) {
     // An explicit allow list overrides DynEco's equipment/block-entity checks.
     // Apply in memory: do not replace the player's on-disk allow list with
     // thousands of generated entries. Re-applied every time recipes load.
-    config.ALLOW_ITEMS.set(new ArrayList(allowed))
+    const allowList = new ArrayList()
+    allowList.addAll(allowed)
+    config.ALLOW_ITEMS.set(allowList)
     console.info('[ATM10 local economy] Broad DynEco market: ' + allowed.size() + ' allowed item IDs; default pricing and market simulation retained.')
   })
 }

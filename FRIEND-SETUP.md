@@ -20,7 +20,7 @@ Close Minecraft and double-click **Update Pack.cmd** when the pack maintainer pu
 
 Both players and the server need the matching release. This updater manages client profiles; it does not configure or update a dedicated server yet.
 
-Your worlds, quest completion, wallet balances, screenshots, maps, server list and ordinary personal options are not distributed. The casino shortcut defaults to F8 when unbound or still on H; an explicitly chosen other key is preserved. If you have never launched the base game and have no options file yet, set Casino Mod > Open Casino to F8 in Controls after the first launch.
+Your worlds, quest completion, wallet balances, screenshots, maps, server list and ordinary personal options are not distributed. The casino shortcut defaults to F8 when missing or still on H; an explicitly chosen other key is preserved. Fresh Setup installations also receive F8 before their first launch. In Controls, search by key name for **Open Casino** under **Casino Mod** (the mod does not call the category Gamble It). Press F8 while in a world with all menus closed. H conflicts with Essential and several base-pack mods.
 
 ## Invite a friend with Essential
 

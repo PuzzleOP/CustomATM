@@ -115,4 +115,12 @@ Assert ([IO.File]::ReadAllText((Join-Path $full 'config/ftbquests/quests/chapter
 Assert ([IO.File]::ReadAllText((Join-Path $full 'options.txt')).Contains('key_key.casinomod.open_casino:key.keyboard.f8')) 'full update adds casino key without copying someone else\s options'
 Invoke-Update
 Assert ((Read-Json (Join-Path $full '.customatm/state.json')).version -eq '1.0.0') 'complete updater can run again successfully'
+Assert ((Get-CasinoOptions '') -eq "key_key.casinomod.open_casino:key.keyboard.f8`n") 'fresh profiles get F8 before their first launch'
+$oldOptions="soundCategory_master:0.7`r`nkey_key.casinomod.open_casino:key.keyboard.h`r`n"
+$newOptions=Get-CasinoOptions $oldOptions
+Assert ($newOptions.Contains('key_key.casinomod.open_casino:key.keyboard.f8')) 'conflicting default H migrates to F8'
+Assert ($newOptions.Contains('soundCategory_master:0.7')) 'casino migration preserves unrelated options'
+Assert ((Get-CasinoOptions $newOptions) -eq $newOptions) 'casino migration is idempotent'
+$customOptions="key_key.casinomod.open_casino:key.keyboard.j`n"
+Assert ((Get-CasinoOptions $customOptions) -eq $customOptions) 'explicit custom casino key is preserved'
 Write-Host "ALL $script:passed CHECKS PASSED. Fixtures: $testRoot"

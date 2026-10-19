@@ -237,6 +237,16 @@ function Add-GeneratedFile($Plan,[string]$Root,[string]$Stage,[string]$Path,[str
     $new=Hash-File $dest;$old=Hash-File (Safe-Path $Root $Path)
     if ($new -ne $old) { $Plan.Add([pscustomobject]@{path=$Path;oldHash=$old;newHash=$new;action='write';source=$null}) }
 }
+function Get-CasinoOptions([string]$Options) {
+    # Also seed fresh profiles before Minecraft creates options.txt. Other
+    # settings are absent deliberately, so Minecraft supplies its defaults.
+    $key='key_key.casinomod.open_casino:'
+    if ($Options -notmatch '(?m)^key_key\.casinomod\.open_casino:') {
+        if ($Options.Length) { return $Options.TrimEnd()+"`n"+$key+"key.keyboard.f8`n" }
+        return $key+"key.keyboard.f8`n"
+    }
+    return [regex]::Replace($Options,'(?m)^key_key\.casinomod\.open_casino:key\.keyboard\.h\r?$',$key+'key.keyboard.f8')
+}
 function Find-Profile {
     # A shortcut installed inside a profile always targets that specific profile.
     $candidate=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../..'))
@@ -292,13 +302,11 @@ function Invoke-Update {
         }
         # Preserve personal options, including any explicitly selected casino key.
         $optionsRel='options.txt';$optionsPath=Safe-Path $Profile $optionsRel
+        $options=''
         if (Test-Path -LiteralPath $optionsPath) {
             $options=[IO.File]::ReadAllText($optionsPath)
-            $key='key_key.casinomod.open_casino:'
-            if ($options -notmatch '(?m)^key_key\.casinomod\.open_casino:') { $options=$options.TrimEnd()+"`n"+$key+"key.keyboard.f8`n" }
-            else { $options=[regex]::Replace($options,'(?m)^key_key\.casinomod\.open_casino:key\.keyboard\.h\r?$',$key+'key.keyboard.f8') }
-            Add-GeneratedFile $plan $Profile $stage $optionsRel $options
         }
+        Add-GeneratedFile $plan $Profile $stage $optionsRel (Get-CasinoOptions $options)
         $state=[ordered]@{schema=1;repository=$script:Repo;version=$m.version;files=@($m.files | ForEach-Object { @{path=$_.path;sha256=$_.sha256} })}
         Add-GeneratedFile $plan $Profile $stage '.customatm/state.json' ($state | ConvertTo-Json -Depth 10)
         # The downloaded Setup program installs a local copy of itself; no remote code is executed.
