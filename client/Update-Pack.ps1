@@ -2,8 +2,9 @@
 [CmdletBinding()]
 param([string]$Profile, [switch]$CheckOnly, [switch]$LibraryOnly)
 $ErrorActionPreference = 'Stop'
+$ProgressPreference = 'SilentlyContinue'
 $script:Repo = 'PuzzleOP/CustomATM'
-$script:ClientVersion = 2
+$script:ClientVersion = 3
 $script:Headers = @{ 'User-Agent'='CustomATM-Updater/1'; 'Accept'='application/vnd.github+json' }
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Add-Type -AssemblyName System.IO.Compression
@@ -85,7 +86,13 @@ function Assert-Base([string]$Root,$Manifest) {
     $file=Safe-Path $Root 'minecraftinstance.json'
     if (!(Test-Path -LiteralPath $file)) { throw 'Select an existing CurseForge ATM10 8.3 profile folder (the one containing minecraftinstance.json).' }
     $instance=Read-Json $file
-    if ($instance.projectID -ne 925200 -or $instance.fileID -ne $Manifest.base.curseforge_file_id -or $instance.gameVersion -ne $Manifest.base.minecraft -or $instance.baseModLoader.name -ne $Manifest.base.loader) {
+    $baseMatch=($instance.projectID -eq 925200 -and $instance.fileID -eq $Manifest.base.curseforge_file_id)
+    $receipt=Safe-Path $Root '.customatm/bootstrap.json'
+    if (Test-Path -LiteralPath $receipt) {
+        $b=Read-Json $receipt
+        $baseMatch=($b.repository -eq $script:Repo -and $b.instance_id -eq $instance.guid -and $b.archive_sha256 -eq $script:BaseArchiveHash -and $b.complete -and $b.version -eq $Manifest.base.version)
+    }
+    if (!$baseMatch -or $instance.gameVersion -ne $Manifest.base.minecraft -or $instance.baseModLoader.name -ne $Manifest.base.loader) {
         throw "This update requires ATM10 $($Manifest.base.version), Minecraft $($Manifest.base.minecraft), $($Manifest.base.loader). Install that exact version with CurseForge first."
     }
 }
@@ -120,7 +127,7 @@ function Get-Plan([string]$Root,$Manifest,$Previous) {
             $plan.Add([pscustomobject]@{path=$path;oldHash=$actual;newHash=$null;action='remove';source=$null})
         }
     }
-    foreach($jar in Get-ChildItem -LiteralPath (Join-Path $Root 'mods') -File -Filter '*.jar') {
+    foreach($jar in @(if(Test-Path -LiteralPath (Join-Path $Root 'mods')) { Get-ChildItem -LiteralPath (Join-Path $Root 'mods') -File -Filter '*.jar' })) {
         $rel='mods/'+$jar.Name
         if (!$desired.ContainsKey($rel) -and !$removed.ContainsKey($rel)) { throw "Extra mod found: $($jar.Name). Move it outside mods before syncing so both players have the same pack." }
     }
@@ -142,7 +149,15 @@ function Stage-Files([string]$Root,[string]$Stage,$Plan,[string]$Payload) {
             if ($item.action -ne 'write') { continue }
             $dest=Safe-Path $Stage $item.path
             [IO.Directory]::CreateDirectory([IO.Path]::GetDirectoryName($dest)) | Out-Null
-            if ($item.source.source -eq 'url') { Download-File $item.source.url $dest $item.newHash }
+            if ($item.source.source -eq 'url') {
+                $reused=$false
+                foreach($cacheRoot in @($script:ReuseProfiles)) {
+                    if (!$cacheRoot) {continue}
+                    $cached=Safe-Path $cacheRoot $item.path
+                    if ((Hash-File $cached) -eq $item.newHash) { [IO.File]::Copy($cached,$dest,$true);$reused=$true;break }
+                }
+                if (!$reused) { Write-Host ('Downloading '+[IO.Path]::GetFileName($item.path));Download-File $item.source.url $dest $item.newHash }
+            }
             else {
                 if (!$zip) { throw 'Missing payload archive.' }
                 $entry=$zip.GetEntry($item.path)
@@ -225,23 +240,8 @@ function Add-GeneratedFile($Plan,[string]$Root,[string]$Stage,[string]$Path,[str
 function Find-Profile {
     # A shortcut installed inside a profile always targets that specific profile.
     $candidate=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../..'))
-    if (Test-Path -LiteralPath (Join-Path $candidate 'minecraftinstance.json')) { return $candidate }
-    $instances=Join-Path $env:USERPROFILE 'curseforge/minecraft/Instances'
-    $matches=@()
-    if (Test-Path -LiteralPath $instances) {
-        foreach($d in Get-ChildItem -LiteralPath $instances -Directory) {
-            $f=Join-Path $d.FullName 'minecraftinstance.json'
-            if (Test-Path -LiteralPath $f) {
-                try { $i=Read-Json $f;if ($i.projectID -eq 925200 -and $i.fileID -eq 9190157) { $matches+=$d.FullName } } catch {}
-            }
-        }
-    }
-    if ($matches.Count -eq 1) { return $matches[0] }
-    Add-Type -AssemblyName System.Windows.Forms
-    $dialog=New-Object Windows.Forms.FolderBrowserDialog
-    $dialog.Description='Choose your CurseForge ATM10 8.3 profile folder (contains mods and minecraftinstance.json)'
-    if ($dialog.ShowDialog() -ne [Windows.Forms.DialogResult]::OK) { throw 'No profile selected.' }
-    return $dialog.SelectedPath
+    if ((Split-Path $PSScriptRoot -Leaf) -eq 'client' -and (Split-Path (Split-Path $PSScriptRoot -Parent) -Leaf) -eq '.customatm' -and (Test-Path -LiteralPath (Join-Path $candidate 'minecraftinstance.json'))) { return $candidate }
+    return (Initialize-CustomATM)
 }
 function Invoke-Update {
     if (!$Profile) { $Profile=Find-Profile }
@@ -302,7 +302,7 @@ function Invoke-Update {
         $state=[ordered]@{schema=1;repository=$script:Repo;version=$m.version;files=@($m.files | ForEach-Object { @{path=$_.path;sha256=$_.sha256} })}
         Add-GeneratedFile $plan $Profile $stage '.customatm/state.json' ($state | ConvertTo-Json -Depth 10)
         # The downloaded Setup program installs a local copy of itself; no remote code is executed.
-        foreach($name in @('Update-Pack.ps1','Update Pack.cmd')) {
+        foreach($name in @('Update-Pack.ps1','Update Pack.cmd','Setup-Profile.ps1','base-extras.json')) {
             $source=Join-Path $PSScriptRoot $name
             $target='.customatm/client/'+$name
             Add-GeneratedFile $plan $Profile $stage $target ([IO.File]::ReadAllText($source))
@@ -311,10 +311,12 @@ function Invoke-Update {
         Add-GeneratedFile $plan $Profile $stage 'Update Pack.cmd' $shortcut
         Assert-GameClosed
         if ($plan.Count) { Apply-Transaction $Profile $txn $stage $plan.ToArray() }
+        Install-DesktopShortcut $Profile
         Write-Host "Ready: CustomATM $($m.version). Launch this profile through CurseForge." -ForegroundColor Green
         Write-Host "Recovery files: $txn"
     } finally { if ($lock) { $lock.Dispose() } }
 }
+. (Join-Path $PSScriptRoot 'Setup-Profile.ps1')
 if (!$LibraryOnly) {
     try { Invoke-Update;exit 0 }
     catch { Write-Host ('UPDATE STOPPED: '+$_.Exception.Message) -ForegroundColor Red;exit 1 }

@@ -8,9 +8,13 @@ def main():
     assert re.fullmatch(r'\d+\.\d+\.\d+',version)
     out=ROOT/'dist'/version;out.mkdir(parents=True,exist_ok=True)
     instance=json.loads((p/'minecraftinstance.json').read_text(encoding='utf-8-sig'))
-    assert instance['projectID']==925200 and instance['fileID']==9190157
+    receipt_path=p/'.customatm/bootstrap.json'
+    receipt=json.loads(receipt_path.read_text()) if receipt_path.exists() else {}
+    assert (instance['projectID']==925200 and instance['fileID']==9190157) or (receipt.get('repository')=='PuzzleOP/CustomATM' and receipt.get('complete') and receipt.get('instance_id')==instance['guid'] and receipt.get('archive_sha256')=='24440fb355de69b28af6ff18556b5d0598bb93570b2b745552cdb1bcb5448c8f')
     assert instance['baseModLoader']['name']=='neoforge-21.1.259'
-    urls={x['installedFile']['fileName']:x['installedFile'].get('downloadUrl') for x in instance['installedAddons']}
+    previous=ROOT/'pack/current-manifest.json'
+    urls={pathlib.PurePosixPath(f['path']).name:f['url'] for f in json.loads(previous.read_text())['files'] if f.get('url')} if previous.exists() else {}
+    urls.update({x['installedFile']['fileName']:x['installedFile']['downloadUrl'] for x in instance['installedAddons'] if x['installedFile'].get('downloadUrl')})
     source_info=json.loads((ROOT/'pack/extra-sources.json').read_text())
     urls.update(source_info)
     files=[];payload={}
@@ -37,7 +41,7 @@ def main():
         for rel,src in sorted(payload.items()):
             info=zipfile.ZipInfo(rel,(2026,10,19,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED
             z.writestr(info,src.read_bytes())
-    manifest={'schema':1,'repository':'PuzzleOP/CustomATM','client_version':2,'version':version,
+    manifest={'schema':1,'repository':'PuzzleOP/CustomATM','client_version':3,'version':version,
               'base':{'name':'All the Mods 10 - ATM10','version':'8.3','minecraft':'1.21.1','loader':'neoforge-21.1.259','curseforge_project_id':925200,'curseforge_file_id':9190157},
               'quest_group':'28D38D1EC21B4002','files':sorted(files,key=lambda f:f['path']),
               'obsolete':json.loads((ROOT/'pack/obsolete.json').read_text()),

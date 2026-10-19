@@ -1,14 +1,18 @@
 # Install CustomATM with CurseForge
 
-Windows 10/11. Keep using CurseForge; no GitHub account or Git installation is needed.
+Windows 10/11 with **CurseForge Standalone** (the standalone Windows app). No GitHub account, Git, Python, or manual ATM10 installation is needed.
 
-1. Install **All the Mods 10 - ATM10, version 8.3** in CurseForge. Required Minecraft: **1.21.1**, loader: **NeoForge 21.1.259**. Use the pack's version list to choose 8.3 specifically.
-2. Close Minecraft. Keep this as a dedicated CustomATM profile; do not independently update the base pack or individual mods.
-3. Download **CustomATM-Setup.zip** from https://github.com/PuzzleOP/CustomATM/releases/latest . Extract it into a folder before running anything.
-4. Double-click **Update Pack.cmd**. It finds your ATM10 8.3 profile, or asks you to select its folder if there is more than one. The correct folder contains `mods` and `minecraftinstance.json`.
-5. Wait for **Ready: CustomATM [version]**, then launch that profile normally in CurseForge.
+1. Install/open CurseForge Standalone and open its **Minecraft** page. Complete its first-time Minecraft setup if prompted.
+2. Close Minecraft.
+3. Download **CustomATM-Setup.zip** from https://github.com/PuzzleOP/CustomATM/releases/latest and **extract** it into a folder.
+4. Double-click **Update Pack.cmd**.
+5. Wait for **Ready: CustomATM [version]**, then launch the **CustomATM** tile in CurseForge.
 
-The first run installs a permanent **Update Pack.cmd** inside the profile. In CurseForge, use the profile menu's **Open Folder** to find it. You can create a desktop shortcut to it.
+Setup creates a separate profile through CurseForge, installs Minecraft **1.21.1 / NeoForge 21.1.259**, downloads the official **ATM10 8.3** base, and installs our custom mods and quests. It reuses identical installed mod files when available; otherwise it downloads them from their authors' hosts. The first installation can take several minutes. Leave CurseForge and the setup window open until it finishes.
+
+Running Setup again finds the profile it created and updates it instead of creating another tile. Older installations made by Setup 1.0.x remain separate; the new setup does not copy their worlds or personal settings. Use the new **CustomATM** tile. Existing ATM10 is not renamed or overwritten.
+
+The first run installs a permanent **Update Pack.cmd** inside the profile and an **Update CustomATM** desktop shortcut. In CurseForge, use the profile menu's **Open Folder** to find the updater if a desktop shortcut could not be created.
 
 ## Future updates
 
@@ -20,10 +24,13 @@ Your worlds, quest completion, wallet balances, screenshots, maps, server list a
 
 ## If it stops
 
-- **Wrong base:** choose ATM10 8.3 / NeoForge 21.1.259 through CurseForge. Other ATM10 versions and ATM10 Sky are different packs.
+- **CurseForge not ready:** open its Minecraft page and run Setup again. The automatic profile creation requires CurseForge Standalone; the Overwolf edition is not supported by this bootstrap.
+- **Wrong base:** use the new Setup to create CustomATM. Do not change its Minecraft, loader, or base-pack version independently.
 - **Extra mod:** the updater reports it without deleting it. Move it outside `mods` if you want to match this pack.
 - **Local edits:** preserve your edits, then restore the last published file or ask the maintainer to include the change.
 - **Download failed:** rerun. Downloads are verified before installation; incomplete downloads are not installed.
 - **Interrupted update:** rerun. An unfinished transaction is restored from its backup before another update starts.
 
 Backups and receipts are in `.customatm/transactions` inside the profile. Keep them until you have verified the update. The initial game content is customized but has not yet completed a full multiplayer playtest.
+
+Profile creation uses CurseForge's local agent interface. If a future CurseForge update changes that interface, setup stops with an error rather than modifying another profile; download an updated Setup when available.

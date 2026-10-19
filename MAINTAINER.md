@@ -8,12 +8,12 @@ The source repository is `PuzzleOP/CustomATM`. A pushed commit alone does not up
 4. Build a new version, for example:
 
    ```powershell
-   python tools/build_release.py --profile "C:\path\to\All the Mods 10 - ATM10" --version 1.0.1
+   python tools/build_release.py --profile "C:\path\to\All the Mods 10 - ATM10" --version 1.1.0
    powershell -NoProfile -ExecutionPolicy Bypass -File tests/Test-Updater.ps1
    ```
 
 5. Review `pack/current-manifest.json`, `pack/snapshot/` and the release notes. Commit the matching source and snapshot. Push that commit.
-6. Run `python tools/publish_release.py --version 1.0.1 --notes release-notes/1.0.1.md`. This uploads all three assets to a draft, verifies remote hashes, then publishes it as the latest stable release.
+6. Run `python tools/publish_release.py --version 1.1.0 --notes release-notes/1.1.0.md`. This uploads all three assets to a draft, verifies remote hashes, then publishes it as the latest stable release.
 7. Both players run Update Pack. The state receipt records the exact installed version. Test the release in game before broad use; a server must be updated separately to the same compatible content.
 
 Publishing uses your existing Git Credential Manager GitHub login in memory. It does not write tokens into files, logs or release assets. Authentication is only needed by the maintainer; recipients use public read-only downloads.
@@ -21,3 +21,11 @@ Publishing uses your existing Git Credential Manager GitHub login in memory. It 
 The updater refuses automatic downgrades. To roll back content, publish a higher version containing the previous tested files. Do not blindly restore an entire old profile or overwrite worlds. Transaction backups are also available for manual recovery.
 
 Full base-pack upgrades require a separate migration and a new base requirement. Do not press CurseForge's update-all button and assume the old manifest still matches. Keep the official base pinned until that migration is prepared.
+
+## Profile bootstrap
+
+Client version 3 creates a native CurseForge profile through the running Standalone app's local agent. A GUID-bound `.customatm/bootstrap.json` receipt identifies profiles it owns; setup never adopts unrelated profiles just because they have the same display name. The ATM10 archive is downloaded from its original ForgeCDN URL and checked against a pinned SHA256. Only its base overrides are extracted locally; they are not republished. Four original shader packs are pinned in `client/base-extras.json`. The published mod manifest supplies the complete customized mod set.
+
+`Setup-Profile.ps1` contains the adapter for the local agent API. Its temporary connection key stays in memory and is not shipped or logged. This is an internal interface verified with the installed Standalone build; future CurseForge changes may require updating this adapter. CurseForge must be installed and its Minecraft setup completed once. The bootstrap does not install CurseForge itself or support the Overwolf edition.
+
+Build from the new CustomATM profile after editing it. The builder accepts its verified bootstrap receipt and retains known original download URLs from the preceding manifest. New third-party mods still need metadata from CurseForge or an entry in `extra-sources.json`.
