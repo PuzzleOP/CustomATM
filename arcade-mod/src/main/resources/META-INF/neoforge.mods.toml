@@ -1,0 +1,40 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "customatm_arcade"
+version = "0.2.0"
+displayName = "CustomATM Redstone Arcade"
+description = "Native Redstone Arcade hub and all eight game screens. Uses the existing Gamble It server and DynEco wallet."
+
+[[mixins]]
+config = "customatm_arcade.mixins.json"
+
+[[dependencies.customatm_arcade]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.259,21.2)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.customatm_arcade]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.customatm_arcade]]
+modId = "casinomod"
+type = "required"
+versionRange = "[1.0.0]"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[dependencies.customatm_arcade]]
+modId = "atm10_casino_dyneco"
+type = "required"
+versionRange = "[1.0.0]"
+ordering = "AFTER"
+side = "CLIENT"

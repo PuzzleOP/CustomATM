@@ -21,7 +21,7 @@ def main():
     for jar in sorted((p/'mods').glob('*.jar')):
         rel='mods/'+jar.name
         entry={'path':rel,'sha256':digest(jar),'size':jar.stat().st_size}
-        if jar.name in {'atm10-casino-dyneco-1.0.0.jar','customatm-economy-1.0.0.jar'}:entry['source']='payload';payload[rel]=jar
+        if jar.name in {'atm10-casino-dyneco-1.0.0.jar','customatm-economy-1.0.0.jar','customatm-arcade-0.2.0.jar'}:entry['source']='payload';payload[rel]=jar
         else:
             url=urls.get(jar.name);assert url and url.startswith('https://'),('Missing original download URL',jar.name)
             entry.update(source='url',url=url)

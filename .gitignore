@@ -2,3 +2,5 @@
 dist/
 __pycache__/
 *.pyc
+arcade-mod/design/preview/*
+!arcade-mod/design/preview/all-games-overview.png

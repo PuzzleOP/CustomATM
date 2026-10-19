@@ -31,3 +31,15 @@ Client version 3 creates a native CurseForge profile through the running Standal
 `Setup-Profile.ps1` contains the adapter for the local agent API. Its temporary connection key stays in memory and is not shipped or logged. This is an internal interface verified with the installed Standalone build; future CurseForge changes may require updating this adapter. CurseForge must be installed and its Minecraft setup completed once. The bootstrap does not install CurseForge itself or support the Overwolf edition.
 
 Build from the new CustomATM profile after editing it. The builder accepts its verified bootstrap receipt and retains known original download URLs from the preceding manifest. New third-party mods still need metadata from CurseForge or an entry in `extra-sources.json`.
+
+## Isolated arcade release
+
+Release 1.4.0 is built without copying or modifying a running profile:
+
+```powershell
+python tools/build_arcade_release.py --base-version 1.3.0 --version 1.4.0
+powershell -NoProfile -ExecutionPolicy Bypass -File tests/Test-Updater.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File tests/Test-ArcadeRelease.ps1
+```
+
+This verifies the previous published asset hashes and the arcade validation receipt, preserves every existing manifest entry and payload byte, and adds only `customatm-arcade-0.2.0.jar`. It reuses updater version 4. After reviewing/committing/pushing, publish through the usual release publisher. Offline previews and checks do not substitute for a later in-game playtest.
