@@ -2,7 +2,7 @@
   "schema": 1,
   "repository": "PuzzleOP/CustomATM",
   "client_version": 3,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "base": {
     "name": "All the Mods 10 - ATM10",
     "version": "8.3",
@@ -341,13 +341,6 @@
       "url": "https://edge.forgecdn.net/files/9113/612/Corgilib-NeoForge-1.21.1-5.0.0.10.jar"
     },
     {
-      "path": "mods/CrashAssistant-neoforge-1.20.6-1.21.4-1.11.12.jar",
-      "sha256": "42f582333ffe61366e68a9320d3c205153f2fdc5b53ad715b01543f85828e6b0",
-      "size": 3481341,
-      "source": "url",
-      "url": "https://edge.forgecdn.net/files/8636/685/CrashAssistant-neoforge-1.20.6-1.21.4-1.11.12.jar"
-    },
-    {
       "path": "mods/CreateDragonsPlus-1.11.9.jar",
       "sha256": "37f05a6775bbe811fe8c2833fa6289a1c704d0b25bdd5f239d343a5c6f62ed8a",
       "size": 1085674,
@@ -409,6 +402,13 @@
       "size": 264089,
       "source": "url",
       "url": "https://edge.forgecdn.net/files/6159/37/EnderStorage-1.21.1-2.13.0.191.jar"
+    },
+    {
+      "path": "mods/Essential_1-5-1_neoforge_1-21-1.jar",
+      "sha256": "b77a2cd8c4b328d9a3a5e9dcf156e15d6ccb776c9f706f16676048119e504987",
+      "size": 51457456,
+      "source": "url",
+      "url": "https://cdn.modrinth.com/data/k2ZPuTBm/versions/Mv7lTMk1/Essential_1-5-1_neoforge_1-21-1.jar"
     },
     {
       "path": "mods/EuphoriaPatcher-1.10.5-r5.9.3-neoforge.jar",
@@ -1745,13 +1745,6 @@
       "size": 1151579,
       "source": "url",
       "url": "https://edge.forgecdn.net/files/8784/713/domum-ornamentum-1.0.236-snapshot-main.jar"
-    },
-    {
-      "path": "mods/drippyloadingscreen_neoforge_3.1.5_MC_1.21.1.jar",
-      "sha256": "f1fcb6cf3cbc7a6055fed0912bf284a7c455a0830de42460943fc5e130072759",
-      "size": 168632,
-      "source": "url",
-      "url": "https://edge.forgecdn.net/files/8552/907/drippyloadingscreen_neoforge_3.1.5_MC_1.21.1.jar"
     },
     {
       "path": "mods/dummmmmmy-1.21-2.1.2-neoforge.jar",
@@ -3681,12 +3674,20 @@
   ],
   "obsolete": [
     {
+      "path": "mods/CrashAssistant-neoforge-1.20.6-1.21.4-1.11.12.jar",
+      "sha256": "42f582333ffe61366e68a9320d3c205153f2fdc5b53ad715b01543f85828e6b0"
+    },
+    {
       "path": "mods/borderless-neoforge-1.21.1-1.7.5_1-all.jar",
       "sha256": "2f7055216da0ee436e558315f8a15e6a53d866e04c58740d02f2eb5984aeaffd"
     },
     {
       "path": "mods/cc-tweaked-1.21.1-forge-1.113.1.jar",
       "sha256": "f001e5fb2064d9007bb1e5a8177860fa15d9d92b75724871b0e0ae2177ca2f3f"
+    },
+    {
+      "path": "mods/drippyloadingscreen_neoforge_3.1.5_MC_1.21.1.jar",
+      "sha256": "f1fcb6cf3cbc7a6055fed0912bf284a7c455a0830de42460943fc5e130072759"
     }
   ],
   "payload": {

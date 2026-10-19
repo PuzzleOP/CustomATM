@@ -1,10 +1,18 @@
 [
   {
+    "path": "mods/CrashAssistant-neoforge-1.20.6-1.21.4-1.11.12.jar",
+    "sha256": "42f582333ffe61366e68a9320d3c205153f2fdc5b53ad715b01543f85828e6b0"
+  },
+  {
     "path": "mods/borderless-neoforge-1.21.1-1.7.5_1-all.jar",
     "sha256": "2f7055216da0ee436e558315f8a15e6a53d866e04c58740d02f2eb5984aeaffd"
   },
   {
     "path": "mods/cc-tweaked-1.21.1-forge-1.113.1.jar",
     "sha256": "f001e5fb2064d9007bb1e5a8177860fa15d9d92b75724871b0e0ae2177ca2f3f"
+  },
+  {
+    "path": "mods/drippyloadingscreen_neoforge_3.1.5_MC_1.21.1.jar",
+    "sha256": "f1fcb6cf3cbc7a6055fed0912bf284a7c455a0830de42460943fc5e130072759"
   }
 ]

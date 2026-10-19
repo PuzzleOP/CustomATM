@@ -22,6 +22,16 @@ Both players and the server need the matching release. This updater manages clie
 
 Your worlds, quest completion, wallet balances, screenshots, maps, server list and ordinary personal options are not distributed. The casino shortcut defaults to F8 when unbound or still on H; an explicitly chosen other key is preserved. If you have never launched the base game and have no options file yet, set Casino Mod > Open Casino to F8 in Controls after the first launch.
 
+## Invite a friend with Essential
+
+CustomATM 1.2.0 includes Essential 1.5.1 (NeoForge 1.21.1). Both players should close Minecraft, run **Update CustomATM**, and wait for **Ready: CustomATM 1.2.0** or a later matching release.
+
+Launch **CustomATM** in CurseForge, add each other through Essential's social menu, and open the world you want to share. In Essential's menu choose **Host**, then **Start Hosting**, and invite your friend using **Add Members**. Your friend accepts the invitation. If Essential presents first-use terms or account prompts, complete them yourself in game.
+
+The host must leave Minecraft and the world open for the friend to stay connected. No separate server setup is needed. [Official hosting guide](https://essential.gg/en/wiki/start-hosting).
+
+This release removes Crash Assistant and Drippy Loading Screen, which Essential lists as conflicting mods. Their jars are retained in update backups; FancyMenu and gameplay mods stay installed. [Compatibility notes](https://essential.gg/wiki/incompatible-mods).
+
 ## If it stops
 
 - **CurseForge not ready:** open its Minecraft page and run Setup again. The automatic profile creation requires CurseForge Standalone; the Overwolf edition is not supported by this bootstrap.
