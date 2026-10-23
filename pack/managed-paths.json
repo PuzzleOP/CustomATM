@@ -7,6 +7,8 @@
     "kubejs/server_scripts/local_customizations/amadron_multiplayer_fix.js",
     "config/ftbquests/quests/chapters/local_guide_*.snbt",
     "config/ftbquests/quests/lang/en_us/chapters/local_guide_*.snbt",
-    "config/ftbquests/quests/lang/en_us/local_guides_group.snbt"
+    "config/ftbquests/quests/lang/en_us/local_guides_group.snbt",
+    "kubejs/server_scripts/local_customizations/ballistix_survival.js",
+    "config/ballistix-common.toml"
   ]
 }

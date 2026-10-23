@@ -43,3 +43,17 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tests/Test-ArcadeRelease.ps1
 ```
 
 This verifies the previous published asset hashes and the arcade validation receipt, preserves every existing manifest entry and payload byte, and adds only `customatm-arcade-0.2.0.jar`. It reuses updater version 4. After reviewing/committing/pushing, publish through the usual release publisher. Offline previews and checks do not substitute for a later in-game playtest.
+
+## Isolated Ballistix release
+
+Release 1.5.0 is assembled from the verified published 1.4.0 assets, author jars downloaded to `.work/ballistix/`, and the two new snapshot files. It never reads or modifies a running profile. `pack/ballistix-additions.json` pins original download URLs, sizes and SHA256 hashes. The builder verifies these inputs and preserves all existing release entries.
+
+```powershell
+python tools/build_ballistix_release.py
+powershell -NoProfile -ExecutionPolicy Bypass -File tests/Test-Updater.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File tests/Test-BallistixRelease.ps1
+```
+
+`tests/BallistixPolicySmoke.java` runs with `tests/BroadMarketSmoke.java` on the pack's Rhino 2101.2.8-build.91 classpath. It checks both recipe callback orders, repeated reloads, existing allows/denies, recipe removals, and conventional equipment preservation. Use a 128 MB JVM for these offline checks. No Minecraft launch is needed. Test actual crafting, market visibility, launcher power, interception and friend joining later in game.
+
+The acquisition policy removes four explosive blocks and four minecart forms by output ID and applies matching in-memory DynEco denies. It does not change old script files or the economy catalogue. It is not an explosion cancellation mechanism or claim integration. Keep any future additions subject to the same crafting/market review. The common config disables retained explosion caching only; other values are filled with upstream defaults. The updater preserves that runtime expansion while the published config stays unchanged.

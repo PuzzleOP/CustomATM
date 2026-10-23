@@ -2,7 +2,7 @@
   "schema": 1,
   "repository": "PuzzleOP/CustomATM",
   "client_version": 4,
-  "version": "1.4.0",
+  "version": "1.5.0",
   "base": {
     "name": "All the Mods 10 - ATM10",
     "version": "8.3",
@@ -13,6 +13,12 @@
   },
   "quest_group": "28D38D1EC21B4002",
   "files": [
+    {
+      "path": "config/ballistix-common.toml",
+      "source": "payload",
+      "sha256": "f52c0f7921fe7332d066bdffa67bd8291fefcf5f03c8f4c401bd66ab92300d47",
+      "size": 215
+    },
     {
       "path": "config/customatm_economy/catalog.json",
       "sha256": "83c9640d5999f6f9f86deef6e2c039a88d71c9434b4f172af0412bfd0b9de250",
@@ -544,6 +550,12 @@
       "sha256": "b50ed33c86036b189ae170f20238d3e2cc6858e433d224daa2853645bffe0aed",
       "size": 950,
       "source": "payload"
+    },
+    {
+      "path": "kubejs/server_scripts/local_customizations/ballistix_survival.js",
+      "source": "payload",
+      "sha256": "5f13177b2f92972acd3b18c900c8ed2ba2ee3608005f12891e34c8b0a9592844",
+      "size": 1352
     },
     {
       "path": "kubejs/server_scripts/local_customizations/dyneco_broad_market.js",
@@ -1711,6 +1723,13 @@
       "size": 2214287,
       "source": "url",
       "url": "https://edge.forgecdn.net/files/9089/539/auroral-1.21.1-1.1.3.jar"
+    },
+    {
+      "path": "mods/ballistix-1.21.1-1.2.3.jar",
+      "sha256": "5c4d025a9b2d125eaa9ccab8ffcde42445498324b71978d25c9efd683eb0204f",
+      "size": 9716022,
+      "source": "url",
+      "url": "https://edge.forgecdn.net/files/9259/921/ballistix-1.21.1-1.2.3.jar"
     },
     {
       "path": "mods/balm-neoforge-1.21.1-21.0.66.jar",
@@ -4007,6 +4026,13 @@
       "url": "https://edge.forgecdn.net/files/9028/199/villagesandpillages-neoforge-2.0.0%2bmc1.21.1.jar"
     },
     {
+      "path": "mods/voltaic-1.21.1-1.2.0.jar",
+      "sha256": "53454127189461f66d532552f3be8ec05bf5898288cf92c1ba313565035b58aa",
+      "size": 1853901,
+      "source": "url",
+      "url": "https://edge.forgecdn.net/files/9247/107/voltaic-1.21.1-1.2.0.jar"
+    },
+    {
       "path": "mods/waystones-neoforge-1.21.1-21.1.46.jar",
       "sha256": "ca76a4457160e8353b1f013a21ab377b264141f466d84ec8952a123058b8af78",
       "size": 1223229,
@@ -4104,6 +4130,6 @@
   ],
   "payload": {
     "name": "customatm-payload.zip",
-    "sha256": "140f48a8743871362c3f59b11055b60ca9481de54da357201df4c108c816d846"
+    "sha256": "af059093af63cada251dfd62a35483e16f630197034a90a37a7dca436eec0390"
   }
 }

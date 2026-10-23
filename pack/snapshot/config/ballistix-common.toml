@@ -1,0 +1,4 @@
+# CustomATM: avoid retaining the large precomputed explosion cache in this heavy pack.
+# NeoForge supplies the remaining Ballistix 1.2.3 defaults on first launch.
+[common.explosives]
+should_cache_explosions = false

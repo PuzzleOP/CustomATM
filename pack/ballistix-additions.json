@@ -1,0 +1,16 @@
+[
+  {
+    "path": "mods/ballistix-1.21.1-1.2.3.jar",
+    "sha256": "5c4d025a9b2d125eaa9ccab8ffcde42445498324b71978d25c9efd683eb0204f",
+    "size": 9716022,
+    "source": "url",
+    "url": "https://edge.forgecdn.net/files/9259/921/ballistix-1.21.1-1.2.3.jar"
+  },
+  {
+    "path": "mods/voltaic-1.21.1-1.2.0.jar",
+    "sha256": "53454127189461f66d532552f3be8ec05bf5898288cf92c1ba313565035b58aa",
+    "size": 1853901,
+    "source": "url",
+    "url": "https://edge.forgecdn.net/files/9247/107/voltaic-1.21.1-1.2.0.jar"
+  }
+]
