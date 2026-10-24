@@ -15,7 +15,7 @@ public class QuestSnbtCheck {
                 }
             }
         }
-        if(count!=20)throw new AssertionError("Expected 20 chapter/language files, got "+count);
-        System.out.println("PASS: all 20 generated files parse with Minecraft and FTB SNBT parsers (no game started).");
+        if(count!=22)throw new AssertionError("Expected 22 chapter/language files, got "+count);
+        System.out.println("PASS: all 22 generated files parse with Minecraft and FTB SNBT parsers (no game started).");
     }
 }

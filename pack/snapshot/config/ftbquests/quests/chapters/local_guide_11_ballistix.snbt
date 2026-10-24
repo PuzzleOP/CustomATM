@@ -1,0 +1,1211 @@
+{
+  "default_hide_dependency_lines": false,
+  "default_quest_shape": "hexagon",
+  "filename": "local_guide_11_ballistix",
+  "group": "28D38D1EC21B4002",
+  "icon": {
+    "id": "ballistix:launcherplatformtier3",
+    "count": 1
+  },
+  "id": "1B37C9C52726C8B2",
+  "order_index": 10,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "id": "6FC8DD76E4A8800E",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "56E7752792B09A91",
+          "type": "checkmark"
+        }
+      ],
+      "x": -3.0,
+      "y": 0.0,
+      "icon": {
+        "id": "ballistix:launcherplatformtier1",
+        "count": 1
+      },
+      "shape": "diamond",
+      "size": 1.5
+    },
+    {
+      "id": "499314BCADC6EF25",
+      "dependencies": [
+        "6FC8DD76E4A8800E"
+      ],
+      "tasks": [
+        {
+          "id": "79514897A7D10731",
+          "type": "checkmark"
+        }
+      ],
+      "x": -3.0,
+      "y": 3.0,
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      },
+      "shape": "square",
+      "optional": true
+    },
+    {
+      "id": "1269F6C13DF4174E",
+      "dependencies": [
+        "6FC8DD76E4A8800E"
+      ],
+      "tasks": [
+        {
+          "id": "0B16B7B27175A829",
+          "type": "item",
+          "item": {
+            "id": "mekanism:basic_energy_cube",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 0.0,
+      "icon": {
+        "id": "mekanism:basic_energy_cube",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "hide_dependency_lines": true,
+      "rewards": [
+        {
+          "id": "26037314FDCCD29D",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "531D7AE5FEA6A686",
+      "dependencies": [
+        "1269F6C13DF4174E"
+      ],
+      "tasks": [
+        {
+          "id": "71C033E2A27C1777",
+          "type": "item",
+          "item": {
+            "id": "mekanism:basic_universal_cable",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 0.0,
+      "icon": {
+        "id": "mekanism:basic_universal_cable",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "rewards": [
+        {
+          "id": "5DA2FBD7E943F629",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "43C6B7135D55AD56",
+      "dependencies": [
+        "531D7AE5FEA6A686"
+      ],
+      "tasks": [
+        {
+          "id": "3786AEE8C2B0C4F9",
+          "type": "item",
+          "item": {
+            "id": "ballistix:launchercontrolpaneltier1",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 6.0,
+      "y": 0.0,
+      "icon": {
+        "id": "ballistix:launchercontrolpaneltier1",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "rewards": [
+        {
+          "id": "09DFAE5E321F4EB0",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "25C608B7F5EE19C6",
+      "dependencies": [
+        "1269F6C13DF4174E"
+      ],
+      "tasks": [
+        {
+          "id": "4A1B4D9E1B27E6E1",
+          "type": "item",
+          "item": {
+            "id": "ballistix:radargun",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 9.0,
+      "y": 0.0,
+      "icon": {
+        "id": "ballistix:radargun",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "rewards": [
+        {
+          "id": "52752D043E9208F0",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "284E3CFAA6511201",
+      "dependencies": [
+        "43C6B7135D55AD56",
+        "25C608B7F5EE19C6"
+      ],
+      "tasks": [
+        {
+          "id": "0DA003CC19CEA865",
+          "type": "item",
+          "item": {
+            "id": "mekanism:basic_energy_cube",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2E1B20B6CE10BF84",
+          "type": "item",
+          "item": {
+            "id": "mekanism:basic_universal_cable",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "69868997BAA98391",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 0.0,
+      "icon": {
+        "id": "mekanism:basic_energy_cube",
+        "count": 1
+      },
+      "shape": "diamond",
+      "size": 1.5,
+      "rewards": [
+        {
+          "id": "653341E7785996AC",
+          "type": "xp",
+          "xp": 75
+        }
+      ]
+    },
+    {
+      "id": "48A0CC7EB35709BA",
+      "dependencies": [
+        "43C6B7135D55AD56"
+      ],
+      "tasks": [
+        {
+          "id": "1C52E3C11C7E844F",
+          "type": "item",
+          "item": {
+            "id": "ballistix:launcherplatformtier1",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "187116106CBE8E8D",
+          "type": "item",
+          "item": {
+            "id": "ballistix:launchersupportframetier1",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 4.0,
+      "icon": {
+        "id": "ballistix:launcherplatformtier1",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "hide_dependency_lines": true,
+      "rewards": [
+        {
+          "id": "7E1195CE87BADC22",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "7276867E4F90E58C",
+      "dependencies": [
+        "48A0CC7EB35709BA"
+      ],
+      "tasks": [
+        {
+          "id": "0115264ABF2FC4EB",
+          "type": "item",
+          "item": {
+            "id": "ballistix:missiletier1",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "38F339263529E5C0",
+          "type": "item",
+          "item": {
+            "id": "ballistix:condensive",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 4.0,
+      "icon": {
+        "id": "ballistix:missiletier1",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "rewards": [
+        {
+          "id": "09A0D8933C1A5A83",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "76AD71500FFE388C",
+      "dependencies": [
+        "7276867E4F90E58C"
+      ],
+      "tasks": [
+        {
+          "id": "73A635F7729317E2",
+          "type": "item",
+          "item": {
+            "id": "ballistix:radargun",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 6.0,
+      "y": 4.0,
+      "icon": {
+        "id": "ballistix:radargun",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "rewards": [
+        {
+          "id": "11DBEB964DFE796E",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "6687D95949FCEB68",
+      "dependencies": [
+        "76AD71500FFE388C",
+        "284E3CFAA6511201"
+      ],
+      "tasks": [
+        {
+          "id": "403AA4840568EFC1",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 4.0,
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      },
+      "shape": "diamond",
+      "size": 1.5,
+      "hide_dependency_lines": true,
+      "rewards": [
+        {
+          "id": "3F9018DC06A49877",
+          "type": "xp",
+          "xp": 75
+        }
+      ]
+    },
+    {
+      "id": "46394717DF086FE1",
+      "dependencies": [
+        "6687D95949FCEB68"
+      ],
+      "tasks": [
+        {
+          "id": "2B353FC9F716CC8D",
+          "type": "item",
+          "item": {
+            "id": "ballistix:launchersupportframetier3",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "1BC75EF1070DC58D",
+          "type": "item",
+          "item": {
+            "id": "ballistix:launchercontrolpaneltier2",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 12.0,
+      "y": 4.0,
+      "icon": {
+        "id": "ballistix:launchersupportframetier3",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "optional": true,
+      "rewards": [
+        {
+          "id": "36F3C6424C58FC5B",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "100279F6475C4FF6",
+      "dependencies": [
+        "6687D95949FCEB68"
+      ],
+      "tasks": [
+        {
+          "id": "28E2AA4C7354E730",
+          "type": "item",
+          "item": {
+            "id": "ballistix:launcherplatformtier3",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "1C94D73B7F179CC5",
+          "type": "item",
+          "item": {
+            "id": "ballistix:launchercontrolpaneltier3",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5EC892D5FA09CED5",
+          "type": "item",
+          "item": {
+            "id": "ballistix:missiletier3",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 15.0,
+      "y": 4.0,
+      "icon": {
+        "id": "ballistix:launcherplatformtier3",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "optional": true,
+      "rewards": [
+        {
+          "id": "5B931D1C6ACCC609",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "2083F8F594D739CD",
+      "dependencies": [
+        "6687D95949FCEB68"
+      ],
+      "tasks": [
+        {
+          "id": "0B59D184C2951AC5",
+          "type": "item",
+          "item": {
+            "id": "ballistix:vls",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 18.0,
+      "y": 4.0,
+      "icon": {
+        "id": "ballistix:vls",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "optional": true,
+      "rewards": [
+        {
+          "id": "1D0FAE1588A0777B",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "2917B9F23960AC52",
+      "dependencies": [
+        "531D7AE5FEA6A686"
+      ],
+      "tasks": [
+        {
+          "id": "19E92C717CA81EDD",
+          "type": "item",
+          "item": {
+            "id": "ballistix:radar",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 8.0,
+      "icon": {
+        "id": "ballistix:radar",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "hide_dependency_lines": true,
+      "rewards": [
+        {
+          "id": "56DEA9577BC7EEF4",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "0D652C5082EB4972",
+      "dependencies": [
+        "2917B9F23960AC52"
+      ],
+      "tasks": [
+        {
+          "id": "12DD60254ABF3292",
+          "type": "item",
+          "item": {
+            "id": "ballistix:airraidsiren",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5877251FFB5AB2A7",
+          "type": "item",
+          "item": {
+            "id": "minecraft:redstone",
+            "count": 1
+          },
+          "count": 8,
+          "consume_items": false
+        },
+        {
+          "id": "7875352B652141BD",
+          "type": "item",
+          "item": {
+            "id": "minecraft:repeater",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 8.0,
+      "icon": {
+        "id": "ballistix:airraidsiren",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "rewards": [
+        {
+          "id": "5756A90966F717BD",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "2AF7AB16A89548C3",
+      "dependencies": [
+        "2917B9F23960AC52"
+      ],
+      "tasks": [
+        {
+          "id": "74F8D137196FEC26",
+          "type": "item",
+          "item": {
+            "id": "ballistix:firecontrolradar",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 6.0,
+      "y": 8.0,
+      "icon": {
+        "id": "ballistix:firecontrolradar",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "rewards": [
+        {
+          "id": "70E936F6B8669DF9",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "11851526BE98D807",
+      "dependencies": [
+        "2AF7AB16A89548C3",
+        "25C608B7F5EE19C6"
+      ],
+      "tasks": [
+        {
+          "id": "61A434138A071E1D",
+          "type": "item",
+          "item": {
+            "id": "ballistix:radargun",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 9.0,
+      "y": 8.0,
+      "icon": {
+        "id": "ballistix:radargun",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "hide_dependency_lines": true,
+      "rewards": [
+        {
+          "id": "2473EE8DE20B98EC",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "620F1FF32C3941AD",
+      "dependencies": [
+        "11851526BE98D807"
+      ],
+      "tasks": [
+        {
+          "id": "63D3765643A3E443",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 8.0,
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      },
+      "shape": "square",
+      "optional": true
+    },
+    {
+      "id": "4C53EE0E48625108",
+      "dependencies": [
+        "0D652C5082EB4972",
+        "2AF7AB16A89548C3",
+        "6687D95949FCEB68"
+      ],
+      "tasks": [
+        {
+          "id": "4949F017FFB624F5",
+          "type": "checkmark"
+        }
+      ],
+      "x": 15.0,
+      "y": 8.0,
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      },
+      "shape": "diamond",
+      "size": 1.5,
+      "hide_dependency_lines": true,
+      "rewards": [
+        {
+          "id": "7F98F094110951A1",
+          "type": "xp",
+          "xp": 75
+        }
+      ]
+    },
+    {
+      "id": "4C05AEFA2C2C2446",
+      "dependencies": [
+        "11851526BE98D807"
+      ],
+      "tasks": [
+        {
+          "id": "1CEF48AA9157FCB8",
+          "type": "item",
+          "item": {
+            "id": "ballistix:samturret",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "4D9B80899F5330E4",
+          "type": "item",
+          "item": {
+            "id": "ballistix:aamissile",
+            "count": 1
+          },
+          "count": 4,
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 12.0,
+      "icon": {
+        "id": "ballistix:samturret",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "hide_dependency_lines": true,
+      "rewards": [
+        {
+          "id": "3F1C9524C6B5DCEB",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "45C36551E592FEEE",
+      "dependencies": [
+        "4C05AEFA2C2C2446"
+      ],
+      "tasks": [
+        {
+          "id": "45ABCC7A7F4C78F3",
+          "type": "item",
+          "item": {
+            "id": "ballistix:ciwsturret",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "292EBDAB998B15A9",
+          "type": "item",
+          "item": {
+            "id": "ballistix:bullet",
+            "count": 1
+          },
+          "count": 64,
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 12.0,
+      "icon": {
+        "id": "ballistix:ciwsturret",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "rewards": [
+        {
+          "id": "13548C0FE29C5256",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "5423E5310065B764",
+      "dependencies": [
+        "4C05AEFA2C2C2446"
+      ],
+      "tasks": [
+        {
+          "id": "16CE97F3D522093D",
+          "type": "item",
+          "item": {
+            "id": "ballistix:laserturret",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 6.0,
+      "y": 12.0,
+      "icon": {
+        "id": "ballistix:laserturret",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "optional": true,
+      "rewards": [
+        {
+          "id": "0F85DBAE5063611A",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "10DB42E661A636A3",
+      "dependencies": [
+        "4C05AEFA2C2C2446"
+      ],
+      "tasks": [
+        {
+          "id": "5FF3BC3D0ACD775E",
+          "type": "item",
+          "item": {
+            "id": "ballistix:railgunturret",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "383B41FBF07F617D",
+          "type": "item",
+          "item": {
+            "id": "minecraft:iron_ingot",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": false
+        }
+      ],
+      "x": 9.0,
+      "y": 12.0,
+      "icon": {
+        "id": "ballistix:railgunturret",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "optional": true,
+      "rewards": [
+        {
+          "id": "0ED6AB451A134539",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "5975FB89AF5BB130",
+      "dependencies": [
+        "45C36551E592FEEE"
+      ],
+      "tasks": [
+        {
+          "id": "11C3F083D04CC1D8",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 12.0,
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      },
+      "shape": "square"
+    },
+    {
+      "id": "75E95A2C32DA0B2E",
+      "dependencies": [
+        "5975FB89AF5BB130",
+        "4C53EE0E48625108"
+      ],
+      "tasks": [
+        {
+          "id": "1BDA60AF93A7C785",
+          "type": "item",
+          "item": {
+            "id": "ballistix:samturret",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5D2D31FB9574E405",
+          "type": "item",
+          "item": {
+            "id": "ballistix:ciwsturret",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5AC3F5B700B7AEFF",
+          "type": "checkmark"
+        }
+      ],
+      "x": 15.0,
+      "y": 12.0,
+      "icon": {
+        "id": "ballistix:samturret",
+        "count": 1
+      },
+      "shape": "diamond",
+      "size": 1.5,
+      "hide_dependency_lines": true,
+      "rewards": [
+        {
+          "id": "394CCEE77FE0E5CA",
+          "type": "xp",
+          "xp": 75
+        }
+      ]
+    },
+    {
+      "id": "1515B42F04694E32",
+      "dependencies": [
+        "75E95A2C32DA0B2E"
+      ],
+      "tasks": [
+        {
+          "id": "535A9973BF42A69A",
+          "type": "item",
+          "item": {
+            "id": "ballistix:aamissilemk2",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "1D1344D810F3C4E7",
+          "type": "item",
+          "item": {
+            "id": "ballistix:launchercontrolpaneltier2",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 16.0,
+      "icon": {
+        "id": "ballistix:aamissilemk2",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "optional": true,
+      "hide_dependency_lines": true,
+      "rewards": [
+        {
+          "id": "34FFB9ACF649EAC0",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "0FC504B66D5A9F0E",
+      "dependencies": [
+        "75E95A2C32DA0B2E"
+      ],
+      "tasks": [
+        {
+          "id": "505590D65BE84461",
+          "type": "item",
+          "item": {
+            "id": "ballistix:esmtower",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 16.0,
+      "icon": {
+        "id": "ballistix:esmtower",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "optional": true,
+      "hide_dependency_lines": true,
+      "rewards": [
+        {
+          "id": "7FDEB7043D6586AD",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "50C72368FF3C65DF",
+      "dependencies": [
+        "6687D95949FCEB68"
+      ],
+      "tasks": [
+        {
+          "id": "76D201FA26FBF09F",
+          "type": "item",
+          "item": {
+            "id": "ballistix:laserdesignator",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 6.0,
+      "y": 16.0,
+      "icon": {
+        "id": "ballistix:laserdesignator",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "optional": true,
+      "hide_dependency_lines": true,
+      "rewards": [
+        {
+          "id": "7919E6B750836D35",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "604DDE2CEB555748",
+      "dependencies": [
+        "75E95A2C32DA0B2E"
+      ],
+      "tasks": [
+        {
+          "id": "0B364B227F9E409E",
+          "type": "item",
+          "item": {
+            "id": "minecraft:chest",
+            "count": 1
+          },
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "7E8B7B2B3C2B7E69",
+          "type": "item",
+          "item": {
+            "id": "minecraft:hopper",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": false
+        }
+      ],
+      "x": 9.0,
+      "y": 16.0,
+      "icon": {
+        "id": "minecraft:chest",
+        "count": 1
+      },
+      "shape": "hexagon",
+      "optional": true,
+      "hide_dependency_lines": true,
+      "rewards": [
+        {
+          "id": "2F3FAE6189B59509",
+          "type": "xp",
+          "xp": 15
+        }
+      ]
+    },
+    {
+      "id": "4F45022ECB949262",
+      "dependencies": [
+        "6FC8DD76E4A8800E"
+      ],
+      "tasks": [
+        {
+          "id": "630E41F6E0953D82",
+          "type": "checkmark"
+        }
+      ],
+      "x": 12.0,
+      "y": 16.0,
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      },
+      "shape": "square",
+      "optional": true,
+      "hide_dependency_lines": true
+    },
+    {
+      "id": "05B7B1767326749E",
+      "dependencies": [
+        "75E95A2C32DA0B2E"
+      ],
+      "tasks": [
+        {
+          "id": "3B22043FF1A4A3D5",
+          "type": "checkmark"
+        }
+      ],
+      "x": 15.0,
+      "y": 16.0,
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      },
+      "shape": "square",
+      "optional": true,
+      "hide_dependency_lines": true
+    },
+    {
+      "id": "66B49BC629F75CCA",
+      "dependencies": [
+        "6687D95949FCEB68",
+        "4C53EE0E48625108",
+        "75E95A2C32DA0B2E"
+      ],
+      "tasks": [
+        {
+          "id": "0682E3E01E749273",
+          "type": "checkmark"
+        }
+      ],
+      "x": 9.0,
+      "y": 20.0,
+      "icon": {
+        "id": "minecraft:book",
+        "count": 1
+      },
+      "shape": "diamond",
+      "size": 1.5,
+      "hide_dependency_lines": true,
+      "rewards": [
+        {
+          "id": "18625C489F27C036",
+          "type": "xp",
+          "xp": 75
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "4783E974D048A522",
+      "image": "customatm:textures/quests/ballistix_lane_0.png",
+      "x": 8.0,
+      "y": -1.15,
+      "width": 19.0,
+      "height": 1.0,
+      "rotation": 0.0
+    },
+    {
+      "id": "1F288FC2466D8908",
+      "image": "customatm:textures/quests/ballistix_lane_1.png",
+      "x": 8.0,
+      "y": 2.85,
+      "width": 19.0,
+      "height": 1.0,
+      "rotation": 0.0
+    },
+    {
+      "id": "76F4F0E8B94B4716",
+      "image": "customatm:textures/quests/ballistix_lane_2.png",
+      "x": 8.0,
+      "y": 6.85,
+      "width": 19.0,
+      "height": 1.0,
+      "rotation": 0.0
+    },
+    {
+      "id": "01648CB57E87FE5C",
+      "image": "customatm:textures/quests/ballistix_lane_3.png",
+      "x": 8.0,
+      "y": 10.85,
+      "width": 19.0,
+      "height": 1.0,
+      "rotation": 0.0
+    },
+    {
+      "id": "448FA9EFEB83DB4E",
+      "image": "customatm:textures/quests/ballistix_lane_4.png",
+      "x": 8.0,
+      "y": 14.85,
+      "width": 19.0,
+      "height": 1.0,
+      "rotation": 0.0
+    }
+  ]
+}

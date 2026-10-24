@@ -6,13 +6,15 @@ Versioned updates for PuzzleOP's customized **ATM10 8.3**, while continuing to u
 
 Open Minecraft in CurseForge Standalone, extract the latest Setup ZIP, then run **Update Pack.cmd**. It creates a separate **CustomATM** tile and installs the ATM10 8.3 base automatically. No GitHub account is required for downloads. The updater receives changes only from published, non-prerelease GitHub releases; pushing an unfinished source change does not update anyone's game.
 
-Included customizations: Essential friend invites/world hosting, a farm-aware DynEco broad market, a shared-wallet Gamble It bridge, Refined Storage addons, Cubes Without Borders, and 10 guided quest chapters containing 269 quests. MineColonies, Ad Astra and the other base mods come from the original ATM10 installation.
+Included customizations: Essential friend invites/world hosting, a farm-aware DynEco broad market, a shared-wallet Gamble It bridge, Refined Storage addons, Cubes Without Borders, and 11 guided quest chapters containing 302 quests. MineColonies, Ad Astra and the other base mods come from the original ATM10 installation.
+
+Release **1.6.0** adds **11 • Ballistix: Missile Outposts** under **Guided Progression**: 33 quests with FE wiring, illustrated silo placement, radar linking, ammunition, layered defenses, troubleshooting and practical drills. Includes four original diagrams and preserves every previous chapter. [Release notes](release-notes/1.6.0.md).
 
 Release **1.5.0** adds Ballistix and its required Voltaic library for missiles, radar and defensive turrets. Nuclear, antimatter and dark-matter warheads/minecarts are excluded from crafting and DynEco purchases. Use separate military outposts: conventional weapons still damage blocks, and claim/shield compatibility needs testing. [Release notes](release-notes/1.5.0.md).
 
 Release **1.4.0** adds the Redstone Arcade hub and all eight redesigned casino games, with clearer bets, returns and rules. Open it with **F8** in a world. [Preview and source](arcade-mod/README.md) · [Release notes](release-notes/1.4.0.md). Existing game payouts remain unchanged; in-game and multiplayer validation is still pending.
 
-Already on 1.3.0 or 1.4.0? Close Minecraft and run your existing **Update CustomATM** shortcut. No new Setup ZIP is needed for 1.5.0.
+Already on 1.3.0 or newer? Close Minecraft and run your existing **Update CustomATM** shortcut. No new Setup ZIP is needed for 1.6.0.
 
 Release 1.3.0 rebuilds the custom chapters into named branches with 224 item milestones, 60 new workshop exercises, ten original setup diagrams, planet-visit tasks and modest XP rewards. Existing chapter/quest IDs remain stable. Equipment tasks detect items automatically; practical reminders are optional except for the final workshop projects. See [quest authoring and validation](quest-source/README.md).
 

@@ -1,5 +1,7 @@
 # CustomATM quest workshops
 
+Release 1.6.0 adds **Ballistix: Missile Outposts**, bringing the custom set to **11 chapters and 302 quests**. Its 33 new quests include 24 inventory milestones, five explicitly manual practical projects, five branches and four original diagrams. The earlier ten chapters remain byte-for-byte unchanged in this release.
+
 The ten original chapters now contain **269 quests**, including **224 quests with item objectives**, **60 new workshop exercises**, **38 named branches**, three planet-visit tasks and ten original explanatory diagrams. This is a rebuild of the previous 209-quest guide set, not a replacement of ATM10's own chapters.
 
 The local ATM10 8.3 Mekanism, AE2 and other advanced chapters were inspected as structural references: meaningful equipment nodes, topic branches, worked setups, illustrated explanations and rewards. Their writing and image assets are not copied into this repository. Our chapter headings and diagrams are original generated assets.
@@ -26,11 +28,19 @@ python tests/check_quests.py
 python tests/check_economy.py
 ```
 
-The quest checks cover unique IDs, acyclic/resolved dependencies, preserved quest identities, language entries, image references, item evidence from the installed pack, non-consuming tasks, bounded rewards, optional branches and node spacing. `QuestSnbtCheck.java` parses all 20 chapter/language files with Minecraft's actual SNBT parser without bootstrapping a game or loading a world. A generated map preview was also inspected.
+The quest checks cover unique IDs, acyclic/resolved dependencies, preserved quest identities, language entries, image references, item evidence from the installed pack or hash-verified staged jars, non-consuming tasks, bounded rewards, optional branches and node spacing. `QuestSnbtCheck.java` parses all 22 chapter/language files with Minecraft's and FTB's actual SNBT parsers without bootstrapping a game or loading a world. Generated map previews were also inspected.
 
 The in-game FTB rendering and multiplayer progression have not yet been playtested for this release; the host requested no second game launch while playing. Item possession and checkmarks are deliberately described as different kinds of evidence.
 
 ## Technical references
+
+### Ballistix addition
+
+`ballistix.py` contains original prose, permanent quest keys, objectives and prerequisites. Run `python tools/build_ballistix_quests.py` to rebuild only chapter 11, its language file, four diagrams and five branch headers. `ballistix-summary.json` records counts. The review-only map is `.work/ballistix/quest-map.png`; it is not distributed as a gameplay asset. Cross-branch dependency lines are hidden as in ATM10's own chapters, with prerequisite titles written into each lesson. IDs are generated from fixed keys, not display names.
+
+Checked against the SHA256-pinned Ballistix 1.2.3 and Voltaic 1.2.0 jars in `pack/ballistix-additions.json`: recipe/model resources, English guidebook entries, control-panel/platform/frame behavior, Search/Fire Control radar behavior, Radar Gun interactions, turret inventory filters and FE capability directions. Specific version-sensitive points include no-Electrodynamics FE support (`Voltaic.isForgeEnergyEnabled`), bottom radar/turret/ESM inputs, platform behind the controller, radar binding within 32 blocks, SAM versus anti-ballistic ammunition, iron-ingot railgun input, current threat assignment and hostile-mob targeting, and Search Radar's distinct ordinary/comparator outputs. No decompiled code or third-party guide images are redistributed.
+
+The author's [Ballistix wiki](https://wiki.aurilis.dev/ballistix/) provides background, but older dependency and turret descriptions differ from the pinned version. The chapter follows the jar behavior where they differ. Actual in-game operation and FTB rendering still need a playtest; no game was launched to prepare this release.
 
 The installed jars' language, recipe and guide resources supplied version-specific item names, conduit components, Ad Astra and Astral guide details. Additional primary references:
 

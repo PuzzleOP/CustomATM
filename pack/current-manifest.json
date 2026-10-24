@@ -2,7 +2,7 @@
   "schema": 1,
   "repository": "PuzzleOP/CustomATM",
   "client_version": 4,
-  "version": "1.5.0",
+  "version": "1.6.0",
   "base": {
     "name": "All the Mods 10 - ATM10",
     "version": "8.3",
@@ -192,6 +192,12 @@
       ]
     },
     {
+      "path": "config/ftbquests/quests/chapters/local_guide_11_ballistix.snbt",
+      "source": "payload",
+      "sha256": "15988d0332eddc20248efd017a2e1be22984111d200c4acb1e6d2645a93a8c4a",
+      "size": 26202
+    },
+    {
       "path": "config/ftbquests/quests/lang/en_us/chapters/local_guide_01_minecolonies.snbt",
       "sha256": "d399530cfd18533400d5c310254eaa73a7841d10f7d53db48ff4bce5452dfae4",
       "size": 23501,
@@ -250,6 +256,12 @@
       "sha256": "71296993030a1b8bbd5f5ed02ca73e0ac461219bd314f228c905ae8f72562eef",
       "size": 24827,
       "source": "payload"
+    },
+    {
+      "path": "config/ftbquests/quests/lang/en_us/chapters/local_guide_11_ballistix.snbt",
+      "source": "payload",
+      "sha256": "16b19b346e8e53ec1bf0707e8ae1df7015ceeb8ed2dfe91929809da6e7c74c97",
+      "size": 47643
     },
     {
       "path": "config/ftbquests/quests/lang/en_us/local_guides_group.snbt",
@@ -340,6 +352,60 @@
       "sha256": "6cdd3af2f7e8d907bc3a37aece075770c198504a83b35d42899328099ca0f484",
       "size": 4181,
       "source": "payload"
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/ballistix_defense.png",
+      "source": "payload",
+      "sha256": "7a7e36319b357bb3099c201268a1f49c9c88a7a7adda999bf3a92576001f9d0a",
+      "size": 41770
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/ballistix_lane_0.png",
+      "source": "payload",
+      "sha256": "1a192ebbc87ed016e9082174bb41e12e6b7d4fdfe5c75f00c4a79cebbd5205e0",
+      "size": 5949
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/ballistix_lane_1.png",
+      "source": "payload",
+      "sha256": "a1e0147d540de2b862e2714ee078abcbded5f6c0f09722665ff0ccb7ecd1786f",
+      "size": 4185
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/ballistix_lane_2.png",
+      "source": "payload",
+      "sha256": "0206953ebc4746ff7c8b6115f4949a4c8997ec89ff35f6ce7ea37c77981dd179",
+      "size": 5385
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/ballistix_lane_3.png",
+      "source": "payload",
+      "sha256": "d0a99c63713c835f6276a702b6ccdc8fe451a1a2fe7850f6fe002dc7bdb7f1c7",
+      "size": 3810
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/ballistix_lane_4.png",
+      "source": "payload",
+      "sha256": "e5b95abd012afca6d3c974ace61aa2bc46b66d2b08c49188974cb791da687ff3",
+      "size": 5244
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/ballistix_overview.png",
+      "source": "payload",
+      "sha256": "c18e2e840d24695c42fe78325a0d9604bb7f7e7ca2a5e84af95c1e58d12f539f",
+      "size": 37988
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/ballistix_power.png",
+      "source": "payload",
+      "sha256": "d608eb288d958012ed1e197aacdcf8d28293668a3dde5b909675db5d50db85ec",
+      "size": 41645
+    },
+    {
+      "path": "kubejs/assets/customatm/textures/quests/ballistix_silo.png",
+      "source": "payload",
+      "sha256": "fd986dd1afa93174a2d0a9b0d612d43b0906151fae4b4c5609f9c0ca4892c1c6",
+      "size": 38599
     },
     {
       "path": "kubejs/assets/customatm/textures/quests/computercraft.png",
@@ -4130,6 +4196,6 @@
   ],
   "payload": {
     "name": "customatm-payload.zip",
-    "sha256": "af059093af63cada251dfd62a35483e16f630197034a90a37a7dca436eec0390"
+    "sha256": "f07a2cf69aeed81319da7db943619f2db5e4d99500147212f3edad0cc99e09da"
   }
 }
